@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+:root {
+  --white: #ffffff;
+
+
+  --font-body: 'Open Sans', sans-serif;
+  --font-navigation: 'Raleway', sans-serif;
+
+
+  --box-shadow-btn-hero: 0 5px 15px rgba(250, 149, 77, 0.4);
+}
+
+
+body {
+  font-family: var(--font-body);
+  background-color: #242424;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
