@@ -131,7 +131,7 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href='/publicacoes'>Publicações</a>
+              <a href='/publicacoes'>Chocolateiros</a>
             </li>
             <li>
               <a href='/convenios'>Convênios</a>

@@ -1,0 +1,173 @@
+import "./ourStory.css";
+
+// --- Ícones SVG para os diferenciais (melhor performance e fácil de customizar) ---
+const IconeUniao = () => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='48'
+    height='48'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    className='diferencial-icon'
+  >
+    <path d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2' />
+    <circle cx='9' cy='7' r='4' />
+    <path d='M22 21v-2a4 4 0 0 0-3-3.87' />
+    <path d='M16 3.13a4 4 0 0 1 0 7.75' />
+  </svg>
+);
+
+const IconeMapa = () => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='48'
+    height='48'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    className='diferencial-icon'
+  >
+    <polygon points='1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6' />
+    <line x1='8' y1='2' x2='8' y2='18' />
+    <line x1='16' y1='6' x2='16' y2='22' />
+  </svg>
+);
+
+const IconeCrescimento = () => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='48'
+    height='48'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    className='diferencial-icon'
+  >
+    <line x1='18' y1='20' x2='18' y2='10' />
+    <line x1='12' y1='20' x2='12' y2='4' />
+    <line x1='6' y1='20' x2='6' y2='14' />
+  </svg>
+);
+
+function OurStory() {
+  return (
+    <div className='nossa-historia-container'  id='our-story'>
+      <div className='historia-wrapper'>
+        {/* 1. Cabeçalho Introdutório */}
+        <header className='historia-header'>
+          <h2>Nossa Essência e Propósito</h2>
+          <p>
+            Nascida da força da terra e da paixão de seus produtores, a Cacauron
+            é a materialização de um sonho: posicionar Rondônia como uma
+            referência mundial em cacau de alta qualidade e em chocolates de
+            origem única.
+          </p>
+        </header>
+
+        {/* 2. Seção da Linha do Tempo */}
+        <section>
+          <h3>Nossa Jornada</h3>
+          <div className='timeline'>
+            <div className='timeline-item'>
+              <div className='timeline-content'>
+                <h4>A Semente da Mudança</h4>
+                <p>
+                  Nossa jornada começou com o projeto "Cacau Sustentável", uma
+                  iniciativa visionária em parceria com o SEBRAE Rondônia, que
+                  pavimentou o caminho para o nosso futuro.
+                </p>
+              </div>
+            </div>
+            <div className='timeline-item'>
+              <div className='timeline-content'>
+                <h4>Fundação da Cacauron</h4>
+                <p>
+                  Em <strong>20 de agosto de 2021</strong>, unimos
+                  cacauicultores e chocolateiros sob uma única bandeira, criando
+                  uma associação pioneira no Brasil com o objetivo de fortalecer
+                  toda a cadeia produtiva.
+                </p>
+              </div>
+            </div>
+            <div className='timeline-item'>
+              <div className='timeline-content'>
+                <h4>Selo "Rondônia Cacau"</h4>
+                <p>
+                  Conquistamos a Indicação de Procedência "Rondônia Cacau", um
+                  selo que certifica a origem, a qualidade superior e a
+                  autenticidade do nosso fruto, carregando as características
+                  únicas do terroir amazônico.
+                </p>
+              </div>
+            </div>
+            <div className='timeline-item'>
+              <div className='timeline-content'>
+                <h4>Reconhecimento Nacional</h4>
+                <p>
+                  A qualidade diferenciada de nossas amêndoas foi celebrada e
+                  premiada em importantes concursos nacionais, validando nosso
+                  compromisso com a excelência e nos impulsionando a voos mais
+                  altos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 3. Seção de Diferenciais */}
+        <section style={{ marginTop: "5rem" }}>
+          <h3>Nossos Diferenciais</h3>
+          <div className='diferenciais-grid'>
+            <div className='diferencial-card'>
+              <IconeUniao />
+              <h3>Pioneirismo e União</h3>
+              <p>
+                Somos a única associação do país que une produtores e
+                chocolateiros, garantindo força e uma visão completa da cadeia
+                produtiva.
+              </p>
+            </div>
+            <div className='diferencial-card'>
+              <IconeMapa />
+              <h3>Presença Estadual</h3>
+              <p>
+                Com produção de cacau em pelo menos 90% do território, o fruto é
+                parte vital da economia e cultura de Rondônia.
+              </p>
+            </div>
+            <div className='diferencial-card'>
+              <IconeCrescimento />
+              <h3>Potência e Futuro</h3>
+              <p>
+                Já somos o 4º maior produtor do Brasil, com a meta ambiciosa de
+                triplicar nossa produção com foco em qualidade e
+                sustentabilidade.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. Mensagem de Fechamento */}
+        <section className='historia-fechamento'>
+          <p>
+            A Cacauron é mais que uma associação. Somos a voz do cacau de
+            Rondônia, um movimento que celebra nossa origem, protege nosso
+            legado e trabalha por um futuro próspero e sustentável.
+          </p>
+        </section>
+      </div>
+    </div>
+  );
+}
+
+export default OurStory;

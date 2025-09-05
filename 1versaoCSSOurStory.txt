@@ -1,0 +1,288 @@
+/* --- ESTILOS GERAIS E MOBILE-FIRST --- */
+
+/* Definindo variáveis de cor para fácil manutenção */
+:root {
+    --cor-primaria: #5D4037;
+    /* Marrom escuro para textos */
+    --cor-secundaria: #8D6E63;
+    /* Marrom mais claro */
+    --cor-destaque: #D97706;
+    /* Laranja/Âmbar para detalhes */
+    --cor-fundo: #FEFBF6;
+    /* Um branco levemente aquecido, aconchegante */
+    --cor-fundo-secao: #FFF;
+    /* Branco para cartões e seções de destaque */
+}
+
+
+
+
+/* Reset e Fontes */
+.nossa-historia-container * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nossa-historia-container {
+    font-family: 'Poppins', sans-serif;
+    /* Usando Poppins para um visual moderno */
+    /* background-color: var(--cor-fundo); */
+    color: var(--cor-primaria);
+    line-height: 1.7;
+    overflow-x: hidden;
+    /* Evita scroll horizontal */
+}
+
+/* Estilos de Tipografia */
+.nossa-historia-container h2,
+.nossa-historia-container h3,
+.nossa-historia-container h4 {
+    font-weight: 600;
+    color: var(--cor-primaria);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.nossa-historia-container h2 {
+    font-size: 2.5rem;
+    color: var(--cor-destaque);
+}
+
+.nossa-historia-container h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.nossa-historia-container h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--cor-destaque);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.nossa-historia-container p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--cor-secundaria);
+    font-weight: 500;
+    font-family: var(--font-body);
+}
+
+/* --- Seções Principais --- */
+
+.historia-wrapper {
+    width: 100%;
+    padding: 3rem 1.5rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: var(--cor-fundo);
+}
+
+/* Cabeçalho de Introdução */
+.historia-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.historia-header p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Linha do Tempo */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--cor-destaque);
+    opacity: 0.3;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    padding: 1rem 1rem 2rem 60px;
+    /* Espaço para o ícone e a linha */
+    position: relative;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: auto;
+    background-color: var(--cor-fundo);
+    border: 4px solid var(--cor-destaque);
+    top: 15px;
+    left: 12px;
+    /* 20px (posição da linha) - 8px (metade da largura do ponto + borda) */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: var(--cor-fundo-secao);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--cor-destaque);
+}
+
+.timeline-content h4 {
+    color: var(--cor-destaque);
+    font-size: 1.25rem;
+}
+
+/* Seção de Diferenciais */
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.diferencial-card {
+    background-color: var(--cor-fundo-secao);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diferencial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.diferencial-icon {
+    color: var(--cor-destaque);
+    margin-bottom: 1rem;
+}
+
+.diferencial-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--cor-primaria);
+}
+
+/* Seção de Fechamento */
+.historia-fechamento {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 4rem 1.5rem;
+    margin-top: 4rem;
+    border-radius: 12px;
+    font-family: var(--font-body);
+}
+
+.historia-fechamento p {
+    color: #fff;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- VERSÃO TABLET --- */
+@media (min-width: 768px) {
+    .historia-wrapper {
+        padding: 4rem 2.5rem;
+    }
+
+    .nossa-historia-container h1 {
+        font-size: 3rem;
+    }
+
+    .nossa-historia-container h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Linha do tempo centralizada */
+    .timeline::after {
+        left: 50%;
+        margin-left: -2px;
+    }
+
+    .timeline-item {
+        width: 50%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Item à esquerda */
+    .timeline-item:nth-child(odd) {
+        left: 0;
+        padding-right: 50px;
+        text-align: right;
+    }
+
+    /* Item à direita */
+    .timeline-item:nth-child(even) {
+        left: 50%;
+        padding-left: 50px;
+        text-align: left;
+    }
+
+    .timeline-item::after {
+        top: 20px;
+        left: auto;
+        right: -10px;
+        /* Posição do ponto na linha */
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: -10px;
+    }
+
+    .timeline-content {
+        border-left: none;
+        border-right: 4px solid var(--cor-destaque);
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        border-right: none;
+        border-left: 4px solid var(--cor-destaque);
+    }
+
+    /* Diferenciais em grid */
+    .diferenciais-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- VERSÃO DESKTOP --- */
+@media (min-width: 1024px) {
+    .historia-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 5rem 2rem;
+    }
+
+    .nossa-historia-container h2 {
+        font-size: 2.9rem;
+    }
+
+    .diferencial-card {
+        padding: 2.5rem;
+    }
+}

@@ -13,7 +13,7 @@ function Hero() {
           sustentabilidade e a qualidade, garantindo que o selo "Rondônia Cacau"
           seja a sua garantia de uma experiência inesquecível e genuína.
         </p>
-        <a href='' className='hero-button'>
+        <a href='#our-story' className='hero-button'>
           Conheça Nosso Trabalho
         </a>
       </div>

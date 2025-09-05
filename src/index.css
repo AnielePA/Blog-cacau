@@ -6,8 +6,16 @@
 
 
 
+
 :root {
   --white: #ffffff;
+  --cor-primaria: #312725;
+  --cor-secundaria: #795548;
+  --cor-destaque: #fd7e58;
+  --cor-fundo: #FDFBF8;
+  --cor-texto-claro: #F5F5F5;
+  --cor-fundo-secao-destaques: #4E342E;
+  --cor-texto-escuro: #3a2a2a;
 
 
   --font-body: 'Open Sans', sans-serif;
@@ -18,10 +26,14 @@
 }
 
 
+
+
 body {
+  background: radial-gradient(ellipse at center, #fdf5e6 0%, #f4e4c1 50%, #e8b282 100%);
   font-family: var(--font-body);
-  background-color: #242424;
+  min-height: 100vh;
 }
+
 
 
 a {
