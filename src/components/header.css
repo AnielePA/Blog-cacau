@@ -8,7 +8,7 @@
     --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
 
-header {
+.header-principal {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -243,7 +243,7 @@ nav>ul>li:focus-within>a svg {
 }
 
 @media (max-width: 1200px) {
-    header {
+    .header-principal {
         justify-content: space-between;
         padding: 10px 20px;
         overflow: hidden;
@@ -406,7 +406,7 @@ nav>ul>li:last-child>ul {
 
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    header {
+    .header-principal {
         padding: 10px 60px;
     }
 }

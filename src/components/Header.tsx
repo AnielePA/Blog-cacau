@@ -19,7 +19,7 @@ function Header() {
   };
 
   return (
-    <header>
+    <header className='header-principal'>
       <div className='container'>
         <div className='logo'>
           <img src={logo} alt='Logo Cacauron' />
@@ -96,7 +96,7 @@ function Header() {
               </a>
               <ul>
                 <li>
-                  <a href='/imprensa/noticias'>Notícias</a>
+                  <a href='#noticias'>Notícias</a>
                 </li>
                 <li>
                   <a href='/imprensa/artigos'>Artigos</a>
