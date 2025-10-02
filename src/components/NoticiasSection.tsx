@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./noticiasSection.css";
+import CacauronESedec from "../assets/images/images-noticias/cacauron-e-sedec.png";
 
 interface NewsItem {
   id: number;
@@ -18,12 +19,12 @@ interface NewsSlideProps {
 const newsData: NewsItem[] = [
   {
     id: 1,
-    image: "https://placehold.co/1200x800/5D4037/FFFFFF?text=Episódio+Novo",
-    title: "A História do Cacau: Lançamento do Novo Episódio",
+    image: CacauronESedec,
+    title: "Cacauron e SEDEC: Parceria pelo futuro do cacau.",
     intro:
-      "Descubra as origens e os segredos do fruto dos deuses em nosso mais recente episódio da série documental.",
-    link: "https://www.youtube.com",
-    buttonText: "Assista Agora",
+      "A Cacauron apresenta o Termo de Cooperação com a SEDEC, para firmar parceria e fomentar a cacauicultura no estado de Rondônia!",
+    link: "https://www.instagram.com/p/DPUDGHMDlBo/?utm_source=ig_web_copy_link&igsh=YjV0NXoxM3lhdG9q",
+    buttonText: "Veja a Publicação",
   },
   {
     id: 2,
@@ -45,7 +46,6 @@ const newsData: NewsItem[] = [
   },
 ];
 
-
 const NewsSlide: React.FC<NewsSlideProps> = ({ slide, isActive }) => (
   <div className={`news-slide ${isActive ? "active" : ""}`}>
     <img src={slide.image} alt={slide.title} className='news-slide__bg-image' />
@@ -64,7 +64,6 @@ const NewsSlide: React.FC<NewsSlideProps> = ({ slide, isActive }) => (
     </div>
   </div>
 );
-
 
 function NoticiasSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -88,7 +87,7 @@ function NoticiasSection() {
   }, [nextSlide]);
 
   return (
-    <section className='noticias-section' id="noticias">
+    <section className='noticias-section' id='noticias'>
       <header className='noticias-section__header'>
         <h2 className='noticias-section__title'>
           Fique por Dentro das Novidades

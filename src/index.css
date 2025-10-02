@@ -9,20 +9,20 @@
 
 :root {
   --white: #ffffff;
-  --cor-primaria: #312725;
-  --cor-secundaria: #795548;
-  --cor-destaque: #fd7e58;
-  --cor-fundo: #FDFBF8;
-  --cor-texto-claro: #F5F5F5;
-  --cor-fundo-secao-destaques: #4E342E;
-  --cor-texto-escuro: #3a2a2a;
+  --cor-marrom1: #312725;
+  --cor-marrom2: #4E342E;
+  --cor-marrom3: #795548;
+  --cor-destaque: #fe784f;
+  --cor-texto-claro: #f7f7f7;
+  --cor-fundo-claro: #f9ead4;
+  --cor-cinza: #9a9494;
+
 
 
   --font-body: 'Open Sans', sans-serif;
   --font-navigation: 'Raleway', sans-serif;
 
 
-  --box-shadow-btn-hero: 0 5px 15px rgba(250, 149, 77, 0.4);
 }
 
 

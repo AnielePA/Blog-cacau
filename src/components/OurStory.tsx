@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "./ourStory.css";
-import cocoaImage from "../assets/images/cocoa-8153358_640.jpg";
+import cacauImage from "../assets/images/STE-2.png";
 import rondoniaCacau from "../assets/images/selo-rondonia-cacau.jpg";
-import colhendoCacau from "../assets/images/colhendo-cacau.jpg";
-
+import colhendoCacau from "../assets/images/STE-1.png";
 
 const IconeRanking = () => (
   <svg
@@ -86,9 +85,9 @@ function OurStory() {
         <div className='bloco-alternado'>
           <div className='bloco-imagem'>
             <img
-              src={cocoaImage}
+              src={cacauImage}
               alt='Produtores de cacau em reunião de planejamento'
-              onClick={() => openModal(cocoaImage)}
+              onClick={() => openModal(cacauImage)}
               style={{ cursor: "pointer" }}
             />
           </div>

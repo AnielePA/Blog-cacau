@@ -1,5 +1,5 @@
 .historia-v2-container {
-    color: var(--cor-secundaria);
+    color: var(--cor-marrom3);
     line-height: 1.8;
     overflow-x: hidden;
     font-weight: 600;
@@ -15,7 +15,7 @@
     strong {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        color: var(--cor-primaria);
+        color: var(--cor-marrom1);
     }
 
     p {
@@ -29,7 +29,7 @@
 
 .header-historia-container {
     width: 100%;
-    max-width: 1160px;
+    max-width: 1170px;
     margin: 30px auto;
     position: relative;
     padding: 3rem 1.5rem;
@@ -48,8 +48,8 @@
     h2 {
         font-size: 2.4rem;
         line-height: 1.2;
-        color: var(--cor-primaria);
-        border-bottom: 2px solid var(--cor-primaria);
+        color: var(--cor-marrom1);
+        border-bottom: 2px solid var(--cor-marrom1);
         padding-bottom: 20px;
         margin: 1rem auto;
 
@@ -66,7 +66,7 @@
         font-size: 1.2rem;
         max-width: 700px;
         margin: 0 auto;
-        color: var(--cor-texto-escuro);
+        color: var(--cor-marrom1);
         font-weight: 600;
     }
 
@@ -156,7 +156,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #795548;
+    background-color: var(--cor-marrom3);
     padding: 20px;
     border-radius: 16px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -206,7 +206,7 @@
 
 .destaque-item {
     color: white;
-    background-color: var(--cor-fundo-secao-destaques);
+    background-color: var(--cor-marrom2);
     border-radius: 20px;
     padding: 50px 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);

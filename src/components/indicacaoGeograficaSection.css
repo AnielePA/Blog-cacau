@@ -1,0 +1,245 @@
+.ig-section-container {
+    font-family: var(--font-body);
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-marrom3);
+    line-height: 1.8;
+
+    h2,
+    h3,
+    h4,
+    strong {
+        font-family: var(--font-body);
+        font-weight: 700;
+        color: var(--cor-marrom1);
+    }
+
+    img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    }
+}
+
+.ig-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    margin-top: 50px;
+    background-color: var(--cor-marrom1);
+    color: var(--white);
+    background-image: url('../assets/images/cacau-unsplash.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: bottom;
+
+    h2 {
+        font-size: 2.4rem;
+        color: var(--white);
+        line-height: 1.2;
+        margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            font-size: 3.5rem;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 3rem;
+        }
+    }
+
+    .ig-logo {
+        width: 230px;
+        height: auto;
+        margin-bottom: 1.5rem;
+        border-radius: 30px;
+
+        @media (min-width: 1024px) {
+            width: 350px;
+        }
+    }
+}
+
+.ig-hero-content {
+    max-width: 800px;
+
+    @media (min-width: 1024px) {
+        max-width: 900px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        height: 485px;
+    }
+}
+
+.ig-intro {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 600;
+
+    h3 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        padding: 4rem 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 4rem 2.5rem;
+    }
+}
+
+.ig-blocos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ig-bloco-conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem 1.5rem;
+
+    &.reverso {
+        @media (min-width: 768px) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 3rem;
+        padding: 4rem 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+        gap: 5rem;
+        padding: 4rem 2.5rem;
+    }
+}
+
+.ig-bloco-texto {
+    flex: 1;
+    width: 100%;
+
+    h4 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+.ig-bloco-imagem {
+    flex: 1;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+    }
+}
+
+.ig-atributos {
+    padding: 3rem 1.5rem;
+    background-color: var(--cor-marrom2);
+    color: var(--white);
+
+    h3 {
+        text-align: center;
+        font-size: 2.2rem;
+        color: var(--white);
+        margin-bottom: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+        padding: 4rem 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 4rem 2.5rem;
+    }
+}
+
+.atributos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.atributo-item {
+    text-align: center;
+
+    svg {
+        color: var(--cor-destaque);
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        color: var(--white);
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        opacity: 0.9;
+    }
+}
+
+.ig-mapa-secao {
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+
+    h3 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        border: 1px solid #eee;
+        border-radius: 8px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 4rem 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 5rem 2.5rem;
+    }
+}

@@ -1,3 +1,9 @@
+:root {
+    --box-shadow-btn-hero: 0 5px 15px rgba(250, 149, 77, 0.4);
+}
+
+
+
 #hero {
     background-image: url(../assets/images/FOTO---CACAU.png);
     background-size: cover;
