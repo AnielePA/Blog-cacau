@@ -1,3 +1,4 @@
+import ChamadaListasSection from "./components/ChamadaListasSection";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import IndicacaoGeograficaSection from "./components/IndicacaoGeograficaSection";
@@ -13,7 +14,7 @@ function App() {
       <NoticiasSection />
       <OurStory />
       <IndicacaoGeograficaSection />
-
+      <ChamadaListasSection />
 
       <Parceiros />
     </div>

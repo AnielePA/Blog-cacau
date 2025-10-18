@@ -1,7 +1,10 @@
 import "./indicacaoGeograficaSection.css";
 import logoIgRondonia from "../assets/images/logoIgRondonia.png";
 import mapaIg from "../assets/images/mapa-ig.png";
-
+import producaoSustentavel from "../assets/images/imagem-site.png";
+import terroirAmazonico from "../assets/images/imagem2-site.png";
+import { useImageModal } from "../hooks/useImageModal";
+import ImageModal from "./ImageModal";
 
 const IconeSabor = () => (
   <svg
@@ -58,13 +61,17 @@ const IconeFolha = () => (
 );
 
 function IndicacaoGeograficaSection() {
+  const { modalImage, openModal, closeModal } = useImageModal();
+
   return (
-    <div className='ig-section-container'>
+    <div className='ig-section-container' id='ig-rondonia'>
       <header className='ig-hero'>
         <div className='ig-hero-content'>
           <h2>IG Rondônia: O Selo que Garante a Origem e a Qualidade</h2>
           <img
             src={logoIgRondonia}
+            onClick={() => openModal(logoIgRondonia)}
+            style={{ cursor: "pointer" }}
             alt='Logo IG Rondônia Cacau'
             className='ig-logo'
           />
@@ -91,8 +98,10 @@ function IndicacaoGeograficaSection() {
         <section className='ig-bloco-conteudo fundo-alternativo'>
           <div className='ig-bloco-imagem'>
             <img
-              src='https://placehold.co/600x450/795548/FFFFFF?text=Terroir+Amazônico'
+              src={terroirAmazonico}
               alt='Paisagem de uma fazenda de cacau em Rondônia'
+              onClick={() => openModal(terroirAmazonico)}
+              style={{ cursor: "pointer" }}
             />
           </div>
           <div className='ig-bloco-texto'>
@@ -118,8 +127,10 @@ function IndicacaoGeograficaSection() {
         <section className='ig-bloco-conteudo reverso'>
           <div className='ig-bloco-imagem'>
             <img
-              src='https://placehold.co/600x450/8D6E63/FFFFFF?text=Produção+Sustentável'
+              src={producaoSustentavel}
               alt='Produtor rural manuseando amêndoas de cacau'
+              onClick={() => openModal(producaoSustentavel)}
+              style={{ cursor: "pointer" }}
             />
           </div>
           <div className='ig-bloco-texto'>
@@ -186,8 +197,11 @@ function IndicacaoGeograficaSection() {
         <img
           src={mapaIg}
           alt='Mapa de Rondônia destacando os 52 municípios da Indicação Geográfica'
+          onClick={() => openModal(mapaIg)}
+          style={{ cursor: "pointer" }}
         />
       </section>
+      <ImageModal modalImage={modalImage} closeModal={closeModal} />
     </div>
   );
 }

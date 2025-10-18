@@ -10,8 +10,10 @@
 :root {
   --white: #ffffff;
   --cor-marrom1: #312725;
-  --cor-marrom2: #4E342E;
-  --cor-marrom3: #795548;
+  --cor-marrom2: #49190f;
+  /*#4E342E*/
+  --cor-marrom3: #7d4c3b;
+  /*#795548*/
   --cor-destaque: #fe784f;
   --cor-texto-claro: #f7f7f7;
   --cor-fundo-claro: #f9ead4;

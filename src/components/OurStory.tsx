@@ -1,8 +1,9 @@
-import { useState } from "react";
 import "./ourStory.css";
 import cacauImage from "../assets/images/STE-2.png";
 import rondoniaCacau from "../assets/images/selo-rondonia-cacau.jpg";
 import colhendoCacau from "../assets/images/STE-1.png";
+import { useImageModal } from "../hooks/useImageModal";
+import ImageModal from "./ImageModal";
 
 const IconeRanking = () => (
   <svg
@@ -58,15 +59,7 @@ const IconeMeta = () => (
   </svg>
 );
 function OurStory() {
-  const [modalImage, setModalImage] = useState<string | null>(null);
-
-  const openModal = (imageSrc: string) => {
-    setModalImage(imageSrc);
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-  };
+  const { modalImage, openModal, closeModal } = useImageModal();
 
   return (
     <main className='historia-v2-container' id='our-story'>
@@ -192,13 +185,7 @@ function OurStory() {
         </div>
       </section>
 
-      {modalImage && (
-        <div className='modal-overlay' onClick={closeModal}>
-          <div className='modal-content'>
-            <img src={modalImage} alt='Imagem ampliada' />
-          </div>
-        </div>
-      )}
+      <ImageModal modalImage={modalImage} closeModal={closeModal} />
     </main>
   );
 }

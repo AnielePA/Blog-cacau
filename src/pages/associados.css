@@ -1,0 +1,212 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.associados-page {
+    background-color: var(--cor-fundo-claro);
+    font-family: var(--font-body);
+    text-align: center;
+
+    .associados-header {
+        padding: 5rem 1.5rem 5rem;
+        background-image: url("../assets/images/imagem-cacau-associados2.png");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-color: var(--cor-marrom3);
+        background-blend-mode: overlay;
+        color: var(--white);
+
+        .back-button {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+            transition: 300ms;
+            animation: slideInLeft 0.6s ease-out;
+
+            &:hover {
+                color: #f2c7aa;
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+                transform: scale(1.1);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 1rem 0;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+            animation: fadeInUp 0.8s ease-out;
+        }
+    }
+
+    .membros-grid-container {
+        padding: 2rem 1.5rem 4rem;
+
+        .membros-grid {
+            display: grid;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .membro-card {
+                background-color: white;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                opacity: 0;
+                transform: scale(0.8);
+                animation: scaleIn 0.6s ease-out forwards;
+                backface-visibility: hidden;
+                display: flex;
+                flex-direction: column;
+
+                &:nth-child(1) {
+                    animation-delay: 0.1s;
+                }
+
+                &:nth-child(2) {
+                    animation-delay: 0.3s;
+                }
+
+                &:nth-child(3) {
+                    animation-delay: 0.5s;
+                }
+
+                &:nth-child(4) {
+                    animation-delay: 0.7s;
+                }
+
+                &:nth-child(5) {
+                    animation-delay: 0.9s;
+                }
+
+                &:nth-child(6) {
+                    animation-delay: 1.1s;
+                }
+
+                &:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+                }
+
+                .membro-card__imagem-wrapper {
+                    height: 280px;
+
+                    .membro-card__imagem {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .membro-card__conteudo {
+                    padding: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+
+                    .membro-card__marca {
+                        font-size: 1.6rem;
+                        color: var(--cor-marrom2);
+                        margin: 0;
+                        font-family: var(--font-navigation);
+                    }
+
+                    .membro-card__pessoas {
+                        font-size: 0.9rem;
+                        color: var(--cor-cinza);
+                        margin: 0.25rem 0 1rem 0;
+                        font-style: italic;
+                    }
+
+                    .membro-card__descricao {
+                        font-family: var(--font-body);
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: var(--cor-marrom2);
+                        line-height: 1.6;
+                        flex-grow: 1;
+                    }
+
+                    .membro-card__footer {
+                        margin-top: 1.5rem;
+                        padding-top: 1rem;
+                        border-top: 1px solid #f0ebe5;
+
+                        .membro-card__cidade {
+                            font-size: 0.9rem;
+                            font-weight: 600;
+                            color: var(--cor-marrom3);
+                            display: inline-flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .membros-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .associados-header h1 {
+        font-size: 3.5rem;
+    }
+
+    .membros-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+}

@@ -19,7 +19,7 @@ const parceirosData = [
 
 function Parceiros() {
   return (
-    <section className='parceiros-section'>
+    <section className='parceiros-section' id='parceiros'>
       <h2 className='parceiros-title'>Parceiros Estratégicos</h2>
       <div className='parceiros-grid'>
         {parceirosData.map((parceiro) => (
