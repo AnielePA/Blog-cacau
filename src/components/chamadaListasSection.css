@@ -1,93 +1,117 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .chamada-section {
     background-color: var(--cor-texto-claro);
     padding: 3rem 1.5rem;
+}
 
-    .chamada-section__title {
-        font-family: var(--font-body);
-        font-size: 2.2rem;
-        color: var(--cor-marrom1);
-        text-align: center;
-        margin-bottom: 2.5rem;
+.chamada-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+    &.animate-in {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    .chamada-grid {
-        display: grid;
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
+.chamada-section__title {
+    font-family: var(--font-body);
+    font-size: 2.2rem;
+    color: var(--cor-marrom1);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
 
-        .chamada-card {
-            background-color: var(--white);
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+.chamada-grid {
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .chamada-card {
+        background-color: var(--white);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .chamada-card__imagem {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .chamada-card__conteudo {
+            padding: 2rem;
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex-grow: 1;
+            text-align: center;
 
-            &:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            .chamada-card__titulo {
+                font-family: var(--font-body);
+                font-size: 1.8rem;
+                color: var(--cor-marrom1);
+                margin-bottom: 1rem;
             }
 
-            .chamada-card__imagem {
-                width: 100%;
-                height: 250px;
-                object-fit: cover;
-            }
-
-            .chamada-card__conteudo {
-                padding: 2rem;
-                display: flex;
-                flex-direction: column;
+            .chamada-card__texto {
+                font-family: var(--font-body);
+                font-size: 1.1rem;
+                color: var(--cor-marrom3);
+                line-height: 1.7;
+                margin-bottom: 2rem;
                 flex-grow: 1;
-                text-align: center;
+                font-weight: 500;
+            }
 
-                .chamada-card__titulo {
-                    font-family: var(--font-body);
-                    font-size: 1.8rem;
-                    color: var(--cor-marrom1);
-                    margin-bottom: 1rem;
+            .chamada-card__botao {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--cor-destaque);
+                color: white;
+                padding: 0.8rem 1.5rem;
+                border-radius: 50px;
+                text-decoration: none;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                margin: 0 auto;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #e65100;
                 }
 
-                .chamada-card__texto {
-                    font-family: var(--font-body);
-                    font-size: 1.1rem;
-                    color: var(--cor-marrom3);
-                    line-height: 1.7;
-                    margin-bottom: 2rem;
-                    flex-grow: 1;
-                    font-weight: 500;
-                }
-
-                .chamada-card__botao {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: var(--cor-destaque);
-                    color: white;
-                    padding: 0.8rem 1.5rem;
+                &:active,
+                &:focus {
                     border-radius: 50px;
-                    text-decoration: none;
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 600;
-                    margin: 0 auto;
-                    transition: background-color 0.3s ease;
-
-                    &:hover {
-                        background-color: #e65100;
-                    }
-
-                    &:active,
-                    &:focus {
-                        border-radius: 50px;
-                        outline: none;
-                    }
+                    outline: none;
                 }
             }
         }
     }
 }
+
 
 
 @media (min-width: 768px) {

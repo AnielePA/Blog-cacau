@@ -2,6 +2,18 @@
     --box-shadow-btn-hero: 0 5px 15px rgba(250, 149, 77, 0.4);
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 #hero {
@@ -30,6 +42,7 @@
         border-radius: 15px;
         backdrop-filter: blur(10px);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+        animation: fadeInUp 1s ease-out 0.5s both;
     }
 
     h1 {

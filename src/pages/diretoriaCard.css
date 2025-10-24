@@ -1,0 +1,61 @@
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.diretoria-card {
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleIn 0.6s ease-out forwards;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .diretoria-card__foto {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: -4rem auto 1rem;
+        border: 4px solid var(--white);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .diretoria-card__info {
+        .diretoria-card__nome {
+            font-size: 1.4rem;
+            color: var(--cor-marrom1);
+            margin-bottom: 0.5rem;
+        }
+
+        .diretoria-card__cargo {
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--cor-destaque);
+            margin-bottom: 1rem;
+            font-family: "Lora", serif;
+        }
+
+        .diretoria-card__municipio {
+            font-size: 0.9rem;
+            color: var(--cor-secundaria);
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+}

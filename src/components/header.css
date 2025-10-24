@@ -8,6 +8,17 @@
     --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
 
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .header-principal {
     display: flex;
     align-items: center;
@@ -19,6 +30,40 @@
     font-family: var(--font-navigation);
     color: var(--white);
     width: 100%;
+    animation: slideInDown 0.8s ease-out;
+}
+
+.header-principal.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--text);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.header-principal.scrolled .logo p {
+    color: var(--text);
+}
+
+
+.header-principal.scrolled .container a {
+    color: var(--text);
+}
+
+.header-principal.scrolled .mobile-menu-btn {
+    color: var(--text);
+}
+
+.header-principal.scrolled .container a:hover {
+    color: #eec643;
+}
+
+.header-principal.scrolled .mobile-menu-btn svg {
+    color: var(--text) !important;
 }
 
 .container {
@@ -239,19 +284,6 @@ nav>ul>li:focus-within>a svg {
     transition: background-color 0.2s ease;
 }
 
-.search-suggestions li:hover {
-    background-color: #f5f5f5;
-}
-
-.fallback-suggestion {
-    font-style: italic;
-    color: #555;
-    border-top: 1px solid #f0f0f0;
-}
-
-.fallback-suggestion:hover {
-    background-color: #e9e9e9;
-}
 
 
 .mobile-menu-btn {

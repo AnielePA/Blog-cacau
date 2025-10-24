@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./noticiasSection.css";
 import CacauronESedec from "../assets/images/images-noticias/cacauron-e-sedec.png";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 interface NewsItem {
   id: number;
@@ -67,6 +68,7 @@ const NewsSlide: React.FC<NewsSlideProps> = ({ slide, isActive }) => (
 
 function NoticiasSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const sectionRef = useScrollAnimation();
 
   const nextSlide = useCallback(() => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % newsData.length);
@@ -87,7 +89,7 @@ function NoticiasSection() {
   }, [nextSlide]);
 
   return (
-    <section className='noticias-section' id='noticias'>
+    <section ref={sectionRef} className='noticias-section' id='noticias'>
       <header className='noticias-section__header'>
         <h2 className='noticias-section__title'>
           Fique por Dentro das Novidades

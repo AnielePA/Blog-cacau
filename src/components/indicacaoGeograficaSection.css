@@ -1,8 +1,21 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .ig-section-container {
     font-family: var(--font-body);
     background-color: var(--cor-fundo-claro);
     color: var(--cor-marrom3);
     line-height: 1.8;
+    opacity: 0;
 
     h2,
     h3,
@@ -40,6 +53,7 @@
     background-size: cover;
     background-color: var(--cor-marrom1);
     background-blend-mode: overlay;
+
 
     h2 {
         font-size: 2.4rem;
@@ -260,4 +274,9 @@
     @media (min-width: 1024px) {
         padding: 5rem 2.5rem;
     }
+}
+
+
+.ig-section-container.animate-in {
+    animation: fadeInUp 0.8s ease-out forwards;
 }

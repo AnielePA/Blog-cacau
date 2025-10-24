@@ -1,0 +1,126 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+.lista-artigos-page {
+    background-color: var(--cor-fundo-claro);
+    min-height: 100vh;
+
+    .artigos-header {
+        padding: 4rem 1.5rem;
+        text-align: center;
+        background-color: var(--white);
+        margin-bottom: 3rem;
+
+        .back-button-artigos {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--cor-marrom1);
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: background-color 0.2s ease;
+            animation: slideInLeft 0.6s ease-out;
+
+            &:hover {
+                background-color: var(--cor-fundo-claro);
+            }
+        }
+
+        .artigos-header__title {
+            font-family: var(--font-navigation);
+            font-size: 2.8rem;
+            color: var(--cor-marrom1);
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .artigos-header__subtitle {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--cor-marrom3);
+            animation: fadeInUp 0.8s ease-out;
+        }
+    }
+
+
+    .artigos-grid-container {
+        padding: 0 1.5rem 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .artigos-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .artigo-card-link:nth-child(1) .artigo-card {
+            animation-delay: 0.1s;
+        }
+
+        .artigo-card-link:nth-child(2) .artigo-card {
+            animation-delay: 0.2s;
+        }
+
+        .artigo-card-link:nth-child(3) .artigo-card {
+            animation-delay: 0.3s;
+        }
+
+        .artigo-card-link:nth-child(4) .artigo-card {
+            animation-delay: 0.4s;
+        }
+
+        .artigo-card-link:nth-child(5) .artigo-card {
+            animation-delay: 0.5s;
+        }
+
+        .artigo-card-link:nth-child(6) .artigo-card {
+            animation-delay: 0.6s;
+        }
+    }
+}
+
+
+@media (min-width: 640px) {
+    .artigos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .artigos-header__title {
+        font-size: 3.5rem;
+    }
+
+    .artigos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+}

@@ -1,11 +1,9 @@
 import "./imageModal.css";
+import { useImageModal } from "../context/modalContext";
 
-interface ImageModalProps {
-  modalImage: string | null;
-  closeModal: () => void;
-}
+function ImageModal() {
+  const { modalImage, closeModal } = useImageModal();
 
-function ImageModal({ modalImage, closeModal }: ImageModalProps) {
   if (!modalImage) return null;
 
   return (

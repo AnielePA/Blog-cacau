@@ -1,3 +1,29 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
 .diretoria-page {
     background-color: var(--cor-fundo-claro);
     font-family: var(--font-body);
@@ -6,8 +32,9 @@
         position: relative;
         padding: 4rem 1.5rem;
         text-align: center;
-        background: radial-gradient(ellipse at center, var(--white) 0%, #e6cbb3 100%);
+        background: radial-gradient(ellipse at center, var(--white) 0%, #f9eadd 100%);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 0.8s ease-out;
 
         .back-button-diretoria {
             background: none;
@@ -19,6 +46,7 @@
             top: 2rem;
             left: 2rem;
             transition: 300ms;
+            animation: slideInLeft 0.6s ease-out;
 
             &:hover {
                 color: #946342;
@@ -50,51 +78,58 @@
             gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+        }
 
-            .diretoria-card {
-                background-color: var(--white);
-                border-radius: 16px;
-                padding: 2rem 1.5rem;
-                text-align: center;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .diretoria-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
 
-                &:hover {
-                    transform: translateY(-10px);
-                    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-                }
+        .diretoria-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
 
-                .diretoria-card__foto {
-                    width: 120px;
-                    height: 120px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    margin: -4rem auto 1rem;
-                    border: 4px solid var(--white);
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-                }
+        .diretoria-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
 
-                .diretoria-card__nome {
-                    font-size: 1.4rem;
-                    color: var(--cor-marrom1);
-                    margin-bottom: 0.5rem;
-                }
+        .diretoria-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
 
-                .diretoria-card__cargo {
-                    font-size: 1rem;
-                    font-weight: bold;
-                    color: var(--cor-destaque);
-                    margin-bottom: 1rem;
-                    font-family: "Lora", serif;
-                }
+        .diretoria-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
 
-                .diretoria-card__municipio {
-                    font-size: 0.9rem;
-                    color: var(--cor-secundaria);
-                    display: inline-flex;
-                    align-items: center;
-                }
-            }
+        .diretoria-card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        .diretoria-card:nth-child(7) {
+            animation-delay: 0.7s;
+        }
+
+        .diretoria-card:nth-child(8) {
+            animation-delay: 0.8s;
+        }
+
+        .diretoria-card:nth-child(9) {
+            animation-delay: 0.9s;
+        }
+
+        .diretoria-card:nth-child(10) {
+            animation-delay: 1.0s;
+        }
+
+        .diretoria-card:nth-child(11) {
+            animation-delay: 1.1s;
+        }
+
+        .diretoria-card:nth-child(12) {
+            animation-delay: 1.2s;
+        }
+
+        .diretoria-card:nth-child(13) {
+            animation-delay: 1.3s;
         }
     }
 }

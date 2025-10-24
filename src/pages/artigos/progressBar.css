@@ -1,0 +1,9 @@
+.progress-bar-ig {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: var(--cor-destaque, #fe784f);
+    z-index: 1000;
+    transition: width 0.1s linear;
+}

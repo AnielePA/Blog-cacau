@@ -1,0 +1,103 @@
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.evento-card {
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleIn 0.6s ease-out forwards;
+
+    &.passado {
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .evento-card__imagem {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .evento-card__conteudo {
+        padding: 1.5rem;
+
+        .evento-card__meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--cor-marrom3);
+            margin-bottom: 1rem;
+
+            span {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .evento-card__titulo {
+            font-family: var(--font-navigation);
+            font-size: 1.8rem;
+            color: var(--cor-marrom1);
+            margin-bottom: 1rem;
+        }
+
+        .evento-card__descricao {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--cor-marrom2);
+            margin-bottom: 1.5rem;
+        }
+
+        .evento-card__botao {
+            display: inline-block;
+            background-color: var(--cor-destaque);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: var(--font-navigation);
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--cor-marrom2);
+            }
+
+            &:active,
+            &:focus {
+                border-radius: 50px;
+                outline: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .evento-card__meta {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .evento-card__conteudo {
+        padding: 2rem;
+    }
+}

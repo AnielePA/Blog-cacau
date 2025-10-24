@@ -1,0 +1,116 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.agenda-page {
+    background-color: var(--cor-fundo-claro);
+
+    .agenda-header {
+        padding: 4rem 1.5rem;
+        text-align: center;
+        background-color: var(--white);
+
+        .back-button-agenda {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--cor-marrom1);
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: background-color 0.2s ease;
+            animation: slideInLeft 0.6s ease-out;
+
+            &:hover {
+                background-color: var(--cor-fundo-claro);
+            }
+        }
+
+        .agenda-header__title {
+            font-family: var(--font-navigation);
+            font-size: 2.5rem;
+            color: var(--cor-marrom1);
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .agenda-header__subtitle {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--cor-marrom3);
+            animation: fadeInUp 0.8s ease-out;
+        }
+    }
+
+
+    .timeline-container {
+        padding: 3rem 1.5rem;
+        max-width: 900px;
+        margin: 0 auto;
+
+        .timeline-section-title {
+            font-family: var(--font-navigation);
+            font-size: 2rem;
+            color: var(--cor-marrom2);
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .evento-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .evento-card:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .evento-card:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+
+        .evento-card:nth-child(4) {
+            animation-delay: 0.7s;
+        }
+
+        .evento-card:nth-child(5) {
+            animation-delay: 0.9s;
+        }
+
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    .agenda-header__title {
+        font-size: 3.5rem;
+    }
+}

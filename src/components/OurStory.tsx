@@ -2,8 +2,8 @@ import "./ourStory.css";
 import cacauImage from "../assets/images/STE-2.png";
 import rondoniaCacau from "../assets/images/selo-rondonia-cacau.jpg";
 import colhendoCacau from "../assets/images/STE-1.png";
-import { useImageModal } from "../hooks/useImageModal";
-import ImageModal from "./ImageModal";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+import { useImageModal } from "../context/modalContext";
 
 const IconeRanking = () => (
   <svg
@@ -59,10 +59,11 @@ const IconeMeta = () => (
   </svg>
 );
 function OurStory() {
-  const { modalImage, openModal, closeModal } = useImageModal();
+  const { openModal } = useImageModal();
+  const sectionRef = useScrollAnimation();
 
   return (
-    <main className='historia-v2-container' id='our-story'>
+    <main ref={sectionRef} className='historia-v2-container' id='our-story'>
       <header className='header-historia-container'>
         <div className='header-historia'>
           <h2>Nossa História, Nossas Raízes 🌱</h2>
@@ -184,8 +185,6 @@ function OurStory() {
           </div>
         </div>
       </section>
-
-      <ImageModal modalImage={modalImage} closeModal={closeModal} />
     </main>
   );
 }

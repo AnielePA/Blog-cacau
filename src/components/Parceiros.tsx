@@ -1,6 +1,7 @@
 import "./parceiros.css";
 import logoSebrae from "../assets/images/logo-sebrae.jpg";
 import logoSicoob from "../assets/images/logo-sicoob1.jpg";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const parceirosData = [
   {
@@ -18,20 +19,27 @@ const parceirosData = [
 ];
 
 function Parceiros() {
+  const sectionRef = useScrollAnimation();
+
   return (
     <section className='parceiros-section' id='parceiros'>
-      <h2 className='parceiros-title'>Parceiros Estratégicos</h2>
-      <div className='parceiros-grid'>
-        {parceirosData.map((parceiro) => (
-          <div key={parceiro.nome} className='parceiro-card'>
-            <img
-              src={parceiro.logoUrl}
-              alt={`Logo ${parceiro.nome}`}
-              className='parceiro-card__logo'
-            />
-            <p className='parceiro-card__descricao'>{parceiro.descricao}</p>
-          </div>
-        ))}
+      <div
+        ref={sectionRef as React.Ref<HTMLDivElement>}
+        className='parceiros-content'
+      >
+        <h2 className='parceiros-title'>Parceiros Estratégicos</h2>
+        <div className='parceiros-grid'>
+          {parceirosData.map((parceiro) => (
+            <div key={parceiro.nome} className='parceiro-card'>
+              <img
+                src={parceiro.logoUrl}
+                alt={`Logo ${parceiro.nome}`}
+                className='parceiro-card__logo'
+              />
+              <p className='parceiro-card__descricao'>{parceiro.descricao}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

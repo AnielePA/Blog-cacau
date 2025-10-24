@@ -1,22 +1,29 @@
 import ChamadaListasSection from "./components/ChamadaListasSection";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import IndicacaoGeograficaSection from "./components/IndicacaoGeograficaSection";
 import NoticiasSection from "./components/NoticiasSection";
 import OurStory from "./components/OurStory";
 import Parceiros from "./components/Parceiros";
+import { ModalProvider } from "./context/ModalProvider";
+import ImageModal from "./components/ImageModal";
+import "./index.css";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Hero />
-      <NoticiasSection />
-      <OurStory />
-      <IndicacaoGeograficaSection />
-      <ChamadaListasSection />
-
-      <Parceiros />
+      <ModalProvider>
+        <Header />
+        <Hero />
+        <NoticiasSection />
+        <OurStory />
+        <IndicacaoGeograficaSection />
+        <Parceiros />
+        <ChamadaListasSection />
+        <Footer />
+        <ImageModal />
+      </ModalProvider>
     </div>
   );
 }

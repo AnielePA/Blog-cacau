@@ -14,7 +14,7 @@
   /*#4E342E*/
   --cor-marrom3: #7d4c3b;
   /*#795548*/
-  --cor-destaque: #fe784f;
+  --cor-destaque: #fd8763;
   --cor-texto-claro: #f7f7f7;
   --cor-fundo-claro: #f9ead4;
   --cor-cinza: #9a9494;
@@ -36,6 +36,10 @@ body {
   min-height: 100vh;
 }
 
+
+body.modal-open {
+  overflow: hidden;
+}
 
 
 a {

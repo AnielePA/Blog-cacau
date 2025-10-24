@@ -3,8 +3,8 @@ import logoIgRondonia from "../assets/images/logoIgRondonia.png";
 import mapaIg from "../assets/images/mapa-ig.png";
 import producaoSustentavel from "../assets/images/imagem-site.png";
 import terroirAmazonico from "../assets/images/imagem2-site.png";
-import { useImageModal } from "../hooks/useImageModal";
-import ImageModal from "./ImageModal";
+import { useImageModal } from "../context/modalContext";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const IconeSabor = () => (
   <svg
@@ -61,10 +61,15 @@ const IconeFolha = () => (
 );
 
 function IndicacaoGeograficaSection() {
-  const { modalImage, openModal, closeModal } = useImageModal();
+  const { openModal } = useImageModal();
+  const sectionRef = useScrollAnimation<HTMLDivElement>();
 
   return (
-    <div className='ig-section-container' id='ig-rondonia'>
+    <div
+      ref={sectionRef}
+      className='ig-section-container'
+      id='ig-rondonia'
+    >
       <header className='ig-hero'>
         <div className='ig-hero-content'>
           <h2>IG Rondônia: O Selo que Garante a Origem e a Qualidade</h2>
@@ -140,7 +145,7 @@ function IndicacaoGeograficaSection() {
             <p>
               Por ser uma planta nativa, o cacau de Rondônia é um poderoso
               aliado da preservação ambiental. Sua produção em
-              <strong>Sistemas Agroflorestais (SAFs)</strong> é um dos maiores
+              <strong> Sistemas Agroflorestais (SAFs)</strong> é um dos maiores
               atributos da nossa atividade, ajudando na restauração de Áreas de
               Preservação Permanente (APPs) e Reservas Legais.
             </p>
@@ -201,7 +206,6 @@ function IndicacaoGeograficaSection() {
           style={{ cursor: "pointer" }}
         />
       </section>
-      <ImageModal modalImage={modalImage} closeModal={closeModal} />
     </div>
   );
 }

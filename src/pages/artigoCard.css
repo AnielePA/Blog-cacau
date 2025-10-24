@@ -1,0 +1,117 @@
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.artigo-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+    .artigo-card {
+        background-color: var(--white);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        opacity: 0;
+        transform: scale(0.8);
+        animation: scaleIn 0.6s ease-out forwards;
+
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+
+            .artigo-card__leia-mais svg {
+                transform: translateX(5px);
+            }
+
+            .artigo-card__imagem {
+                transform: scale(1.05);
+            }
+        }
+
+        .artigo-card__imagem-wrapper {
+            height: 200px;
+            overflow: hidden;
+
+            .artigo-card__imagem {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+            }
+        }
+
+        .artigo-card__conteudo {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            .artigo-card__data {
+                font-family: var(--font-body);
+                font-size: 0.85rem;
+                color: var(--cor-cinza);
+                margin-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+            }
+
+            .artigo-card__titulo {
+                font-family: var(--font-navigation);
+                font-size: 1.4rem;
+                color: var(--cor-marrom1);
+                margin: 0 0 0.75rem 0;
+                line-height: 1.4;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .artigo-card__resumo {
+                font-family: var(--font-body);
+                font-size: 1rem;
+                line-height: 1.6;
+                color: var(--cor-marrom3);
+                margin-bottom: 1.5rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                flex-grow: 1;
+            }
+
+            .artigo-card__leia-mais {
+                font-family: var(--font-navigation);
+                font-weight: bold;
+                color: var(--cor-destaque);
+                display: inline-flex;
+                align-items: center;
+                margin-top: auto;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .artigo-card-link .artigo-card .artigo-card__imagem-wrapper {
+        height: 250px;
+    }
+}

@@ -3,34 +3,112 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/20/solid";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./header.css";
 import logo from "../assets/images/LOGO_BRANCO.png";
-
+import logoVerde from "../assets/images/LOGO_VERDE_BANDEIRA.png";
 
 type SearchableItem = {
   keywords: string[];
   title: string;
   destination: string;
   type: "navigate" | "scroll";
-  isFallback?: boolean;
 };
 
 const searchableContent: SearchableItem[] = [
   {
-    keywords: ["notícias", "novidades", "imprensa", "blog"],
+    keywords: [
+      "notícias",
+      "novidades",
+      "imprensa",
+      "blog",
+      "atualizações",
+      "news",
+      "noticias",
+    ],
     title: "Ver as Últimas Notícias",
     destination: "#noticias",
     type: "scroll",
   },
   {
-    keywords: ["associados", "chocolateiros", "produtores", "comunidade"],
+    keywords: [
+      "associados",
+      "chocolateiros",
+      "produtores",
+      "comunidade",
+      "cacaulândia chocolates",
+      "chocolate tiengo",
+      "shalom cacau",
+      "targa chocolate",
+      "franco cacao",
+      "chocolate santana",
+      "marli barbosa",
+      "israel barbosa",
+      "marli",
+      "israel",
+      "deoclides pires",
+      "deoclides",
+      "neuzeli",
+      "shalom",
+      "selma targa",
+      "selma",
+      "jhanne franco",
+      "jhanne",
+      "celso josé de abreu santana",
+      "celso santana",
+      "celso",
+    ],
     title: "Conhecer Nossos Chocolateiros",
     destination: "/associados",
     type: "navigate",
   },
   {
-    keywords: ["diretoria", "liderança", "presidente", "quem somos"],
+    keywords: [
+      "diretoria",
+      "liderança",
+      "presidente",
+      "quem somos",
+      "diretores",
+      "estevam fernandes magalhães",
+      "estevam",
+      "presidente",
+      "deoclídes pires da silva",
+      "deoclídes",
+      "vicê presidente",
+      "helberte augusto neves",
+      "helberte",
+      "diretor administrativo",
+      "flávio teixeira da silva",
+      "flávio",
+      "diretor administrativo suplente",
+      "marta betânia ferreira carvalho",
+      "marta",
+      "diretor financeiro",
+      "israel barbosa da silveira",
+      "israel",
+      "diretor financeiro suplente",
+      "marcelo alves medeiros",
+      "marcelo",
+      "diretor de marketing",
+      "jhanne cleice silva franco",
+      "jhanne",
+      "diretor de marketing suplente",
+      "antônio deusemínio de almeida",
+      "antônio",
+      "diretor de sustentabilidade",
+      "assis pereira de morais",
+      "assis",
+      "diretor de sustentabilidade suplente",
+      "melissa barbosa costa de almeida",
+      "melissa",
+      "diretora de chocolateria",
+      "shalom oliveira mendes silva",
+      "shalom",
+      "diretora de chocolateria suplente",
+      "deborah regina",
+      "deborah",
+      "executiva",
+    ],
     title: "Conhecer a Diretoria",
     destination: "/diretoria",
     type: "navigate",
@@ -53,16 +131,79 @@ const searchableContent: SearchableItem[] = [
     destination: "#parceiros",
     type: "scroll",
   },
+  {
+    keywords: [
+      "contato",
+      "fale conosco",
+      "email",
+      "instagram",
+      "facebook",
+      "youtube",
+      "redes sociais",
+      "whatsapp",
+    ],
+    title: "Fale Conosco",
+    destination: "#footer",
+    type: "scroll",
+  },
+  {
+    keywords: ["artigos", "blog", "novidades", "imprensa", "materia", "posts"],
+    title: "Ver artigos",
+    destination: "/artigos",
+    type: "navigate",
+  },
+  {
+    keywords: [
+      "eventos",
+      "feiras",
+      "workshops",
+      "seminários",
+      "conferências",
+      "concursos",
+    ],
+    title: "Ver eventos",
+    destination: "/eventos",
+    type: "navigate",
+  },
+  {
+    keywords: [
+      "cacauron na estrada",
+      "série",
+      "historia",
+      "cacau em rondonia",
+      "documentário",
+      "video",
+      "rondônia",
+    ],
+    title: "Ver Cacauron na Estrada: A Série sobre o Cacau em Rondônia",
+    destination: "/cacauron-na-estrada",
+    type: "navigate",
+  },
 ];
-
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubmenus, setOpenSubmenus] = useState<Record<string, boolean>>({});
 
-
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState<SearchableItem[]>([]);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleSubmenu = (menuName: string) => {
     setOpenSubmenus((prevState) => ({
@@ -71,12 +212,10 @@ function Header() {
     }));
   };
 
-
   const goToDestination = (item: SearchableItem) => {
     if (item.type === "navigate") {
       window.location.href = item.destination;
     } else {
-      // type === 'scroll'
       if (window.location.pathname !== "/") {
         window.location.href = `/${item.destination}`;
       } else {
@@ -86,20 +225,14 @@ function Header() {
     }
     setSearchTerm("");
     setSuggestions([]);
-    setIsMenuOpen(false); // Fecha o menu mobile após a ação
+    setIsMenuOpen(false);
   };
-
 
   const handleSearch = () => {
     if (suggestions.length > 0) {
-      // Se houver sugestões, a primeira é sempre a melhor correspondência ou o fallback
       goToDestination(suggestions[0]);
-    } else if (searchTerm.trim() !== "") {
-      // Caso o utilizador clique no ícone sem sugestões visíveis, vai para a página de pesquisa
-      window.location.href = `/pesquisa?q=${encodeURIComponent(searchTerm)}`;
     }
   };
-
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -111,21 +244,7 @@ function Header() {
           keyword.toLowerCase().includes(value.toLowerCase())
         )
       );
-
-      const fallbackSuggestion: SearchableItem = {
-        keywords: [],
-        title: `Pesquisar por "${value}"`,
-        destination: `/pesquisa?q=${encodeURIComponent(value)}`,
-        type: "navigate",
-        isFallback: true,
-      };
-
-
-      if (keywordSuggestions.length === 0) {
-        setSuggestions([fallbackSuggestion]);
-      } else {
-        setSuggestions(keywordSuggestions);
-      }
+      setSuggestions(keywordSuggestions);
     } else {
       setSuggestions([]);
     }
@@ -138,10 +257,10 @@ function Header() {
   };
 
   return (
-    <header className='header-principal'>
+    <header className={`header-principal ${isScrolled ? "scrolled" : ""}`}>
       <div className='container'>
         <div className='logo'>
-          <img src={logo} alt='Logo Cacauron' />
+          <img src={isScrolled ? logoVerde : logo} alt='Logo Cacauron' />
           <p>Cacauron</p>
         </div>
         <button
@@ -168,11 +287,7 @@ function Header() {
               {suggestions.length > 0 && (
                 <ul className='search-suggestions'>
                   {suggestions.map((item, index) => (
-                    <li
-                      key={index}
-                      onClick={() => goToDestination(item)}
-                      className={item.isFallback ? "fallback-suggestion" : ""}
-                    >
+                    <li key={index} onClick={() => goToDestination(item)}>
                       {item.title}
                     </li>
                   ))}
@@ -234,42 +349,21 @@ function Header() {
                   <a href='#noticias'>Notícias</a>
                 </li>
                 <li>
-                  <a href='/imprensa/artigos'>Artigos</a>
+                  <a href='/artigos'>Artigos</a>
                 </li>
               </ul>
             </li>
-            <li className={openSubmenus["eventos"] ? "open" : ""}>
-              <a
-                href='/eventos'
-                aria-haspopup='true'
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleSubmenu("eventos");
-                }}
-              >
-                Eventos
-                <ChevronDownIcon
-                  style={{
-                    transform: openSubmenus["eventos"]
-                      ? "rotate(180deg)"
-                      : "rotate(0deg)",
-                  }}
-                />
-              </a>
-              <ul>
-                <li>
-                  <a href='/eventos/agenda'>Agenda de Eventos</a>
-                </li>
-              </ul>
+            <li>
+              <a href='/eventos'>Eventos</a>
             </li>
             <li>
               <a href='/associados'>Chocolateiros</a>
             </li>
             <li>
-              <a href='/convenios'>Cacauron na Estrada</a>
+              <a href='/cacauron-na-estrada'>Cacauron na Estrada</a>
             </li>
             <li>
-              <a href='/contato'>Contato</a>
+              <a href='#footer'>Contato</a>
             </li>
           </ul>
         </nav>
@@ -286,11 +380,7 @@ function Header() {
         {suggestions.length > 0 && (
           <ul className='search-suggestions'>
             {suggestions.map((item, index) => (
-              <li
-                key={index}
-                onClick={() => goToDestination(item)}
-                className={item.isFallback ? "fallback-suggestion" : ""}
-              >
+              <li key={index} onClick={() => goToDestination(item)}>
                 {item.title}
               </li>
             ))}
