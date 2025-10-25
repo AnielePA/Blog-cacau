@@ -8,6 +8,7 @@ import shalomLogo from "../assets/images/associados/shalom.png";
 import targaLogo from "../assets/images/associados/targa.jpg";
 import francoLogo from "../assets/images/associados/franco.png";
 import santanaLogo from "../assets/images/associados/santana.png";
+import cacauRaizLogo from "../assets/images/associados/cacauRaiz.png";
 import ChocolateiroCard, { type Chocolateiro } from "./ChocolateiroCard";
 
 const chocolateirosData: Chocolateiro[] = [
@@ -64,6 +65,15 @@ const chocolateirosData: Chocolateiro[] = [
     cidade: "Presidente Médici",
     descricao:
       "Empresa familiar idealizada por um cacauicultor. Focada em agregar valor ao cacau local, tem como principal missão levar produtos de alta qualidade aos seus clientes.",
+  },
+  {
+    id: 7,
+    nomeMarca: "Cacau Raiz",
+    nomesPessoas: "Melissa Almeida",
+    logoUrl: cacauRaizLogo,
+    cidade: "Ouro Preto do Oeste",
+    descricao:
+      "Fundada há 7 anos, a Cacau Raiz nasceu do desejo de conciliar a maternidade com a vida profissional. Liderada por mulheres, nossa marca vai além de chocolates: é uma forma de respeitar a natureza, valorizar o campo e promover a inclusão alimentar.",
   },
 ];
 

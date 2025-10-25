@@ -64,7 +64,7 @@ const YoutubeIcon = () => (
 );
 
 function Footer() {
-  const cnpjEmpresa = "XX.XXX.XXX/0001-XX";
+  const cnpjEmpresa = "46.482.466/0001-71";
   const contentRef = useScrollAnimation();
 
   return (
@@ -83,7 +83,7 @@ function Footer() {
           <ul className='footer-socials'>
             <li>
               <a
-                href='https://wa.me/5569999999999'
+                href='https://wa.me/5569992374769'
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='WhatsApp'
@@ -93,7 +93,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href='#'
+                href='https://www.instagram.com/cacauron.ig'
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='Instagram'
@@ -103,7 +103,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href='#'
+                href='https://www.facebook.com/cacauron.ig'
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='Facebook'
@@ -113,7 +113,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href='#'
+                href='https://www.youtube.com/@cacauron'
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='Youtube'
@@ -127,10 +127,10 @@ function Footer() {
               Entre em contato também pelo nosso Email!
             </p>
             <a
-              href='mailto:contato@cacauron.com.br'
+              href='mailto:cacauron.ig@gmail.com'
               className='footer-email-link'
             >
-              contato@cacauron.com.br
+              cacauron.ig@gmail.com
             </a>
           </div>
         </section>
@@ -155,6 +155,8 @@ function Footer() {
             <span>|</span> CNPJ: {cnpjEmpresa}
           </>
         )}
+        <br />
+        <small>Desenvolvido por Atmos Empresas & Aniele P. Ardisson.</small>
       </div>
     </footer>
   );

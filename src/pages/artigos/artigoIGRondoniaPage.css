@@ -38,6 +38,7 @@
 .artigo-page-ig {
     background-color: var(--white);
     color: var(--cor-marrom1);
+    overflow-x: hidden;
 
     .artigo-header-ig {
         position: relative;
@@ -226,5 +227,23 @@
 @media (min-width: 992px) {
     .artigo-body-ig {
         max-width: 800px;
+    }
+}
+
+@media (max-width: 900px) {
+    .artigo-page-ig {
+        .artigo-header-ig {
+            .artigo-header-ig__content {
+                .header-main-row {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    .artigo-header-ig__text {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }

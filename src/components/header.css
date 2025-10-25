@@ -13,6 +13,7 @@
         opacity: 0;
         transform: translateY(-100%);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -468,7 +469,7 @@ nav>ul>li:focus-within>a svg {
 }
 
 a:focus {
-    box-shadow: 0 0 0 3px rgba(15, 98, 255, 0.12);
+    box-shadow: 0 0 0 3px rgba(238, 121, 67, 0.2);
     border-radius: 8px;
 }
 
