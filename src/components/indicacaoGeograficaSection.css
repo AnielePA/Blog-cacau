@@ -15,7 +15,7 @@
     background-color: var(--cor-fundo-claro);
     color: var(--cor-marrom3);
     line-height: 1.8;
-    opacity: 0;
+    /* opacity: 0; */
 
     h2,
     h3,
@@ -277,6 +277,38 @@
 }
 
 
-.ig-section-container.animate-in {
+/* .ig-section-container.animate-in {
     animation: fadeInUp 0.8s ease-out forwards;
+} */
+
+
+.ig-intro,
+.ig-blocos-container,
+.ig-atributos,
+.ig-mapa-secao {
+    opacity: 0;
+}
+
+.ig-section-container.animate-in .ig-intro,
+.ig-section-container.animate-in .ig-blocos-container,
+.ig-section-container.animate-in .ig-atributos,
+.ig-section-container.animate-in .ig-mapa-secao {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+.ig-section-container.animate-in .ig-intro {
+    animation-delay: 0.5s;
+}
+
+.ig-section-container.animate-in .ig-blocos-container {
+    animation-delay: 0.9s;
+}
+
+.ig-section-container.animate-in .ig-atributos {
+    animation-delay: 0.13s;
+}
+
+.ig-section-container.animate-in .ig-mapa-secao {
+    animation-delay: 0.20s;
 }

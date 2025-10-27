@@ -2,13 +2,13 @@ import { useState } from "react";
 import "./associados.css";
 
 import { ChevronLeftIcon, Users } from "lucide-react";
-import cacaulandiaLogo from "../assets/images/associados/cacaulandia.png";
-import tiengoLogo from "../assets/images/associados/tiengo.png";
-import shalomLogo from "../assets/images/associados/shalom.png";
-import targaLogo from "../assets/images/associados/targa.jpg";
-import francoLogo from "../assets/images/associados/franco.png";
-import santanaLogo from "../assets/images/associados/santana.png";
-import cacauRaizLogo from "../assets/images/associados/cacauRaiz.png";
+import cacaulandiaLogo from "../../assets/images/associados/cacaulandia.png";
+import tiengoLogo from "../../assets/images/associados/tiengo.png";
+import shalomLogo from "../../assets/images/associados/shalom.png";
+import targaLogo from "../../assets/images/associados/targa.jpg";
+import francoLogo from "../../assets/images/associados/franco.png";
+import santanaLogo from "../../assets/images/associados/santana.png";
+import cacauRaizLogo from "../../assets/images/associados/cacauRaiz.png";
 import ChocolateiroCard, { type Chocolateiro } from "./ChocolateiroCard";
 
 const chocolateirosData: Chocolateiro[] = [

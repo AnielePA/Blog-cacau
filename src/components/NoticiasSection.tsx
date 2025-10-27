@@ -27,24 +27,24 @@ const newsData: NewsItem[] = [
     link: "https://www.instagram.com/p/DPUDGHMDlBo/?utm_source=ig_web_copy_link&igsh=YjV0NXoxM3lhdG9q",
     buttonText: "Veja a Publicação",
   },
-  {
-    id: 2,
-    image: "https://placehold.co/1200x800/D97706/FFFFFF?text=Cacauron+na+Mídia",
-    title: "Cacauron é Destaque em Matéria Sobre Sustentabilidade",
-    intro:
-      "Nossas práticas de cultivo sustentável e o impacto positivo na comunidade foram reconhecidos nacionalmente.",
-    link: "#",
-    buttonText: "Leia a Matéria",
-  },
-  {
-    id: 3,
-    image: "https://placehold.co/1200x800/8D6E63/FFFFFF?text=Prêmio+Qualidade",
-    title: "Nosso Cacau Conquista Prêmio de Qualidade Superior",
-    intro:
-      "Recebemos mais um reconhecimento pela qualidade excepcional de nossas amêndoas em concurso nacional.",
-    link: "#",
-    buttonText: "Saiba Mais",
-  },
+  // {
+  //   id: 2,
+  //   image: "https://placehold.co/1200x800/D97706/FFFFFF?text=Cacauron+na+Mídia",
+  //   title: "Cacauron é Destaque em Matéria Sobre Sustentabilidade",
+  //   intro:
+  //     "Nossas práticas de cultivo sustentável e o impacto positivo na comunidade foram reconhecidos nacionalmente.",
+  //   link: "#",
+  //   buttonText: "Leia a Matéria",
+  // },
+  // {
+  //   id: 3,
+  //   image: "https://placehold.co/1200x800/8D6E63/FFFFFF?text=Prêmio+Qualidade",
+  //   title: "Nosso Cacau Conquista Prêmio de Qualidade Superior",
+  //   intro:
+  //     "Recebemos mais um reconhecimento pela qualidade excepcional de nossas amêndoas em concurso nacional.",
+  //   link: "#",
+  //   buttonText: "Saiba Mais",
+  // },
 ];
 
 const NewsSlide: React.FC<NewsSlideProps> = ({ slide, isActive }) => (

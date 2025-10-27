@@ -156,7 +156,9 @@ function Footer() {
           </>
         )}
         <br />
-        <small>Desenvolvido por Atmos Empresas & Aniele P. Ardisson.</small>
+        <small>
+          Desenvolvido por Atmos Empresas & Aniele Pereira Ardisson.
+        </small>
       </div>
     </footer>
   );

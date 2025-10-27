@@ -97,8 +97,6 @@ const diretoriaData: Diretoria[] = [
   },
 ];
 
-
-
 function DiretoriaPage() {
   const navigate = useNavigate();
   return (

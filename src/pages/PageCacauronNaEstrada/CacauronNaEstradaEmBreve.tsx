@@ -2,7 +2,6 @@ import "./cacauronNaEstradaEmBreve.css";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeftIcon } from "lucide-react";
 
-
 const FilmIcon = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
@@ -41,13 +40,8 @@ function CacauronNaEstradaEmBreve() {
         <p className='coming-soon-subtitle'>
           <span className='coming-soon-highlight'>Em breve</span>, embarcaremos
           juntos na série
-          <strong
-
-          >
-            Cacauron na Estrada
-          </strong>
-          , desvendando a rica história e os segredos do cacau de Rondônia.
-          Aguarde!
+          <strong>Cacauron na Estrada</strong>, desvendando a rica história e os
+          segredos do cacau de Rondônia. Aguarde!
         </p>
       </div>
     </section>

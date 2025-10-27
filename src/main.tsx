@@ -3,13 +3,13 @@ import { createRoot } from "react-dom/client";
 import "@fortawesome/fontawesome-free/css/all.css";
 import App from "./App.tsx";
 import "./index.css";
-import AssociadosPage from "./pages/AssociadosPage.tsx";
+import AssociadosPage from "./pages/PageAssociados/AssociadosPage.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import DiretoriaPage from "./pages/DiretoriaPage.tsx";
-import AgendaEventosPage from "./pages/AgendaEventosPage.tsx";
-import ListaArtigosPage from "./pages/ListaArtigosPage.tsx";
-import ArtigoIGRondoniaPage from "./pages/artigos/ArtigoIGRondoniaPage.tsx";
-import CacauronNaEstradaEmBreve from "./pages/CacauronNaEstradaEmBreve.tsx";
+import DiretoriaPage from "./pages/PageDiretoria/DiretoriaPage.tsx";
+import AgendaEventosPage from "./pages/PageEventos/AgendaEventosPage.tsx";
+import ListaArtigosPage from "./pages/PageArtigos/ListaArtigosPage.tsx";
+import ArtigoIGRondoniaPage from "./pages/PageArtigos/artigos/ArtigoIGRondoniaPage.tsx";
+import CacauronNaEstradaEmBreve from "./pages/PageCacauronNaEstrada/CacauronNaEstradaEmBreve.tsx";
 
 const router = createBrowserRouter([
   {
