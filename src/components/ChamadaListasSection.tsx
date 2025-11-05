@@ -1,7 +1,8 @@
-import "./chamadaListasSection.css";
-import { useScrollAnimation } from "../hooks/useScrollAnimation";
-import associadosImg from "../assets/images/lista-chamada-associados.png";
-import diretoriaImg from "../assets/images/lista-chamada-diretoria.png";
+import "./chamadaListasSection.css"; 
+import { useScrollAnimation } from "../hooks/useScrollAnimation"; 
+import associadosImg from "../assets/images/lista-chamada-associados.png"; 
+import diretoriaImg from "../assets/images/lista-chamada-diretoria.png"; 
+import { useTranslation } from "react-i18next"; 
 
 const ArrowRightIcon = () => (
   <svg
@@ -23,55 +24,65 @@ const ArrowRightIcon = () => (
 
 function ChamadaListasSection() {
   const sectionRef = useScrollAnimation();
+  const { t } = useTranslation();
 
   return (
-    <section className='chamada-section'>
-      <div
-        ref={sectionRef as React.Ref<HTMLDivElement>}
-        className='chamada-content'
-      >
-        <h2 className='chamada-section__title'>Conheça Nossa Comunidade</h2>
-        <div className='chamada-grid'>
-          <div className='chamada-card'>
-            <img
-              src={associadosImg}
-              alt='Cacauicultores e chocolateiros da Cacauron'
-              className='chamada-card__imagem'
-            />
-            <div className='chamada-card__conteudo'>
-              <h3 className='chamada-card__titulo'>Nossos Associados</h3>
-              <p className='chamada-card__texto'>
-                O coração da Cacauron é formado por homens e mulheres
-                apaixonados. Conheça os cacauicultores e chocolateiros que fazem
-                a diferença.
-              </p>
-              <a href='/associados' className='chamada-card__botao'>
-                Ver Associados <ArrowRightIcon />
-              </a>
-            </div>
-          </div>
+      <section className='chamada-section'>
+        <div
+          ref={sectionRef as React.Ref<HTMLDivElement>}
+          className='chamada-content'
+        >
+          <h2 className='chamada-section__title'>{t("chamadaListas.title")}</h2>
 
-          <div className='chamada-card'>
-            <img
-              src={diretoriaImg}
-              alt='Diretoria da Cacauron reunida'
-              className='chamada-card__imagem'
-            />
-            <div className='chamada-card__conteudo'>
-              <h3 className='chamada-card__titulo'>Nossa Diretoria</h3>
-              <p className='chamada-card__texto'>
-                Conheça as lideranças que guiam nossa associação com visão
-                estratégica, compromisso e dedicação ao futuro do cacau de
-                Rondônia.
-              </p>
-              <a href='/diretoria' className='chamada-card__botao'>
-                Conhecer a Diretoria <ArrowRightIcon />
-              </a>
+          <div className='chamada-grid'>
+            <div className='chamada-card'>
+              <img
+                src={associadosImg}
+                alt={t("chamadaListas.cardAssociados.imageAlt")}
+                className='chamada-card__imagem'
+              />
+
+              <div className='chamada-card__conteudo'>
+                <h3 className='chamada-card__titulo'>
+                  {t("chamadaListas.cardAssociados.title")}
+                </h3>
+
+                <p className='chamada-card__texto'>
+                  {t("chamadaListas.cardAssociados.text")}
+                </p>
+
+                <a href='/associados' className='chamada-card__botao'>
+                  {t("chamadaListas.cardAssociados.buttonText")}
+                  <ArrowRightIcon />
+                </a>
+              </div>
+            </div>
+
+            <div className='chamada-card'>
+              <img
+                src={diretoriaImg}
+                alt={t("chamadaListas.cardDiretoria.imageAlt")}
+                className='chamada-card__imagem'
+              />
+
+              <div className='chamada-card__conteudo'>
+                <h3 className='chamada-card__titulo'>
+                  {t("chamadaListas.cardDiretoria.title")}
+                </h3>
+
+                <p className='chamada-card__texto'>
+                  {t("chamadaListas.cardDiretoria.text")}
+                </p>
+
+                <a href='/diretoria' className='chamada-card__botao'>
+                  {t("chamadaListas.cardDiretoria.buttonText")}
+                  <ArrowRightIcon />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 }
 

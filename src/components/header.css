@@ -315,7 +315,7 @@ nav>ul>li:focus-within>a svg {
     transform: rotate(180deg);
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1400px) {
     .header-principal {
         justify-content: space-between;
         padding: 10px 25px;
@@ -483,8 +483,90 @@ nav>ul>li:last-child>ul {
 }
 
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1399px) {
     .header-principal {
         padding: 10px 60px;
+    }
+}
+
+.language-switcher {
+    position: relative;
+}
+
+.language-switcher button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-family: var(--font-navigation);
+}
+
+.header-principal .language-switcher button {
+    color: var(--white);
+}
+
+.header-principal.scrolled .language-switcher button,
+.nav-open .language-switcher button {
+    color: var(--cor-marrom1);
+}
+
+.language-switcher .chevron-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.language-switcher .chevron-icon.rotated {
+    transform: rotate(180deg);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    min-width: 150px;
+    padding: 0.5rem 0;
+    overflow: hidden;
+}
+
+.language-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.language-dropdown button {
+    border: none;
+    color: var(--cor-marrom1) !important;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: normal;
+    font-size: 0.9rem;
+    background: none;
+}
+
+.language-dropdown button.active {
+    background: var(--cor-fundo-claro);
+    font-weight: bold;
+}
+
+.language-dropdown button:hover {
+    background: var(--cor-fundo-claro);
+}
+
+@media (max-width: 1400px) {
+    .nav-open .language-switcher {
+        margin-left: 0;
+        margin-top: 1rem;
     }
 }

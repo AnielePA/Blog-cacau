@@ -2,10 +2,10 @@ import "./agendaEventospage.css";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeftIcon } from "lucide-react";
 import EventoCard, { type Evento } from "./EventoCard";
+import { useTranslation } from "react-i18next";
 
 const CalendarIconTitle = () => (
   <svg
-    xmlns='http://www.w3.org/2000/svg'
     width='38'
     height='38'
     viewBox='0 0 24 24'
@@ -16,45 +16,41 @@ const CalendarIconTitle = () => (
     strokeLinejoin='round'
     style={{ marginLeft: "12px", verticalAlign: "middle" }}
   >
-    <rect x='3' y='4' width='18' height='18' rx='2' ry='2'></rect>
-    <line x1='16' y1='2' x2='16' y2='6'></line>
-    <line x1='8' y1='2' x2='8' y2='6'></line>
-    <line x1='3' y1='10' x2='21' y2='10'></line>
+    {" "}
+    <rect x='3' y='4' width='18' height='18' rx='2' ry='2'></rect>{" "}
+    <line x1='16' y1='2' x2='16' y2='6'></line>{" "}
+    <line x1='8' y1='2' x2='8' y2='6'></line>{" "}
+    <line x1='3' y1='10' x2='21' y2='10'></line>{" "}
   </svg>
 );
 
-const eventosData: Evento[] = [
-  {
-    id: 1,
-    data: "2025-12-06",
-    titulo: "7º Concurso Nacional do Cacau",
-    local: "Cacoal Selva Park, Cacoal - RO",
-    descricao:
-      "Valorizando a produção nacional e a sustentabilidade, a final do VII Concurso Nacional de Cacau Especial celebra a qualidade do cacau brasileiro, com destaque para a força da cacauicultura rondoniense. A Cacauron, ao participar deste evento, reforça o compromisso de promover e valorizar os cacauicultores e chocolateiros da região.",
-    imagemUrl:
-      "https://placehold.co/800x400/7d4c3b/FFFFFF?text=Concurso+Nacional+do+Cacau",
-    link: "https://rondonia.ro.gov.br/pela-primeira-vez-rondonia-sedia-concurso-nacional-de-cacau-e-reune-produtores-de-todo-o-brasil/",
-    linkTexto: "",
-  },
-  {
-    id: 2,
-    data: "2025-11-24",
-    titulo:
-      "Concurso de Qualidade e Sustentabilidade do Cacau de Rondônia (Concacau)",
-    local: "Prime House, em Ji-Paraná - RO",
-    descricao:
-      "O evento faz parte de um conjunto de ações que buscam o desenvolvimento da cacauicultura no estado, promovendo a qualidade do produto e a sustentabilidade da produção. O ConCacau também visa a participação em eventos nacionais, como o Concurso Nacional de Cacau Especial, onde produtores de Rondônia têm obtido destaque. ",
-    imagemUrl:
-      "https://placehold.co/800x400/49190f/FFFFFF?text=Workshop+Cacauron",
-    link: "#",
-    linkTexto: "inscreva-se",
-  },
-];
-
 function AgendaEventosPage() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const hoje = new Date();
   hoje.setHours(0, 0, 0, 0);
+
+  const eventosData: Evento[] = [
+    {
+      id: 1,
+      jsonKey: "concursoNacional",
+      data: "2025-12-06",
+      local: "Cacoal Selva Park, Cacoal - RO",
+      imagemUrl:
+        "https://placehold.co/800x400/7d4c3b/FFFFFF?text=Concurso+Nacional",
+      link: "https://rondonia.ro.gov.br/pela-primeira-vez-rondonia-sedia-concurso-nacional-de-cacau-e-reune-produtores-de-todo-o-brasil/",
+      linkTextoChave: "agendaEventosPage.eventos.concursoNacional.botaoCard",
+    },
+    {
+      id: 2,
+      jsonKey: "concacau",
+      data: "2025-11-24",
+      local: "Prime House, em Ji-Paraná - RO",
+      imagemUrl: "https://placehold.co/800x400/49190f/FFFFFF?text=Concacau",
+      link: "#",
+      linkTextoChave: "agendaEventosPage.eventos.concacau.botaoCard",
+    },
+  ];
 
   const proximosEventos = eventosData
     .filter((evento) => new Date(evento.data) >= hoje)
@@ -67,42 +63,58 @@ function AgendaEventosPage() {
   return (
     <section className='agenda-page'>
       <header className='agenda-header'>
-        <button onClick={() => navigate(-1)} className='back-button-agenda'>
+        <button
+          onClick={() => navigate(-1)}
+          className='back-button-agenda'
+          aria-label={t("agendaEventosPage.backButtonAriaLabel")}
+        >
           <ChevronLeftIcon />
         </button>
+
         <h1 className='agenda-header__title'>
-          Agenda de Eventos
+          {t("agendaEventosPage.headerTitle")}
           <CalendarIconTitle />
         </h1>
+
         <p className='agenda-header__subtitle'>
-          Fique por dentro dos principais acontecimentos, feiras e workshops do
-          universo do cacau em Rondônia e participe da nossa jornada.
+          {t("agendaEventosPage.headerSubtitle")}
         </p>
       </header>
 
       <main className='timeline-container'>
         <section>
-          <h2 className='timeline-section-title'>Próximos Eventos</h2>
+          <h2 className='timeline-section-title'>
+            {t("agendaEventosPage.proximosEventosTitle")}
+          </h2>
+
           {proximosEventos.length > 0 ? (
             proximosEventos.map((evento) => (
-              <EventoCard key={evento.id} evento={evento} isPast={false} />
+              <EventoCard
+                key={evento.id}
+                evento={evento}
+                isPast={false}
+                t={t}
+              />
             ))
           ) : (
             <p style={{ textAlign: "center", fontFamily: "var(--font-body)" }}>
-              Nenhum evento programado no momento.
+              {t("agendaEventosPage.semProximosEventos")}{" "}
             </p>
           )}
         </section>
 
         <section style={{ marginTop: "4rem" }}>
-          <h2 className='timeline-section-title'>Eventos Anteriores</h2>
+          <h2 className='timeline-section-title'>
+            {t("agendaEventosPage.eventosAnterioresTitle")}
+          </h2>
+
           {eventosPassados.length > 0 ? (
             eventosPassados.map((evento) => (
-              <EventoCard key={evento.id} evento={evento} isPast={true} />
+              <EventoCard key={evento.id} evento={evento} isPast={true} t={t} />
             ))
           ) : (
             <p style={{ textAlign: "center", fontFamily: "var(--font-body)" }}>
-              Não há eventos anteriores.
+              {t("agendaEventosPage.semEventosAnteriores")}
             </p>
           )}
         </section>

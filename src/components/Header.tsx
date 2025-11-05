@@ -3,10 +3,11 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/20/solid";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import "./header.css";
 import logo from "../assets/images/LOGO_BRANCO.png";
 import logoVerde from "../assets/images/LOGO_VERDE_BANDEIRA.png";
+import { useTranslation } from "react-i18next";
 
 type SearchableItem = {
   keywords: string[];
@@ -15,183 +16,162 @@ type SearchableItem = {
   type: "navigate" | "scroll";
 };
 
-const searchableContent: SearchableItem[] = [
+const generateNameKeywords = (name: string): string[] => {
+  const lowerCaseName = name.toLowerCase();
+  const firstName = lowerCaseName.split(" ")[0];
+  return [lowerCaseName, firstName].filter(Boolean);
+};
+
+const generateRoleKeywords = (role: string): string[] => {
+  const lowerCaseRole = role.toLowerCase();
+  const parts = lowerCaseRole
+    .split(/[\s-]+/)
+    .filter((part) => part.length > 2 || !["de", "da", "do"].includes(part));
+  return [lowerCaseRole, ...parts].filter(Boolean);
+};
+
+const diretoriaDataForKeywords = [
+  { nome: "Estevam Fernandes Magalhães", cargo: "Presidente" },
+  { nome: "Deoclídes Pires da Silva", cargo: "Vicê Presidente" },
+  { nome: "Helberte Augusto Neves", cargo: "Diretor Administrativo" },
   {
-    keywords: [
-      "notícias",
-      "novidades",
-      "imprensa",
-      "blog",
-      "atualizações",
-      "news",
-      "noticias",
-    ],
-    title: "Ver as Últimas Notícias",
-    destination: "#noticias",
-    type: "scroll",
+    nome: "Flávio Teixeira da Silva",
+    cargo: "Diretor Administrativo - Suplente",
+  },
+  { nome: "Marta Betânia Ferreira Carvalho", cargo: "Diretor Financeiro" },
+  {
+    nome: "Israel Barbosa da Silveira",
+    cargo: "Diretor Financeiro - Suplente",
+  },
+  { nome: "Marcelo Alves Medeiros", cargo: "Diretor de Marketing" },
+  {
+    nome: "Jhanne Cleice Silva Franco",
+    cargo: "Diretor de Marketing - Suplente",
   },
   {
-    keywords: [
-      "associados",
-      "chocolateiros",
-      "produtores",
-      "comunidade",
-      "cacaulândia chocolates",
-      "chocolate tiengo",
-      "shalom cacau",
-      "targa chocolate",
-      "franco cacao",
-      "chocolate santana",
-      "cacau raiz",
-      "marli barbosa",
-      "israel barbosa",
-      "marli",
-      "israel",
-      "deoclides pires",
-      "deoclides",
-      "neuzeli",
-      "shalom",
-      "selma targa",
-      "selma",
-      "jhanne franco",
-      "jhanne",
-      "celso josé de abreu santana",
-      "celso santana",
-      "celso",
-      "melissa barbosa costa de almeida",
-      "melissa almeida",
-      "melissa",
-    ],
-    title: "Conhecer Nossos Chocolateiros",
-    destination: "/associados",
-    type: "navigate",
+    nome: "Antônio Deusemínio de Almeida",
+    cargo: "Diretor de Sustentabilidade",
   },
   {
-    keywords: [
-      "diretoria",
-      "liderança",
-      "presidente",
-      "quem somos",
-      "diretores",
-      "estevam fernandes magalhães",
-      "estevam",
-      "presidente",
-      "deoclídes pires da silva",
-      "deoclídes",
-      "vicê presidente",
-      "helberte augusto neves",
-      "helberte",
-      "diretor administrativo",
-      "flávio teixeira da silva",
-      "flávio",
-      "diretor administrativo suplente",
-      "marta betânia ferreira carvalho",
-      "marta",
-      "diretor financeiro",
-      "israel barbosa da silveira",
-      "israel",
-      "diretor financeiro suplente",
-      "marcelo alves medeiros",
-      "marcelo",
-      "diretor de marketing",
-      "jhanne cleice silva franco",
-      "jhanne",
-      "diretor de marketing suplente",
-      "antônio deusemínio de almeida",
-      "antônio",
-      "diretor de sustentabilidade",
-      "assis pereira de morais",
-      "assis",
-      "diretor de sustentabilidade suplente",
-      "melissa barbosa costa de almeida",
-      "melissa",
-      "diretora de chocolateria",
-      "shalom oliveira mendes silva",
-      "shalom",
-      "diretora de chocolateria suplente",
-      "deborah regina",
-      "deborah",
-      "executiva",
-    ],
-    title: "Conhecer a Diretoria",
-    destination: "/diretoria",
-    type: "navigate",
+    nome: "Assis Pereira de Morais",
+    cargo: "Diretor de Sustentabilidade - Suplente",
   },
   {
-    keywords: ["história", "sobre", "origem", "cacauron"],
-    title: "Ler a História da Cacauron",
-    destination: "#our-story",
-    type: "scroll",
+    nome: "Melissa Barbosa Costa de Almeida",
+    cargo: "Diretora de Chocolateria",
   },
   {
-    keywords: ["ig", "indicação geográfica", "selo", "qualidade"],
-    title: "Saber Mais sobre o Selo IG Rondônia",
-    destination: "#ig-rondonia",
-    type: "scroll",
+    nome: "Shalom Oliveira Mendes Silva",
+    cargo: "Diretora de Chocolateria - Suplente",
   },
+  { nome: "Deborah Regina", cargo: "Executiva" },
+];
+const chocolateirosDataForKeywords = [
   {
-    keywords: ["parceiros", "sicoob", "sebrae", "apoio"],
-    title: "Veja Nossos Parceiros",
-    destination: "#parceiros",
-    type: "scroll",
+    nomeMarca: "Cacaulândia Chocolates",
+    nomesPessoas: "Marli e Israel Barbosa",
   },
+  { nomeMarca: "Chocolate Tiengo", nomesPessoas: "Deoclides Pires e família" },
+  { nomeMarca: "Shalom Cacau", nomesPessoas: "Neuzeli e Shalom" },
+  { nomeMarca: "Targa Chocolate", nomesPessoas: "Selma Targa" },
+  { nomeMarca: "Franco Cacao", nomesPessoas: "Jhanne Franco" },
   {
-    keywords: [
-      "contato",
-      "fale conosco",
-      "email",
-      "instagram",
-      "facebook",
-      "youtube",
-      "redes sociais",
-      "whatsapp",
-    ],
-    title: "Fale Conosco",
-    destination: "#footer",
-    type: "scroll",
-  },
-  {
-    keywords: ["artigos", "blog", "novidades", "imprensa", "materia", "posts"],
-    title: "Ver artigos",
-    destination: "/artigos",
-    type: "navigate",
-  },
-  {
-    keywords: [
-      "eventos",
-      "feiras",
-      "workshops",
-      "seminários",
-      "conferências",
-      "concursos",
-    ],
-    title: "Ver eventos",
-    destination: "/eventos",
-    type: "navigate",
-  },
-  {
-    keywords: [
-      "cacauron na estrada",
-      "série",
-      "historia",
-      "cacau em rondonia",
-      "documentário",
-      "video",
-      "rondônia",
-    ],
-    title: "Ver Cacauron na Estrada: A Série sobre o Cacau em Rondônia",
-    destination: "/cacauron-na-estrada",
-    type: "navigate",
+    nomeMarca: "Chocolate Santana",
+    nomesPessoas: "Celso José de Abreu Santana",
   },
 ];
 
+const availableLanguages = [
+  { code: "pt-BR", label: "PT", longLabel: "Português" },
+  { code: "en", label: "EN", longLabel: "English" },
+  { code: "es", label: "ES", longLabel: "Español" },
+];
+
 function Header() {
+  const { t, i18n } = useTranslation();
+
+  const searchableContent: SearchableItem[] = useMemo(() => {
+    let diretoriaKeywords =
+      (t("header.searchSuggestions.conhecerDiretoria.keywords", {
+        returnObjects: true,
+        defaultValue: [],
+      }) as string[]) || [];
+    diretoriaDataForKeywords.forEach((d) => {
+      diretoriaKeywords = [
+        ...diretoriaKeywords,
+        ...generateNameKeywords(d.nome),
+        ...generateRoleKeywords(d.cargo),
+      ];
+    });
+    diretoriaKeywords = [...new Set(diretoriaKeywords)];
+
+    let chocolateirosKeywords =
+      (t("header.searchSuggestions.conhecerChocolateiros.keywords", {
+        returnObjects: true,
+        defaultValue: [],
+      }) as string[]) || [];
+    chocolateirosDataForKeywords.forEach((c) => {
+      chocolateirosKeywords.push(c.nomeMarca.toLowerCase());
+      const nomes = c.nomesPessoas
+        .toLowerCase()
+        .split(/[\s,e]+/)
+        .filter(Boolean);
+      chocolateirosKeywords = [...chocolateirosKeywords, ...nomes];
+    });
+    chocolateirosKeywords = [...new Set(chocolateirosKeywords)];
+
+    const destinationMap: Record<
+      string,
+      { destination: string; type: "navigate" | "scroll" }
+    > = {
+      verNoticias: { destination: "#noticias", type: "scroll" },
+      conhecerChocolateiros: { destination: "/associados", type: "navigate" },
+      conhecerDiretoria: { destination: "/diretoria", type: "navigate" },
+      lerHistoria: { destination: "#our-story", type: "scroll" },
+      saberMaisIG: { destination: "#ig-rondonia", type: "scroll" },
+      verParceiros: { destination: "#parceiros", type: "scroll" },
+      faleConosco: { destination: "#footer", type: "scroll" },
+      verArtigos: { destination: "/artigos", type: "navigate" },
+      verDocumentos: { destination: "#documentos", type: "scroll" },
+      verEventos: { destination: "/eventos", type: "navigate" },
+      verCacauronNaEstrada: {
+        destination: "/cacauron-na-estrada",
+        type: "navigate",
+      },
+    };
+
+    const suggestionsFromT = t("header.searchSuggestions", {
+      returnObjects: true,
+    }) as Record<string, { title: string; keywords: string[] }>;
+
+    return Object.entries(suggestionsFromT).map(([key, value]) => {
+      const destInfo = destinationMap[key] || {
+        destination: "#",
+        type: "scroll",
+      };
+      let finalKeywords = value.keywords || [];
+
+      if (key === "conhecerDiretoria") finalKeywords = diretoriaKeywords;
+      if (key === "conhecerChocolateiros")
+        finalKeywords = chocolateirosKeywords;
+
+      return {
+        keywords: finalKeywords,
+        title: value.title,
+        destination: destInfo.destination,
+        type: destInfo.type,
+      };
+    });
+  }, [t]);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubmenus, setOpenSubmenus] = useState<Record<string, boolean>>({});
-
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState<SearchableItem[]>([]);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const langSwitcherRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -201,13 +181,27 @@ function Header() {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        langSwitcherRef.current &&
+        !langSwitcherRef.current.contains(event.target as Node)
+      ) {
+        setIsLangMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [langSwitcherRef]);
 
   const toggleSubmenu = (menuName: string) => {
     setOpenSubmenus((prevState) => ({
@@ -241,7 +235,6 @@ function Header() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchTerm(value);
-
     if (value.length > 1) {
       const keywordSuggestions = searchableContent.filter((item) =>
         item.keywords.some((keyword) =>
@@ -260,12 +253,21 @@ function Header() {
     }
   };
 
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const currentLangLabel =
+    availableLanguages.find((lang) =>
+      i18n.language.startsWith(lang.code.split("-")[0])
+    )?.label || availableLanguages[0].label;
+
   return (
     <header className={`header-principal ${isScrolled ? "scrolled" : ""}`}>
       <div className='container'>
         <div className='logo'>
-          <img src={isScrolled ? logoVerde : logo} alt='Logo Cacauron' />
-          <p>Cacauron</p>
+          <img src={isScrolled ? logoVerde : logo} alt={t("header.logoAlt")} />
+          <p>{t("header.logoText")}</p>
         </div>
         <button
           className={`mobile-menu-btn ${isMenuOpen ? "open" : ""}`}
@@ -273,7 +275,7 @@ function Header() {
             setIsMenuOpen(!isMenuOpen);
             setOpenSubmenus({});
           }}
-          aria-label='Toggle menu'
+          aria-label={t("header.toggleMenuAriaLabel")}
         >
           {isMenuOpen ? <XMarkIcon /> : <Bars3Icon />}
         </button>
@@ -282,7 +284,7 @@ function Header() {
             <div className='search mobile-search'>
               <input
                 type='text'
-                placeholder='Pesquisar...'
+                placeholder={t("header.searchPlaceholder")}
                 value={searchTerm}
                 onChange={handleInputChange}
                 onKeyDown={handleKeyDown}
@@ -292,7 +294,8 @@ function Header() {
                 <ul className='search-suggestions'>
                   {suggestions.map((item, index) => (
                     <li key={index} onClick={() => goToDestination(item)}>
-                      {item.title}
+                      {" "}
+                      {item.title}{" "}
                     </li>
                   ))}
                 </ul>
@@ -301,7 +304,7 @@ function Header() {
           )}
           <ul>
             <li>
-              <a href='/'>Início</a>
+              <a href='/'>{t("header.nav.inicio")}</a>
             </li>
             <li className={openSubmenus["institucional"] ? "open" : ""}>
               <a
@@ -312,7 +315,7 @@ function Header() {
                   toggleSubmenu("institucional");
                 }}
               >
-                Institucional
+                {t("header.nav.institucional")}
                 <ChevronDownIcon
                   style={{
                     transform: openSubmenus["institucional"]
@@ -323,10 +326,14 @@ function Header() {
               </a>
               <ul>
                 <li>
-                  <a href='/diretoria'>Diretoria</a>
+                  <a href='/diretoria'>
+                    {t("header.nav.institucionalSub.diretoria")}
+                  </a>
                 </li>
                 <li>
-                  <a href='#our-story'>História</a>
+                  <a href='#our-story'>
+                    {t("header.nav.institucionalSub.historia")}
+                  </a>
                 </li>
               </ul>
             </li>
@@ -339,7 +346,7 @@ function Header() {
                   toggleSubmenu("imprensa");
                 }}
               >
-                Imprensa
+                {t("header.nav.imprensa")}
                 <ChevronDownIcon
                   style={{
                     transform: openSubmenus["imprensa"]
@@ -350,32 +357,74 @@ function Header() {
               </a>
               <ul>
                 <li>
-                  <a href='#noticias'>Notícias</a>
+                  <a href='#noticias'>{t("header.nav.imprensaSub.noticias")}</a>
                 </li>
                 <li>
-                  <a href='/artigos'>Artigos</a>
+                  <a href='/artigos'>{t("header.nav.imprensaSub.artigos")}</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href='/eventos'>Eventos</a>
+              <a href='/eventos'>{t("header.nav.eventos")}</a>
             </li>
             <li>
-              <a href='/associados'>Chocolateiros</a>
+              <a href='/associados'>{t("header.nav.chocolateiros")}</a>
             </li>
             <li>
-              <a href='/cacauron-na-estrada'>Cacauron na Estrada</a>
+              <a href='/cacauron-na-estrada'>
+                {t("header.nav.cacauronNaEstrada")}
+              </a>
             </li>
             <li>
-              <a href='#footer'>Contato</a>
+              <a href='#footer'>{t("header.nav.contato")}</a>
             </li>
           </ul>
+
+          <div
+            className='language-switcher'
+            ref={langSwitcherRef}
+            style={{
+              marginLeft: isMenuOpen ? "0" : "auto",
+              alignSelf: "center",
+            }}
+          >
+            <button onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}>
+              {currentLangLabel}
+              <ChevronDownIcon
+                className={`chevron-icon ${isLangMenuOpen ? "rotated" : ""}`}
+              />
+            </button>
+
+            {isLangMenuOpen && (
+              <div className='language-dropdown'>
+                <ul>
+                  {availableLanguages.map((lang) => (
+                    <li key={lang.code}>
+                      <button
+                        onClick={() => {
+                          changeLanguage(lang.code);
+                          setIsLangMenuOpen(false);
+                        }}
+                        className={
+                          i18n.language.startsWith(lang.code.split("-")[0])
+                            ? "active"
+                            : ""
+                        }
+                      >
+                        {lang.longLabel} ({lang.label})
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
         </nav>
       </div>
       <div className='search desktop-search'>
         <input
           type='text'
-          placeholder='Pesquisar...'
+          placeholder={t("header.searchPlaceholder")}
           value={searchTerm}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
@@ -385,7 +434,8 @@ function Header() {
           <ul className='search-suggestions'>
             {suggestions.map((item, index) => (
               <li key={index} onClick={() => goToDestination(item)}>
-                {item.title}
+                {" "}
+                {item.title}{" "}
               </li>
             ))}
           </ul>
@@ -396,3 +446,10 @@ function Header() {
 }
 
 export default Header;
+
+declare global {
+  interface Window {
+    google?: { translate?: unknown };
+    googleTranslateElementInit?: () => void;
+  }
+}

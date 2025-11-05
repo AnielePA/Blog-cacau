@@ -34,7 +34,7 @@ function ProgressBar() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); 
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

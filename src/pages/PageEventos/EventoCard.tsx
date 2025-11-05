@@ -1,4 +1,5 @@
 import "./eventoCard.css";
+import { type TFunction } from "i18next";
 
 const CalendarIcon = () => (
   <svg
@@ -19,7 +20,6 @@ const CalendarIcon = () => (
     <line x1='3' y1='10' x2='21' y2='10'></line>
   </svg>
 );
-
 const LocationIcon = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
@@ -41,20 +41,21 @@ const LocationIcon = () => (
 type Evento = {
   id: number;
   data: string;
-  titulo: string;
   local: string;
-  descricao: string;
   imagemUrl: string;
   link?: string;
-  linkTexto?: string;
+  linkTextoChave?: string;
+  jsonKey: string;
 };
 
 function EventoCard({
   evento,
   isPast,
+  t,
 }: {
   evento: Evento;
   isPast: boolean;
+  t: TFunction;
 }) {
   const dataEvento = new Date(evento.data);
   dataEvento.setDate(dataEvento.getDate() + 1);
@@ -64,27 +65,49 @@ function EventoCard({
     year: "numeric",
   });
 
+  const tituloTraduzido = t(
+    `agendaEventosPage.eventos.${evento.jsonKey}.titulo`
+  );
+  const descricaoTraduzida = t(
+    `agendaEventosPage.eventos.${evento.jsonKey}.descricao`
+  );
+
+  const buttonText = evento.linkTextoChave
+    ? t(evento.linkTextoChave, {
+        defaultValue: evento.linkTextoChave.includes(".")
+          ? ""
+          : evento.linkTextoChave,
+      })
+    : t("agendaEventosPage.cardInscrevaSe");
+
   return (
     <article className={`evento-card ${isPast ? "passado" : ""}`}>
       <img
         src={evento.imagemUrl}
-        alt={evento.titulo}
+        alt={tituloTraduzido}
         className='evento-card__imagem'
       />
+
       <div className='evento-card__conteudo'>
         <div className='evento-card__meta'>
           <span>
             <CalendarIcon /> {dataFormatada}
           </span>
+
           <span>
             <LocationIcon /> {evento.local}
           </span>
         </div>
-        <h3 className='evento-card__titulo'>{evento.titulo}</h3>
-        <p className='evento-card__descricao'>{evento.descricao}</p>
-        {evento.link && !isPast && (
-          <a href={evento.link} className='evento-card__botao'>
-            {evento.linkTexto || "Saiba Mais"}
+        <h3 className='evento-card__titulo'>{tituloTraduzido}</h3>
+        <p className='evento-card__descricao'>{descricaoTraduzida}</p>
+        {evento.link && buttonText && !isPast && (
+          <a
+            href={evento.link}
+            className='evento-card__botao'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {buttonText}
           </a>
         )}
       </div>

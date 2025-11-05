@@ -1,0 +1,511 @@
+{
+  "header": {
+    "logoAlt": "Cacauron Logo",
+    "logoText": "Cacauron",
+    "toggleMenuAriaLabel": "Toggle menu",
+    "searchPlaceholder": "Search...",
+    "nav": {
+      "inicio": "Home",
+      "institucional": "Institutional",
+      "institucionalSub": {
+        "diretoria": "Directors",
+        "historia": "Our Story"
+      },
+      "imprensa": "Press",
+      "imprensaSub": {
+        "noticias": "News",
+        "artigos": "Articles"
+      },
+      "eventos": "Events",
+      "chocolateiros": "Chocolatiers",
+      "cacauronNaEstrada": "Cacauron on the Road",
+      "contato": "Contact"
+    },
+    "searchSuggestions": {
+      "verNoticias": {
+        "title": "See the Latest News",
+        "keywords": [
+          "notícias",
+          "novidades",
+          "imprensa",
+          "blog",
+          "atualizações",
+          "news",
+          "noticias",
+          "latest",
+          "press",
+          "updates"
+        ]
+      },
+      "conhecerChocolateiros": {
+        "title": "Meet Our Chocolatiers",
+        "keywords": [
+          "associados",
+          "chocolateiros",
+          "produtores",
+          "comunidade",
+          "associates",
+          "chocolatiers",
+          "producers",
+          "community",
+          "cacaulândia chocolates",
+          "chocolate tiengo",
+          "shalom cacau",
+          "targa chocolate",
+          "franco cacao",
+          "chocolate santana",
+          "cacau raiz",
+          "marli barbosa",
+          "israel barbosa",
+          "marli",
+          "israel",
+          "deoclides pires",
+          "deoclides",
+          "neuzeli",
+          "shalom",
+          "selma targa",
+          "selma",
+          "jhanne franco",
+          "jhanne",
+          "celso josé de abreu santana",
+          "celso santana",
+          "celso",
+          "melissa barbosa costa de almeida",
+          "melissa almeida",
+          "melissa"
+        ]
+      },
+      "conhecerDiretoria": {
+        "title": "Meet the Directors",
+        "keywords": [
+          "diretoria",
+          "liderança",
+          "presidente",
+          "quem somos",
+          "diretores",
+          "directors",
+          "board",
+          "leadership",
+          "president",
+          "about us",
+          "estevam fernandes magalhães",
+          "estevam",
+          "deoclídes pires da silva",
+          "deoclídes",
+          "vicê presidente",
+          "vice president",
+          "helberte augusto neves",
+          "helberte",
+          "diretor administrativo",
+          "flávio teixeira da silva",
+          "flávio",
+          "diretor administrativo suplente",
+          "marta betânia ferreira carvalho",
+          "marta",
+          "diretor financeiro",
+          "israel barbosa da silveira",
+          "israel",
+          "diretor financeiro suplente",
+          "marcelo alves medeiros",
+          "marcelo",
+          "diretor de marketing",
+          "jhanne cleice silva franco",
+          "jhanne",
+          "diretor de marketing suplente",
+          "antônio deusemínio de almeida",
+          "antônio",
+          "diretor de sustentabilidade",
+          "assis pereira de morais",
+          "assis",
+          "diretor de sustentabilidade suplente",
+          "melissa barbosa costa de almeida",
+          "melissa",
+          "diretora de chocolateria",
+          "shalom oliveira mendes silva",
+          "shalom",
+          "diretora de chocolateria suplente",
+          "deborah regina",
+          "deborah",
+          "executiva"
+        ]
+      },
+      "lerHistoria": {
+        "title": "Read the Story of Cacauron",
+        "keywords": [
+          "história",
+          "sobre",
+          "origem",
+          "cacauron",
+          "history",
+          "story",
+          "about",
+          "origin"
+        ]
+      },
+      "saberMaisIG": {
+        "title": "Learn More about the IG Seal Rondônia",
+        "keywords": [
+          "ig",
+          "indicação geográfica",
+          "selo",
+          "qualidade",
+          "geographical indication",
+          "seal",
+          "quality",
+          "rondônia"
+        ]
+      },
+      "verParceiros": {
+        "title": "See Our Partners",
+        "keywords": [
+          "parceiros",
+          "sicoob",
+          "sebrae",
+          "apoio",
+          "partners",
+          "support"
+        ]
+      },
+      "faleConosco": {
+        "title": "Contact Us",
+        "keywords": [
+          "contato",
+          "fale conosco",
+          "email",
+          "instagram",
+          "facebook",
+          "youtube",
+          "redes sociais",
+          "whatsapp",
+          "contact",
+          "social media"
+        ]
+      },
+      "verArtigos": {
+        "title": "View articles",
+        "keywords": [
+          "artigos",
+          "blog",
+          "novidades",
+          "imprensa",
+          "materia",
+          "posts",
+          "articles"
+        ]
+      },
+      "verDocumentos": {
+        "title": "View Documents",
+        "keywords": [
+          "documentos",
+          "idaron",
+          "normas",
+          "praga",
+          "monilíase",
+          "praga moniliase",
+          "oficio",
+          "instrução normativa",
+          "defesa sanitária",
+          "rastreabilidade",
+          "documents",
+          "norms",
+          "regulations",
+          "pest",
+          "moniliasis",
+          "pest moniliasis",
+          "official letter",
+          "normative instruction",
+          "sanitary defense",
+          "traceability"
+        ]
+      },
+      "verEventos": {
+        "title": "View events",
+        "keywords": [
+          "eventos",
+          "feiras",
+          "workshops",
+          "seminários",
+          "conferências",
+          "concursos",
+          "events",
+          "fairs"
+        ]
+      },
+      "verCacauronNaEstrada": {
+        "title": "Watch Cacauron on the Road: The Series about Cocoa in Rondônia",
+        "keywords": [
+          "cacauron na estrada",
+          "série",
+          "historia",
+          "cacau em rondonia",
+          "documentário",
+          "video",
+          "rondônia",
+          "cacauron on the road",
+          "series",
+          "history",
+          "cocoa in rondonia",
+          "documentary"
+        ]
+      }
+    }
+  },
+  "hero": {
+    "title": "CACAURON: Cultivating the Future of Cocoa in Rondônia",
+    "description": "CACAURON is the union of producers and chocolatiers who, together, cultivate excellence and tradition. Our commitment is to sustainability and quality, ensuring that the \"Rondônia Cacau\" seal is your guarantee of an unforgettable and genuine experience.",
+    "buttonText": "Discover Our Work"
+  },
+  "noticias": {
+    "title": "Stay Up to Date with News",
+    "intro": "Follow the latest news, releases, and achievements from Cacauron here. Connect with our journey and the world of cocoa from Rondônia.",
+    "prevButtonAriaLabel": "Previous news",
+    "nextButtonAriaLabel": "Next news",
+    "slides": {
+      "slide1": {
+        "title": "Cacauron and SEDEC: Partnership for the future of cocoa.",
+        "intro": "Cacauron presents the Cooperation Agreement with SEDEC, to establish a partnership and promote cocoa farming in the state of Rondônia!",
+        "buttonText": "See Publication"
+      },
+      "slide2": {
+        "title": "Rondônia leads national ranking of samples in the Concurso de Cacau Especial",
+        "intro": "Rondônia ranked first among states with the highest number of cocoa samples submitted to the 7º Concurso Nacional de Cacau Especial!",
+        "buttonText": "See the Ranking"
+      }
+    }
+  },
+  "ourStory": {
+    "headerTitle": "Our Story, Our Roots 🌱",
+    "headerSubtitle": "We are the voice of cocoa from Rondônia, a movement that celebrates our origin, protects our legacy, and works towards a future where every bean is synonymous with excellence, respect, and prosperity.",
+    "sementeMudanca": {
+      "title": "The Seed of Change",
+      "imageAlt": "Cocoa producers in a planning meeting",
+      "text1": "Our journey began to flourish from the <strong>\"Cacau Sustentável\" (Sustainable Cocoa)</strong> project, a visionary initiative in partnership with SEBRAE Rondônia. It was this initial support, combined with accurate diagnostics and the joint effort of producers, that paved the way for the creation of Cacauron.",
+      "text2": "The goal has always been clear: to foster the production chain, guarantee a better quality of life for families in the countryside, and reveal to the world the true identity and potential of cocoa farming in Rondônia. On <strong>August 20, 2021</strong>, this dream became a reality."
+    },
+    "seloExcelencia": {
+      "title": "A Seal of Excellence and Identity",
+      "imageAlt": "Cocoa beans with the Rondônia Cacau seal",
+      "text1": "The heart of our mission is the promotion and protection of the <strong>Indication of Provenance \"Rondônia Cacau\"</strong>. This is not just a seal, but a certification of heritage. It attests to the origin, superior quality, and authenticity of a cocoa that carries the unique characteristics of our Amazonian terroir.",
+      "text2": "Cacauron is the guardian of this designation, ensuring that every product bearing this mark meets rigorous standards of excellence, reflecting our members' commitment to sustainable practices and the appreciation of local culture."
+    },
+    "qualidadeReconhecida": {
+      "title": "A Fruit of Recognized Quality",
+      "imageAlt": "Cocoa producer celebrating award",
+      "text1": "The cocoa from Rondônia is not just promising; it is an award-winning reality. The distinct quality of our beans, a result of careful management and a favorable terroir, has already been celebrated and recognized in important national competitions. This recognition is the engine that drives us to seek even greater heights.",
+      "text2": "We are a pioneering organization in Brazil, the only one to embrace in a single entity the two fundamental links of this chain: the <strong>cacauicultores (cocoa farmers)</strong>, who care for the land, and the <strong>chocolateiros (chocolatiers)</strong>, who transform the fruit into art."
+    },
+    "destaques": {
+      "potenciaNacional": {
+        "title": "National Powerhouse",
+        "text": "We already rank as the 4th largest cocoa producer in Brazil."
+      },
+      "presencaEstadual": {
+        "title": "Statewide Presence",
+        "text": "Cocoa production is present in at least 90% of our territory."
+      },
+      "visaoFuturo": {
+        "title": "Vision for the Future",
+        "text": "We have an ambitious goal to triple our production with a focus on sustainability."
+      }
+    }
+  },
+  "indicacaoGeografica": {
+    "heroTitle": "IG Rondônia: The Seal that Guarantees Origin and Quality",
+    "logoAlt": "IG Rondônia Cacau Logo",
+    "introTitle": "What is the \"Rondônia Cacau\" Geographical Indication?",
+    "introText1": "It is the official recognition of the deep connection between a product of excellence and its place of origin. Granted to cocoa beans (<strong>Theobroma cacao</strong>) from the entire state, this certification attests to the unique quality and singular characteristics that only the Amazonian terroir of Rondônia can offer.",
+    "introText2": "Cacauron, as the official holder of the registration, is proud to manage and protect this heritage, ensuring that every bean bearing the seal represents our history, sustainability, and passion.",
+    "terroirAmazonico": {
+      "title": "The Amazonian Terroir: Cradle of a Unique Cocoa",
+      "imageAlt": "Landscape of a cocoa farm in Rondônia",
+      "text1": "The cocoa of Rondônia is born in the heart of the Amazon biome, shaped by a combination of natural factors that create a perfect environment for its development. The equatorial climate, with abundant rainfall, an average annual temperature of 26°C, and more than five hours of daily sunlight, is ideal for the cocoa tree.",
+      "text2": "The plant, native to the Amazon, adapts perfectly to the local soils, whose characteristics are easily balanced with management techniques. Cultivated predominantly by family farmers, our cocoa can be of seedling or clonal origin, or a combination of both, always managed with agroforestry and conservationist practices."
+    },
+    "producaoSustentavel": {
+      "title": "Sustainable Production: Respect for the Environment and People",
+      "imageAlt": "Rural producer handling cocoa beans",
+      "text1": "As a native plant, Rondônia's cocoa is a powerful ally for environmental preservation. Its production in <strong>Agroforestry Systems (SAFs)</strong> is one of the greatest attributes of our activity, aiding in the restoration of Permanent Preservation Areas (APPs) and Legal Reserves.",
+      "text2": "This cultivation model protects water resources, the landscape, and biodiversity, while also generating income, wealth, and helping families stay on their land, strengthening family farming. This synergy results in an efficient activity with a profound positive impact."
+    },
+    "atributos": {
+      "title": "Distinct Flavor and Quality",
+      "saborDistinto": {
+        "title": "Distinct Flavor",
+        "text": "The characteristics of our terroir are reflected in an unmistakable and unique flavor."
+      },
+      "qualidadeFisicoQuimica": {
+        "title": "Physical-Chemical Quality",
+        "text": "It presents an ideal fat content and melting point for chocolates of high consistency and complexity."
+      },
+      "sinergiaAmazonia": {
+        "title": "Synergy with the Amazon",
+        "text": "Our production goes hand-in-hand with preservation, resulting in an efficient and high-impact activity."
+      }
+    },
+    "mapa": {
+      "title": "A Seal for the Entire State",
+      "text": "The Indication of Provenance \"Rondônia Cacau\" covers the entire state of Rondônia, including all 52 of its municipalities. This demonstrates a collective and unified commitment from all our producers to the high standards of quality, traceability, and sustainability that the seal represents.",
+      "imageAlt": "Map of Rondônia highlighting the 52 municipalities of the Geographical Indication"
+    }
+  },
+  "documentos": {
+    "title": "Sanitary Defense and Traceability",
+    "intro": "Protecting the quality of our cocoa is a priority. To prevent the entry of the Monilíase pest in Rondônia, IDARON has established new rules for producer registration and the transit of almonds. Access the official documents for more details.",
+    "link1": "IDARON Official Letter (Summary of Rules)",
+    "link2": "IDARON Normative Instruction (Compiled)",
+    "buttonText": "View and Download PDF"
+  },
+  "parceiros": {
+    "title": "Strategic Partners",
+    "sebrae": {
+      "logoAlt": "Sebrae Logo",
+      "descricao": "Fundamental support in training our producers and in the strategic development of cocoa farming in Rondônia."
+    },
+    "sicoob": {
+      "logoAlt": "Sicoob Logo",
+      "descricao": "Financial partner that believes and invests in the sustainable growth of cooperatives and our associates."
+    }
+  },
+  "chamadaListas": {
+    "title": "Meet Our Community",
+    "cardAssociados": {
+      "imageAlt": "Cacauron's chocolatiers",
+      "title": "Our Chocolatiers",
+      "text": "The heart of Cacauron is made up of passionate men and women. Meet the chocolatiers who make a difference.",
+      "buttonText": "See Chocolatiers"
+    },
+    "cardDiretoria": {
+      "imageAlt": "Cacauron's directors gathered",
+      "title": "Our Directors",
+      "text": "Meet the leaders who guide our association with strategic vision, commitment, and dedication to the future of cocoa in Rondônia.",
+      "buttonText": "Meet the Directors"
+    }
+  },
+  "footer": {
+    "ilustracaoAlt": "Cocoa illustration",
+    "conectarTitulo": "Connect with Cacauron!",
+    "sigaNos": "Follow us on social media:",
+    "socialMediaAriaLabels": {
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "youtube": "Youtube"
+    },
+    "contatoEmailTexto": "Contact us via our Email too!",
+    "logoAlt": "Cacauron Logo",
+    "logoTextoCompleto": "Cacauron - Associação dos Cacauicultores e Chocolateiros de Rondônia",
+    "direitosReservados": "© {{year}} Cacauron. All rights reserved.",
+    "cnpj": "CNPJ: {{cnpj}}",
+    "desenvolvidoPor": "Developed by Atmos Empresas & Aniele Pereira Ardisson."
+  },
+  "associadosPage": {
+    "headerTitle": "Our Chocolatiers ",
+    "headerSubtitle": "Meet the brands that transform Rondônia's cocoa into art.",
+    "backButtonAriaLabel": "Back",
+    "cards": {
+      "cacaulandia": {
+        "descricao": "A pioneering brand from the Barbosa family, producing bean-to-bar chocolate with original recipes, focusing on environmental preservation and also promoting ecotourism."
+      },
+      "tiengo": {
+        "descricao": "Tree-to-bar chocolate that unites family tradition and sustainability. Produced artisanally, it is vegan, gluten-free, and lactose-free, representing the pure flavor of the Amazon."
+      },
+      "shalom": {
+        "descricao": "A family business run by mother and daughter, focused on artisanal production. They create chocolates that are true experiences of affection, art, and well-being."
+      },
+      "targa": {
+        "descricao": "Produces chocolates from fine cocoa beans grown on their own farm, without the use of agrochemicals and with a total focus on sustainability."
+      },
+      "franco": {
+        "descricao": "Bean-to-bar chocolate factory specializing in zero milk, zero gluten, and no refined sugar options, expressing the identity of Rondônia's cocoa."
+      },
+      "santana": {
+        "descricao": "A family business envisioned by a cocoa farmer. Focused on adding value to local cocoa, its main mission is to deliver high-quality products to its customers."
+      },
+      "cacauRaiz": {
+        "descricao": "Founded 7 years ago, Cacau Raiz was born from the desire to balance motherhood with professional life. Led by women, our brand goes beyond chocolates: it is a way to respect nature, value the countryside, and promote food inclusion."
+      }
+    }
+  },
+  "diretoriaPage": {
+    "headerTitle": "Our Board of Directors",
+    "headerSubtitle": "Committed leaders who guide Cacauron with vision, strategy, and a deep passion for the future of cocoa in Rondônia.",
+    "backButtonAriaLabel": "Back",
+    "cardMunicipioLabel": "Municipality",
+    "cargos": {
+      "presidente": "President",
+      "vicePresidente": "Vice President",
+      "diretorAdministrativo": "Administrative Director",
+      "diretorAdministrativoSuplente": "Deputy Administrative Director",
+      "diretorFinanceiro": "Financial Director",
+      "diretorFinanceiroSuplente": "Deputy Financial Director",
+      "diretorMarketing": "Marketing Director",
+      "diretorMarketingSuplente": "Deputy Marketing Director",
+      "diretorSustentabilidade": "Sustainability Director",
+      "diretorSustentabilidadeSuplente": "Deputy Sustainability Director",
+      "diretoraChocolateria": "Chocolate Director",
+      "diretoraChocolateriaSuplente": "Deputy Chocolate Director",
+      "executiva": "Executive"
+    }
+  },
+  "listaArtigosPage": {
+    "headerTitle": "Our Articles",
+    "headerSubtitle": "Explore the stories, insights, and news from the world of Cacauron and Amazonian cocoa.",
+    "backButtonAriaLabel": "Go back",
+    "cardLeiaMais": "Read article",
+    "artigos": {
+      "artigo1": {
+        "titulo": "Cacauron and the appreciation of the Geographical Identity of Cacau from Rondônia",
+        "resumo": "Discover how the Geographical Indication is redefining the quality and recognition of the cocoa produced in our state..."
+      }
+    }
+  },
+  "artigoIGRondoniaPage": {
+    "headerTitle": "Cacauron and the appreciation of the Geographical Identity of Cacau from Rondônia",
+    "headerSubtitle": "Discover how the Geographical Indication is redefining the quality and recognition of cocoa produced in our state.",
+    "logoAlt": "IG Rondônia Seal",
+    "metaAuthor": "By Alan Reis",
+    "metaReadingTime": "Approx. 6 min read",
+    "backButtonAriaLabel": "Go back",
+    "figcaption1": "The GI covers all 52 municipalities of the state, unifying production under a quality seal.",
+    "imageAlt1": "Map of Rondônia showing the Geographical Indication area",
+    "figcaption2": "Cocoa beans from Rondônia: a fruit rich in fat and with the unique flavor of our territory.",
+    "imageAlt2": "Several cocoa fruits together.",
+    "figcaption3": "Sustainable cocoa production in Rondônia, integrating cultivation with the Amazonian landscape.",
+    "imageAlt3": "Aerial view of a cocoa plantation in Rondônia. The dense, green crop stands out in a sharp rectangle, surrounded by drier pasture areas with native palm trees and the Amazon rainforest in the background.",
+    "paragrafo1": "Cocoa produced in Rondônia is <strong>synonymous with quality</strong>. The cocoa sector is in constant expansion in the state, supported by a major association that brings together <strong>cocoa growers and chocolatiers</strong> for the benefit of the industry and its producers. Drawing increasing national attention, whether through the consumer market or quality contests, the excellence of cocoa and chocolate production is based on the protection of its <strong>regional identity</strong>, which has its own seal proving its exceptional origin.",
+    "paragrafo2": "<strong>CACAURON</strong> (Associação de Cacauicultores e Chocolateiros de Rondônia), founded on <strong>August 20, 2021</strong>, was created with the goal of uniting cocoa growers and chocolatiers in a single association — being the <strong>only one in the country</strong> to encompass both spheres of cocoa production. Raising the banner of <strong>sustainable production</strong> and supporting research and study, CACAURON aims to protect and promote the <strong>geographical identity</strong> of cocoa from Rondônia; preserving cultural aspects of the region while striving to elevate the level of product excellence even further. CACAURON acts as the representative of the cocoa sector before federal, state, and municipal governments, working to give the industry proper visibility and defending it when necessary.",
+    "paragrafo3": "On <strong>November 14, 2023</strong>, at the request of CACAURON, the state of Rondônia was granted, by the <strong>Instituto Nacional da Propriedade Industrial (INPI)</strong>, the <strong>Geographical Indication</strong> registration in the category <strong>Indication of Origin</strong> for the product <strong>“Cacau em amêndoas – Theobroma cacao”</strong>, with a geographic delimitation covering <strong>all municipalities of the state</strong>. The certification resulted from several technical visits conducted in previous years to confirm the unique quality of cocoa from Rondônia.",
+    "paragrafo4": "According to SEBRAE, the Geographical Indication title (also known as GI) identifies the geographical origin of a product’s production, distinguishing it from others on the market, since a certain origin may indicate <strong>unique characteristics</strong> found only in products from that region. In the case of cocoa from Rondônia, its particularities come from its adaptation to the <strong>Amazon biome</strong>, which offers the perfect combination of climate, relief, and soil — creating a fruit <strong>rich in fats</strong> and ideal for producing chocolates with unique textures and diverse consistencies; a <strong>distinct flavor</strong> already recognized nationally through competitions.",
+    "paragrafo5": "As the holder of the title <strong>IG “Rondônia Cacau”</strong>, CACAURON works to ensure the <strong>excellence of cocoa quality</strong> in the state. To receive the GI seal of origin, producers must meet specific <strong>quality requirements</strong> consistent with the standards verified by INPI when granting the registration. By managing and protecting the denomination, CACAURON ensures the state’s commitment to the market, always delivering excellence in both cocoa and chocolate production.",
+    "paragrafo6": "Currently, Rondônia is the <strong>4th largest cocoa-producing state</strong> in the country, aiming to <strong>triple</strong> its production in the coming years according to the Strategic Plan for the Cocoa Production Chain being developed with support from <strong>SEBRAE</strong> and state government agencies. With this support, CACAURON promotes initiatives focused on <strong>sustainable production</strong>, bringing unique opportunities to cocoa producers. This fosters growth in the sector without endangering the environment or local farming culture, as the goal is to reconcile <strong>development with regional identity</strong>; creating a unique culture that both exports and produces for Rondônia’s domestic market while fighting for the <strong>preservation of the Amazon biome</strong>.",
+    "paragrafo7": "On the national stage, producers from the state have gained recognition over the past few years in quality and sustainability contests, reaching a peak in <strong>2023</strong> when, at the <strong>Concurso Nacional de Cacau Especial do Brasil</strong>, two producers brought pride to the state: <strong>Robson Tomaz de Castro</strong>, who won <strong>first place</strong> in the Blend category, and <strong>Deoclides Pires da Silva</strong>, who won <strong>first place</strong> in the Varietal category (notably, this same producer had also won first place in 2022 in the same category). In <strong>2024</strong>, producer <strong>Mauro Celso Tauffer</strong> achieved <strong>3rd and 2nd place</strong> in the contest in the Varietal and Blend categories, respectively.",
+    "paragrafo8": "On <strong>December 6, 2025</strong>, the <strong>7th edition</strong> of the Concurso Nacional de Cacau Especial do Brasil will take place, hosted by the municipality of <strong>Cacoal</strong>. With Rondônia leading all states in the total number of samples submitted, the announcement of the finalists featured <strong>five producers from Rondônia</strong> nominated in both contest categories (three in Varietal and two in Blend). As in previous years, Rondônia promises once again to be present on the winners' podium, showcasing the unstoppable growth, good management, and development of this thriving sector for the people of Rondônia."
+  },
+  "agendaEventosPage": {
+    "headerTitle": "Event Schedule",
+    "headerSubtitle": "Stay up to date with the main events, fairs, and workshops in the world of cocoa in Rondônia, and join us on our journey.",
+    "backButtonAriaLabel": "Go back",
+    "proximosEventosTitle": "Upcoming Events",
+    "eventosAnterioresTitle": "Past Events",
+    "semProximosEventos": "No upcoming events at the moment.",
+    "semEventosAnteriores": "No past events available.",
+    "cardInscrevaSe": "Register",
+    "eventos": {
+      "concursoNacional": {
+        "titulo": "7th National Cocoa Contest",
+        "descricao": "Celebrating national production and sustainability, the final of the VII National Fine Cocoa Contest honors the quality of Brazilian cocoa, highlighting the strength of cocoa farming in Rondônia. By participating in this event, Cacauron reinforces its commitment to promoting and valuing the region’s cocoa growers and chocolatiers.",
+        "botaoCard": "Learn more"
+      },
+      "concacau": {
+        "titulo": "Quality and Sustainability Contest of Cacau from Rondônia (Concacau)",
+        "descricao": "This event is part of a set of initiatives aimed at developing cocoa farming in the state, promoting both product quality and sustainable production. ConCacau also seeks participation in national events such as the National Fine Cocoa Contest, where producers from Rondônia have achieved outstanding results.",
+        "botaoCard": "Learn more"
+      }
+    }
+  },
+  "cacauronNaEstradaEmBreve": {
+    "backButtonAriaLabel": "Go back",
+    "title": "Get Ready for the Journey!",
+    "subtitle": "<0>Coming soon</0>, we will embark together on the series <1>Cacauron na Estrada</1>, uncovering the rich history and secrets of cocoa from Rondônia. Stay tuned!"
+  }
+}

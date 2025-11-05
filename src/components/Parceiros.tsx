@@ -2,24 +2,26 @@ import "./parceiros.css";
 import logoSebrae from "../assets/images/logo-sebrae.jpg";
 import logoSicoob from "../assets/images/logo-sicoob1.jpg";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
-
-const parceirosData = [
-  {
-    nome: "Sebrae",
-    logoUrl: logoSebrae,
-    descricao:
-      "Apoio fundamental na capacitação dos nossos produtores e no desenvolvimento estratégico da cacauicultura em Rondônia.",
-  },
-  {
-    nome: "Sicoob",
-    logoUrl: logoSicoob,
-    descricao:
-      "Parceiro financeiro que acredita e investe no crescimento sustentável das cooperativas e dos nossos associados.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 function Parceiros() {
   const sectionRef = useScrollAnimation();
+  const { t } = useTranslation();
+
+  const parceirosData = [
+    {
+      nome: "Sebrae",
+      logoUrl: logoSebrae,
+      descricao: t("parceiros.sebrae.descricao"),
+      logoAlt: t("parceiros.sebrae.logoAlt"),
+    },
+    {
+      nome: "Sicoob",
+      logoUrl: logoSicoob,
+      descricao: t("parceiros.sicoob.descricao"),
+      logoAlt: t("parceiros.sicoob.logoAlt"),
+    },
+  ];
 
   return (
     <section className='parceiros-section' id='parceiros'>
@@ -27,13 +29,13 @@ function Parceiros() {
         ref={sectionRef as React.Ref<HTMLDivElement>}
         className='parceiros-content'
       >
-        <h2 className='parceiros-title'>Parceiros Estratégicos</h2>
+        <h2 className='parceiros-title'>{t("parceiros.title")}</h2>
         <div className='parceiros-grid'>
           {parceirosData.map((parceiro) => (
             <div key={parceiro.nome} className='parceiro-card'>
               <img
                 src={parceiro.logoUrl}
-                alt={`Logo ${parceiro.nome}`}
+                alt={parceiro.logoAlt}
                 className='parceiro-card__logo'
               />
               <p className='parceiro-card__descricao'>{parceiro.descricao}</p>

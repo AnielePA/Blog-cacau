@@ -32,7 +32,7 @@
         position: relative;
         padding: 4rem 1.5rem;
         text-align: center;
-        background: radial-gradient(ellipse at center, var(--white) 0%, #f9eadd 100%);
+        background-color: var(--white);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         animation: fadeInUp 0.8s ease-out;
 

@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import "./noticiasSection.css";
 import CacauronESedec from "../assets/images/images-noticias/cacauron-e-sedec.png";
+import RondoniaRanking from "../assets/images/images-noticias/ranking.jpg";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
+import { useTranslation } from "react-i18next";
 
 interface NewsItem {
   id: number;
@@ -16,36 +18,6 @@ interface NewsSlideProps {
   slide: NewsItem;
   isActive: boolean;
 }
-
-const newsData: NewsItem[] = [
-  {
-    id: 1,
-    image: CacauronESedec,
-    title: "Cacauron e SEDEC: Parceria pelo futuro do cacau.",
-    intro:
-      "A Cacauron apresenta o Termo de Cooperação com a SEDEC, para firmar parceria e fomentar a cacauicultura no estado de Rondônia!",
-    link: "https://www.instagram.com/p/DPUDGHMDlBo/?utm_source=ig_web_copy_link&igsh=YjV0NXoxM3lhdG9q",
-    buttonText: "Veja a Publicação",
-  },
-  // {
-  //   id: 2,
-  //   image: "https://placehold.co/1200x800/D97706/FFFFFF?text=Cacauron+na+Mídia",
-  //   title: "Cacauron é Destaque em Matéria Sobre Sustentabilidade",
-  //   intro:
-  //     "Nossas práticas de cultivo sustentável e o impacto positivo na comunidade foram reconhecidos nacionalmente.",
-  //   link: "#",
-  //   buttonText: "Leia a Matéria",
-  // },
-  // {
-  //   id: 3,
-  //   image: "https://placehold.co/1200x800/8D6E63/FFFFFF?text=Prêmio+Qualidade",
-  //   title: "Nosso Cacau Conquista Prêmio de Qualidade Superior",
-  //   intro:
-  //     "Recebemos mais um reconhecimento pela qualidade excepcional de nossas amêndoas em concurso nacional.",
-  //   link: "#",
-  //   buttonText: "Saiba Mais",
-  // },
-];
 
 const NewsSlide: React.FC<NewsSlideProps> = ({ slide, isActive }) => (
   <div className={`news-slide ${isActive ? "active" : ""}`}>
@@ -67,38 +39,56 @@ const NewsSlide: React.FC<NewsSlideProps> = ({ slide, isActive }) => (
 );
 
 function NoticiasSection() {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionRef = useScrollAnimation();
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  const newsData: NewsItem[] = [
+    {
+      id: 1,
+      image: CacauronESedec,
+      title: t("noticias.slides.slide1.title"),
+      intro: t("noticias.slides.slide1.intro"),
+      link: "https://www.instagram.com/p/DPUDGHMDlBo/?utm_source=ig_web_copy_link&igsh=YjV0NXoxM3lhdG9q",
+      buttonText: t("noticias.slides.slide1.buttonText"),
+    },
+    {
+      id: 2,
+      image: RondoniaRanking,
+      title: t("noticias.slides.slide2.title"),
+      intro: t("noticias.slides.slide2.intro"),
+      link: "https://www.instagram.com/p/DPwcIZjj_7j/?utm_source=ig_web_copy_link",
+      buttonText: t("noticias.slides.slide2.buttonText"),
+    },
+  ];
 
   const nextSlide = useCallback(() => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % newsData.length);
-  }, []);
+  }, [newsData.length]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setActiveIndex(
       (prevIndex) => (prevIndex - 1 + newsData.length) % newsData.length
     );
-  };
+  }, [newsData.length]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
       nextSlide();
-    }, 7000);
+    }, 8000);
 
-    return () => clearInterval(interval);
-  }, [nextSlide]);
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [activeIndex, nextSlide]);
 
   return (
     <section ref={sectionRef} className='noticias-section' id='noticias'>
       <header className='noticias-section__header'>
-        <h2 className='noticias-section__title'>
-          Fique por Dentro das Novidades
-        </h2>
-        <p className='noticias-section__intro'>
-          Acompanhe aqui as últimas notícias, lançamentos e conquistas da
-          Cacauron. Conecte-se com a nossa jornada e com o universo do cacau de
-          Rondônia.
-        </p>
+        <h2 className='noticias-section__title'>{t("noticias.title")}</h2>
+        <p className='noticias-section__intro'>{t("noticias.intro")}</p>
       </header>
 
       <div className='noticias-slider'>
@@ -109,11 +99,10 @@ function NoticiasSection() {
             isActive={index === activeIndex}
           />
         ))}
-
         <button
           onClick={prevSlide}
           className='slider-nav prev'
-          aria-label='Notícia anterior'
+          aria-label={t("noticias.prevButtonAriaLabel")}
         >
           <svg
             viewBox='0 0 24 24'
@@ -127,7 +116,7 @@ function NoticiasSection() {
         <button
           onClick={nextSlide}
           className='slider-nav next'
-          aria-label='Próxima notícia'
+          aria-label={t("noticias.nextButtonAriaLabel")}
         >
           <svg
             viewBox='0 0 24 24'

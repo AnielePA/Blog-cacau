@@ -15,7 +15,6 @@
     background-color: var(--cor-fundo-claro);
     color: var(--cor-marrom3);
     line-height: 1.8;
-    /* opacity: 0; */
 
     h2,
     h3,
@@ -277,9 +276,7 @@
 }
 
 
-/* .ig-section-container.animate-in {
-    animation: fadeInUp 0.8s ease-out forwards;
-} */
+
 
 
 .ig-intro,

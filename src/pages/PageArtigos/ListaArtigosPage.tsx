@@ -2,33 +2,41 @@ import "./listaArtigosPage.css";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeftIcon } from "lucide-react";
 import ArtigoCard, { type ArtigoPreview } from "./ArtigoCard";
-// import seloIG from "../../assets/images/selo-rondonia-cacau.jpg";
-
-const artigosData: ArtigoPreview[] = [
-  {
-    id: 1,
-    slug: "igrondonia",
-    titulo:
-      "Cacauron e a valorização da Identidade Geográfica do Cacau de Rondônia",
-    resumo:
-      "Descubra como a Indicação Geográfica está redefinindo a qualidade e o reconhecimento do cacau produzido em nosso estado...",
-    imagemUrl: "https://placehold.co/600x400/49190f/FFFFFF?text=Artigo+1",
-    dataPublicacao: "2025-10-22",
-  },
-];
+import { useTranslation } from "react-i18next";
+import seloIg from "../../assets/images/selo-article-1.jpg";
 
 function ListaArtigosPage() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const artigosData: ArtigoPreview[] = [
+    {
+      id: 1,
+      slug: "igrondonia",
+      titulo: t("listaArtigosPage.artigos.artigo1.titulo"),
+      resumo: t("listaArtigosPage.artigos.artigo1.resumo"),
+      imagemUrl: seloIg,
+      dataPublicacao: "2025-10-22",
+    },
+  ];
+
   return (
     <section className='lista-artigos-page'>
       <header className='artigos-header'>
-        <button onClick={() => navigate(-1)} className='back-button-artigos'>
+        <button
+          onClick={() => navigate(-1)}
+          className='back-button-artigos'
+          aria-label={t("listaArtigosPage.backButtonAriaLabel")}
+        >
           <ChevronLeftIcon />
         </button>
-        <h1 className='artigos-header__title'>Nossos Artigos</h1>
+
+        <h1 className='artigos-header__title'>
+          {t("listaArtigosPage.headerTitle")}
+        </h1>
+
         <p className='artigos-header__subtitle'>
-          Explore as histórias, conhecimentos e novidades do universo Cacauron e
-          do cacau amazônico.
+          {t("listaArtigosPage.headerSubtitle")}
         </p>
       </header>
 

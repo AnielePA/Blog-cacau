@@ -9,6 +9,7 @@ import Parceiros from "./components/Parceiros";
 import { ModalProvider } from "./context/ModalProvider";
 import ImageModal from "./components/ImageModal";
 import "./index.css";
+import DocumentosSection from "./components/DocumentosSection";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <NoticiasSection />
         <OurStory />
         <IndicacaoGeograficaSection />
+        <DocumentosSection />
         <Parceiros />
         <ChamadaListasSection />
         <Footer />

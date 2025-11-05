@@ -1,0 +1,454 @@
+{
+  "header": {
+    "logoAlt": "Logo Cacauron",
+    "logoText": "Cacauron",
+    "toggleMenuAriaLabel": "Alternar menu",
+    "searchPlaceholder": "Pesquisar...",
+    "nav": {
+      "inicio": "Início",
+      "institucional": "Institucional",
+      "institucionalSub": {
+        "diretoria": "Diretoria",
+        "historia": "História"
+      },
+      "imprensa": "Imprensa",
+      "imprensaSub": {
+        "noticias": "Notícias",
+        "artigos": "Artigos"
+      },
+      "eventos": "Eventos",
+      "chocolateiros": "Chocolateiros",
+      "cacauronNaEstrada": "Cacauron na Estrada",
+      "contato": "Contato"
+    },
+    "searchSuggestions": {
+      "verNoticias": {
+        "title": "Ver as Últimas Notícias",
+        "keywords": [
+          "notícias",
+          "novidades",
+          "imprensa",
+          "blog",
+          "atualizações",
+          "news",
+          "noticias"
+        ]
+      },
+      "conhecerChocolateiros": {
+        "title": "Conhecer Nossos Chocolateiros",
+        "keywords": [
+          "associados",
+          "chocolateiros",
+          "produtores",
+          "comunidade",
+          "cacaulândia chocolates",
+          "chocolate tiengo",
+          "shalom cacau",
+          "targa chocolate",
+          "franco cacao",
+          "chocolate santana",
+          "cacau raiz",
+          "marli barbosa",
+          "israel barbosa",
+          "marli",
+          "israel",
+          "deoclides pires",
+          "deoclides",
+          "neuzeli",
+          "shalom",
+          "selma targa",
+          "selma",
+          "jhanne franco",
+          "jhanne",
+          "celso josé de abreu santana",
+          "celso santana",
+          "celso",
+          "melissa barbosa costa de almeida",
+          "melissa almeida",
+          "melissa"
+        ]
+      },
+      "conhecerDiretoria": {
+        "title": "Conhecer a Diretoria",
+        "keywords": [
+          "diretoria",
+          "liderança",
+          "presidente",
+          "quem somos",
+          "diretores",
+          "estevam fernandes magalhães",
+          "estevam",
+          "presidente",
+          "deoclídes pires da silva",
+          "deoclídes",
+          "vicê presidente",
+          "helberte augusto neves",
+          "helberte",
+          "diretor administrativo",
+          "flávio teixeira da silva",
+          "flávio",
+          "diretor administrativo suplente",
+          "marta betânia ferreira carvalho",
+          "marta",
+          "diretor financeiro",
+          "israel barbosa da silveira",
+          "israel",
+          "diretor financeiro suplente",
+          "marcelo alves medeiros",
+          "marcelo",
+          "diretor de marketing",
+          "jhanne cleice silva franco",
+          "jhanne",
+          "diretor de marketing suplente",
+          "antônio deusemínio de almeida",
+          "antônio",
+          "diretor de sustentabilidade",
+          "assis pereira de morais",
+          "assis",
+          "diretor de sustentabilidade suplente",
+          "melissa barbosa costa de almeida",
+          "melissa",
+          "diretora de chocolateria",
+          "shalom oliveira mendes silva",
+          "shalom",
+          "diretora de chocolateria suplente",
+          "deborah regina",
+          "deborah",
+          "executiva"
+        ]
+      },
+      "lerHistoria": {
+        "title": "Ler a História da Cacauron",
+        "keywords": ["história", "sobre", "origem", "cacauron"]
+      },
+      "saberMaisIG": {
+        "title": "Saber Mais sobre o Selo IG Rondônia",
+        "keywords": ["ig", "indicação geográfica", "selo", "qualidade"]
+      },
+      "verParceiros": {
+        "title": "Veja Nossos Parceiros",
+        "keywords": ["parceiros", "sicoob", "sebrae", "apoio"]
+      },
+      "faleConosco": {
+        "title": "Fale Conosco",
+        "keywords": [
+          "contato",
+          "fale conosco",
+          "email",
+          "instagram",
+          "facebook",
+          "youtube",
+          "redes sociais",
+          "whatsapp"
+        ]
+      },
+      "verArtigos": {
+        "title": "Ver artigos",
+        "keywords": [
+          "artigos",
+          "blog",
+          "novidades",
+          "imprensa",
+          "materia",
+          "posts"
+        ]
+      },
+      "verDocumentos": {
+        "title": "Ver documentos",
+        "keywords": [
+          "documentos",
+          "idaron",
+          "normas",
+          "praga",
+          "monilíase",
+          "praga moniliase",
+          "oficio",
+          "instrução normativa",
+          "defesa sanitária",
+          "rastreabilidade"
+        ]
+      },
+      "verEventos": {
+        "title": "Ver eventos",
+        "keywords": [
+          "eventos",
+          "feiras",
+          "workshops",
+          "seminários",
+          "conferências",
+          "concursos"
+        ]
+      },
+      "verCacauronNaEstrada": {
+        "title": "Ver Cacauron na Estrada: A Série sobre o Cacau em Rondônia",
+        "keywords": [
+          "cacauron na estrada",
+          "série",
+          "historia",
+          "cacau em rondonia",
+          "documentário",
+          "video",
+          "rondônia"
+        ]
+      }
+    }
+  },
+  "hero": {
+    "title": "CACAURON: Cultivando o Futuro do Cacau em Rondônia",
+    "description": "A CACAURON é a união de produtores e chocolateiros que, juntos, cultivam a excelência e a tradição. Nosso compromisso é com a sustentabilidade e a qualidade, garantindo que o selo \"Rondônia Cacau\" seja a sua garantia de uma experiência inesquecível e genuína.",
+    "buttonText": "Conheça Nosso Trabalho"
+  },
+  "noticias": {
+    "title": "Fique por Dentro das Novidades",
+    "intro": "Acompanhe aqui as últimas notícias, lançamentos e conquistas da Cacauron. Conecte-se com a nossa jornada e com o universo do cacau de Rondônia.",
+    "prevButtonAriaLabel": "Notícia anterior",
+    "nextButtonAriaLabel": "Próxima notícia",
+    "slides": {
+      "slide1": {
+        "title": "Cacauron e SEDEC: Parceria pelo futuro do cacau.",
+        "intro": "A Cacauron apresenta o Termo de Cooperação com a SEDEC, para firmar parceria e fomentar a cacauicultura no estado de Rondônia!",
+        "buttonText": "Veja a Publicação"
+      },
+      "slide2": {
+        "title": "Rondônia lidera ranking nacional de amostras no Concurso de Cacau Especial",
+        "intro": "Rondônia ficou em primeiro lugar no ranking de estados com o maior número de amostras de cacau enviadas para o 7º Concurso Nacional de Cacau Especial!",
+        "buttonText": "Veja o Ranking"
+      }
+    }
+  },
+  "ourStory": {
+    "headerTitle": "Nossa História, Nossas Raízes 🌱",
+    "headerSubtitle": "Somos a voz do cacau de Rondônia, um movimento que celebra nossa origem, protege nosso legado e trabalha por um futuro onde cada amêndoa seja sinônimo de excelência, respeito e prosperidade.",
+    "sementeMudanca": {
+      "title": "A Semente da Mudança",
+      "imageAlt": "Produtores de cacau em reunião de planejamento",
+      "text1": "Nossa jornada começou a florescer a partir do projeto <strong>\"Cacau Sustentável\"</strong>, uma iniciativa visionária em parceria com o SEBRAE Rondônia. Foi esse apoio inicial, somado a diagnósticos precisos e ao esforço conjunto de produtores, que pavimentou o caminho para a criação da Cacauron.",
+      "text2": "O objetivo sempre foi claro: fomentar a cadeia produtiva, garantir mais qualidade de vida para as famílias do campo e revelar ao mundo a verdadeira identidade e o potencial da cacauicultura rondoniense. Em <strong>20 de agosto de 2021</strong>, esse sonho se tornou realidade."
+    },
+    "seloExcelencia": {
+      "title": "Um Selo de Excelência e Identidade",
+      "imageAlt": "Amêndoas de cacau com o selo Rondônia Cacau",
+      "text1": "O coração da nossa missão é a promoção e a proteção da <strong>Indicação de Procedência \"Rondônia Cacau\"</strong>. Este não é apenas um selo, mas a certificação de uma herança. Ele atesta a origem, a qualidade superior e a autenticidade de um cacau que carrega as características únicas do nosso terroir amazônico.",
+      "text2": "A Cacauron é a guardiã desta designação, assegurando que cada produto que leva essa marca cumpra rigorosos padrões de excelência, refletindo o compromisso dos nossos associados com práticas sustentáveis e com a valorização da cultura local."
+    },
+    "qualidadeReconhecida": {
+      "title": "Um Fruto de Qualidade Reconhecida",
+      "imageAlt": "Produtor de cacau celebrando premiação",
+      "text1": "O cacau de Rondônia não é apenas promissor, é uma realidade premiada. A qualidade diferenciada de nossas amêndoas, resultado de um manejo cuidadoso e de um terroir favorável, já foi celebrada e reconhecida em importantes concursos nacionais. Este reconhecimento é o motor que nos impulsiona a buscar voos ainda mais altos.",
+      "text2": "Somos uma organização pioneira no Brasil, a única a abraçar em uma só entidade os dois elos fundamentais desta cadeia: os <strong>cacauicultores</strong>, que cuidam da terra, e os <strong>chocolateiros</strong>, que transformam o fruto em arte."
+    },
+    "destaques": {
+      "potenciaNacional": {
+        "title": "Potência Nacional",
+        "text": "Já figuramos como o 4º maior produtor de cacau do Brasil."
+      },
+      "presencaEstadual": {
+        "title": "Presença Estadual",
+        "text": "A produção de cacau está presente em pelo menos 90% do nosso território."
+      },
+      "visaoFuturo": {
+        "title": "Visão de Futuro",
+        "text": "Temos a meta ambiciosa de triplicar nossa produção com foco em sustentabilidade."
+      }
+    }
+  },
+  "indicacaoGeografica": {
+    "heroTitle": "IG Rondônia: O Selo que Garante a Origem e a Qualidade",
+    "logoAlt": "Logo IG Rondônia Cacau",
+    "introTitle": "O que é a Indicação Geográfica \"Rondônia Cacau\"?",
+    "introText1": "É o reconhecimento oficial da profunda conexão entre um produto de excelência e seu lugar de origem. Concedida ao cacau em amêndoas <strong> Theobroma cacao </strong> de todo o estado, esta certificação atesta a qualidade única e as características singulares que só o terroir amazônico de Rondônia pode oferecer.",
+    "introText2": "A Cacauron, como detentora oficial do registro, tem o orgulho de gerir e proteger este patrimônio, garantindo que cada amêndoa que carrega o selo represente a nossa história, sustentabilidade e paixão.",
+    "terroirAmazonico": {
+      "title": "O Terroir Amazônico: Berço de um Cacau Único",
+      "imageAlt": "Paisagem de uma fazenda de cacau em Rondônia",
+      "text1": "O cacau de Rondônia nasce no coração do bioma amazônico, moldado por uma combinação de fatores naturais que criam um ambiente perfeito para o seu desenvolvimento. O clima equatorial, com chuvas abundantes, temperatura média anual de 26°C e mais de cinco horas de sol diárias, é ideal para o cacaueiro.",
+      "text2": "A planta, nativa da Amazônia, adapta-se perfeitamente aos solos locais, cujas características são facilmente equilibradas com técnicas de manejo. Cultivado predominantemente por agricultores familiares, nosso cacau pode ter origem seminal, clonal ou uma combinação de ambas, com um manejo sempre agroflorestal e conservacionista."
+    },
+    "producaoSustentavel": {
+      "title": "Produção Sustentável: Respeito ao Meio Ambiente e às Pessoas",
+      "imageAlt": "Produtor rural manuseando amêndoas de cacau",
+      "text1": "Por ser uma planta nativa, o cacau de Rondônia é um poderoso aliado da preservação ambiental. Sua produção em <strong> Sistemas Agroflorestais (SAFs)</strong> é um dos maiores atributos da nossa atividade, ajudando na restauração de Áreas de Preservação Permanente (APPs) e Reservas Legais.",
+      "text2": "Este modelo de cultivo protege os recursos hídricos, a paisagem e a biodiversidade, ao mesmo tempo que gera renda, riqueza e contribui para a fixação das famílias no campo, fortalecendo a agricultura familiar. Essa sinergia resulta em uma atividade eficiente e de profundo impacto positivo."
+    },
+    "atributos": {
+      "title": "Sabor e Qualidade Diferenciados",
+      "saborDistinto": {
+        "title": "Sabor Distinto",
+        "text": "As características do nosso terroir refletem-se em um sabor inconfundível e único."
+      },
+      "qualidadeFisicoQuimica": {
+        "title": "Qualidade Físico-Química",
+        "text": "Apresenta um teor de gordura e ponto de fusão ideais para chocolates de alta consistência e complexidade."
+      },
+      "sinergiaAmazonia": {
+        "title": "Sinergia com a Amazônia",
+        "text": "Nossa produção anda de mãos dadas com a preservação, resultando em uma atividade eficiente e de impacto positivo."
+      }
+    },
+    "mapa": {
+      "title": "Um Selo para Todo o Estado",
+      "text": "A Indicação de Procedência \"Rondônia Cacau\" abrange a totalidade do estado de Rondônia, incluindo seus 52 municípios. Isso demonstra um compromisso coletivo e unificado de todos os nossos produtores com os altos padrões de qualidade, rastreabilidade e sustentabilidade que o selo representa.",
+      "imageAlt": "Mapa de Rondônia destacando os 52 municípios da Indicação Geográfica"
+    }
+  },
+  "documentos": {
+    "title": "Defesa Sanitária e Rastreabilidade",
+    "intro": "A proteção da qualidade do nosso cacau é uma prioridade. Para prevenir a entrada da praga Monilíase em Rondônia, a IDARON instituiu novas normas para o cadastro de produtores e o trânsito de amêndoas. Acesse os documentos oficiais para mais detalhes.",
+    "link1": "Ofício IDARON (Resumo das Normas)",
+    "link2": "Instrução Normativa IDARON (Compilada)",
+    "buttonText": "Ver e Baixar PDF"
+  },
+  "parceiros": {
+    "title": "Parceiros Estratégicos",
+    "sebrae": {
+      "logoAlt": "Logo Sebrae",
+      "descricao": "Apoio fundamental na capacitação dos nossos produtores e no desenvolvimento estratégico da cacauicultura em Rondônia."
+    },
+    "sicoob": {
+      "logoAlt": "Logo Sicoob",
+      "descricao": "Parceiro financeiro que acredita e investe no crescimento sustentável das cooperativas e dos nossos associados."
+    }
+  },
+  "chamadaListas": {
+    "title": "Conheça Nossa Comunidade",
+    "cardAssociados": {
+      "imageAlt": "Cacauicultores e chocolateiros da Cacauron",
+      "title": "Nossos Associados",
+      "text": "O coração da Cacauron é formado por homens e mulheres apaixonados. Conheça os cacauicultores e chocolateiros que fazem a diferença.",
+      "buttonText": "Ver Associados"
+    },
+    "cardDiretoria": {
+      "imageAlt": "Diretoria da Cacauron reunida",
+      "title": "Nossa Diretoria",
+      "text": "Conheça as lideranças que guiam nossa associação com visão estratégica, compromisso e dedicação ao futuro do cacau de Rondônia.",
+      "buttonText": "Conhecer a Diretoria"
+    }
+  },
+  "footer": {
+    "ilustracaoAlt": "Ilustração de cacau",
+    "conectarTitulo": "Conecte-se com a Cacauron!",
+    "sigaNos": "Siga-nos nas redes sociais:",
+    "socialMediaAriaLabels": {
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "youtube": "Youtube"
+    },
+    "contatoEmailTexto": "Entre em contato também pelo nosso Email!",
+    "logoAlt": "Logo Cacauron",
+    "logoTextoCompleto": "Cacauron - Associação dos Cacauicultores e Chocolateiros de Rondônia",
+    "direitosReservados": "© {{year}} Cacauron. Todos os direitos reservados.",
+    "cnpj": "CNPJ: {{cnpj}}",
+    "desenvolvidoPor": "Desenvolvido por Atmos Empresas & Aniele Pereira Ardisson."
+  },
+  "associadosPage": {
+    "headerTitle": "Nossos Chocolateiros ",
+    "headerSubtitle": "Conheça as marcas que transformam o cacau de Rondônia em arte.",
+    "backButtonAriaLabel": "Voltar",
+    "cards": {
+      "cacaulandia": {
+        "descricao": "Marca pioneira da família Barbosa, produzindo chocolate bean-to-bar com receitas originais e foco na preservação ambiental, fomentando também o ecoturismo."
+      },
+      "tiengo": {
+        "descricao": "Chocolate tree-to-bar que une tradição familiar e sustentabilidade. Produzido de forma artesanal, é vegano, sem glúten e lactose, representando o puro sabor da Amazônia."
+      },
+      "shalom": {
+        "descricao": "Empresa familiar conduzida por mãe e filha, focada na produção artesanal. Cria chocolates que são verdadeiras experiências de afeto, arte e bem-estar."
+      },
+      "targa": {
+        "descricao": "Produz chocolates a partir de amêndoas de cacau fino cultivadas em lavoura própria, sem o uso de agroquímicos e com foco total na sustentabilidade."
+      },
+      "franco": {
+        "descricao": "Fábrica de chocolate da amêndoa à barra, especializada em opções zero leite, zero glúten e sem açúcar refinado, expressando a identidade do cacau rondoniense."
+      },
+      "santana": {
+        "descricao": "Empresa familiar idealizada por um cacauicultor. Focada em agregar valor ao cacau local, tem como principal missão levar produtos de alta qualidade aos seus clientes."
+      },
+      "cacauRaiz": {
+        "descricao": "Fundada há 7 anos, a Cacau Raiz nasceu do desejo de conciliar a maternidade com a vida profissional. Liderada por mulheres, nossa marca vai além de chocolates: é uma forma de respeitar a natureza, valorizar o campo e promover a inclusão alimentar."
+      }
+    }
+  },
+  "diretoriaPage": {
+    "headerTitle": "Nossa Diretoria",
+    "headerSubtitle": "Lideranças comprometidas que guiam a Cacauron com visão, estratégia e uma profunda paixão pelo futuro do cacau em Rondônia.",
+    "backButtonAriaLabel": "Voltar",
+    "cardMunicipioLabel": "Município",
+    "cargos": {
+      "presidente": "Presidente",
+      "vicePresidente": "Vice-Presidente",
+      "diretorAdministrativo": "Diretor Administrativo",
+      "diretorAdministrativoSuplente": "Diretor Administrativo - Suplente",
+      "diretorFinanceiro": "Diretor Financeiro",
+      "diretorFinanceiroSuplente": "Diretor Financeiro - Suplente",
+      "diretorMarketing": "Diretor de Marketing",
+      "diretorMarketingSuplente": "Diretor de Marketing - Suplente",
+      "diretorSustentabilidade": "Diretor de Sustentabilidade",
+      "diretorSustentabilidadeSuplente": "Diretor de Sustentabilidade - Suplente",
+      "diretoraChocolateria": "Diretora de Chocolateria",
+      "diretoraChocolateriaSuplente": "Diretora de Chocolateria - Suplente",
+      "executiva": "Executiva"
+    }
+  },
+  "listaArtigosPage": {
+    "headerTitle": "Nossos Artigos",
+    "headerSubtitle": "Explore as histórias, conhecimentos e novidades do universo Cacauron e do cacau amazônico.",
+    "backButtonAriaLabel": "Voltar",
+    "cardLeiaMais": "Ler artigo",
+    "artigos": {
+      "artigo1": {
+        "titulo": "Cacauron e a valorização da Identidade Geográfica do Cacau de Rondônia",
+        "resumo": "Descubra como a Indicação Geográfica está redefinindo a qualidade e o reconhecimento do cacau produzido em nosso estado..."
+      }
+    }
+  },
+  "artigoIGRondoniaPage": {
+    "headerTitle": "Cacauron e a valorização da Identidade Geográfica do Cacau de Rondônia",
+    "headerSubtitle": "Descubra como a Indicação Geográfica está redefinindo a qualidade e o reconhecimento do cacau produzido em nosso estado.",
+    "logoAlt": "Selo IG Rondônia",
+    "metaAuthor": "Por Alan Reis",
+    "metaReadingTime": "Aprox. 6 min de leitura",
+    "backButtonAriaLabel": "Voltar",
+    "figcaption1": "A IG abrange todos os 52 municípios do estado, unificando a produção sob um selo de qualidade.",
+    "imageAlt1": "Mapa de Rondônia com a área da Indicação Geográfica",
+    "figcaption2": "Amêndoas de cacau de Rondônia: fruto rico em gordura e sabor único do nosso território.",
+    "imageAlt2": "Vários frutos de cacau juntos.",
+    "figcaption3": "Produção sustentável de cacau em Rondônia, integrando o cultivo à paisagem amazônica.",
+    "imageAlt3": "Vista aérea de uma plantação de cacau em Rondônia. O cultivo verde e denso se destaca em um retângulo nítido, cercado por áreas de pastagem mais secas com palmeiras nativas e a floresta amazônica ao fundo.",
+    "paragrafo1": "O cacau produzido em Rondônia é <strong>sinônimo de qualidade</strong>. O setor cacaueiro está em constante expansão no estado, tendo ao seu lado uma grande associação que engloba <strong>cacauicultores e chocolateiros</strong> em prol do setor e de seus produtores. Chamando cada vez mais a atenção nacional, seja pelo mercado consumidor ou através de concursos de qualidade, a excelência da produção de cacau e chocolate tem como base a proteção de sua <strong>identidade regional</strong>, que possui o seu próprio selo comprovando a sua procedência excepcional.",
+    "paragrafo2": "A <strong>CACAURON</strong> (Associação de Cacauicultores e Chocolateiros de Rondônia) com fundação em <strong>20 de agosto de 2021</strong>, surgiu com o objetivo de reunir cacauicultores e chocolateiros em uma mesma associação, sendo a <strong>única do país</strong> a englobar as duas esferas da produção do cacau. Levantando a bandeira da <strong>produção sustentável</strong> e do apoio ao estudo e pesquisa, a meta da CACAURON é proteger e promover a <strong>identidade geográfica</strong> do cacau de Rondônia; preservando aspectos culturais da região ao mesmo tempo em que busca elevar ainda mais o nível de excelência do produto. A CACAURON atua como a representante do setor cacaueiro junto aos governos federal, estadual e municipal, buscando dar a visibilidade necessária ao setor e também defendê-lo quando necessário.",
+    "paragrafo3": "No dia <strong>14 de novembro de 2023</strong>, a pedido da CACAURON, foi concedido ao estado de Rondônia pelo <strong>Instituto Nacional da Propriedade Industrial (INPI)</strong>, o registro de <strong>Indicação Geográfica</strong> na categoria <strong>Indicação de Procedência</strong> para o produto <strong> “Cacau em amêndoas – Theobroma cacao”</strong>, com sua delimitação geográfica abrangendo <strong> todos os municípios do estado</strong>. A certificação ocorreu através de diversas visitas que aconteceram em anos anteriores tendo como objetivo comprovar a qualidade única do cacau proveniente do estado de Rondônia.",
+    "paragrafo4": "Segundo o SEBRAE, o título de Indicação Geográfica (também conhecido pela sigla IG) indica as origens geográficas da produção do produto, os distinguindo, assim, de outros produtos presentes no mercado, pois certa origem pode indicar <strong>características únicas</strong> que só são observadas em produtos oriundos de tal região. No caso do cacau de Rondônia, as suas particularidades se dão ao estarem adaptados ao <strong> bioma amazônico</strong>, que possui a combinação perfeita entre fatores climáticos, relevo e solos, criando um fruto <strong> rico em gorduras</strong> excelente para a produção de chocolates com consistências únicas e diversas; um <strong> sabor diferenciado</strong> que já foi comprovado em escala nacional através de concursos.",
+    "paragrafo5": "Sendo a detentora do título <strong>IG “Rondônia Cacau”</strong>, a CACAURON busca zelar pela <strong>excelência de qualidade</strong> do cacau no estado, pois para receberem o selo IG de indicação de procedência em sua produção, os produtores devem cumprir <strong> requisitos de qualidade</strong> para se adequarem aos padrões condizentes com os níveis de excelência que foram verificados pelo INPI ao conceder o registro para o estado. Ao administrar e proteger a denominação, a CACAURON se certifica em firmar o compromisso do estado para com o mercado, sempre entregando níveis de excelência na produção tanto do cacau quanto do chocolate.",
+    "paragrafo6": "Rondônia, atualmente, é o <strong> 4° maior estado em produção de cacau</strong> do país, tendo como meta a expansão de sua produção em incríveis <strong> 3 vezes</strong> nos próximos anos de acordo com o Planejamento Estratégico da Cadeia produtiva do Cacau que está em construção com o Incentivo do <strong>SEBRAE</strong> e de entidades dos setores do governo estadual. Com este apoio, a CACAURON busca promover suas iniciativas com foco na <strong> produção sustentável</strong>, trazendo oportunidades únicas para os produtores de cacau. Impulsionando, assim, o setor a crescer. Porém, este crescimento não colocará em risco o meio ambiente nem a cultura de plantio local, pois o objetivo é conciliar o <strong> desenvolvimento com a identidade regional</strong>; criando uma cultura única que irá tanto exportar quanto produzir produtos destinados ao mercado interno de Rondônia, tudo isso ao mesmo tempo em que luta pela <strong>preservação do bioma amazônico</strong>.",
+    "paragrafo7": "No cenário nacional, produtores do estado ganharam notoriedade ao longo dos últimos anos em concursos de qualidade e sustentabilidade, tendo como ápice o ano de <strong>2023</strong> quando no <strong> Concurso Nacional de Cacau Especial do Brasil</strong> dois produtores orgulharam o estado, sendo eles: o produtor <strong> Robson Tomaz de Castro</strong> que conquistou o <strong> primeiro lugar</strong> na categoria Mistura e o produtor <strong> Deoclides Pires da Silva</strong> que conquistou o <strong> primeiro lugar</strong> na categoria Varietal (vale ressaltar que em 2022 este mesmo produtor havia ficado em primeiro lugar no pódio do concurso nesta mesma categoria). No ano de <strong> 2024</strong>, o produtor <strong>Mauro Celso Tauffer</strong>, conseguiu a façanha de ficar em <strong>3° e em 2° lugar</strong> no concurso nas categorias Varietal e Mistura, respectivamente.",
+    "paragrafo8": "No dia <strong>06 de dezembro de 2025</strong>, ocorrerá a <strong> 7° edição</strong> do Concurso Nacional de Cacau Especial do Brasil, sendo o munícipio de <strong>Cacoal</strong> o anfitrião desta edição. Com Rondônia liderando entre todos os estados o número de amostras totais enviadas, o anúncio dos finalistas contou com <strong> cinco produtores rondonienses</strong> indicados em ambas as categorias da premiação (três na categoria Varietal e dois na categoria Mistura). Assim como nos anos anteriores, Rondônia promete estar mais uma vez presente no pódio do concurso, demonstrando como a produção de cacau está em uma crescente imparável de boas administrações, ações e desenvolvimento deste setor tão rico para a população rondoniense."
+  },
+  "agendaEventosPage": {
+    "headerTitle": "Agenda de Eventos",
+    "headerSubtitle": "Fique por dentro dos principais acontecimentos, feiras e workshops do universo do cacau em Rondônia e participe da nossa jornada.",
+    "backButtonAriaLabel": "Voltar",
+    "proximosEventosTitle": "Próximos Eventos",
+    "eventosAnterioresTitle": "Eventos Anteriores",
+    "semProximosEventos": "Nenhum evento programado no momento.",
+    "semEventosAnteriores": "Não há eventos anteriores.",
+    "cardInscrevaSe": "Inscreva-se",
+    "eventos": {
+      "concursoNacional": {
+        "titulo": "7º Concurso Nacional do Cacau",
+        "descricao": "Valorizando a produção nacional e a sustentabilidade, a final do VII Concurso Nacional de Cacau Especial celebra a qualidade do cacau brasileiro, com destaque para a força da cacauicultura rondoniense. A Cacauron, ao participar deste evento, reforça o compromisso de promover e valorizar os cacauicultores e chocolateiros da região.",
+        "botaoCard": "Saiba Mais"
+      },
+      "concacau": {
+        "titulo": "Concurso de Qualidade e Sustentabilidade do Cacau de Rondônia (Concacau)",
+        "descricao": "O evento faz parte de um conjunto de ações que buscam o desenvolvimento da cacauicultura no estado, promovendo a qualidade do produto e a sustentabilidade da produção. O ConCacau também visa a participação em eventos nacionais, como o Concurso Nacional de Cacau Especial, onde produtores de Rondônia têm obtido destaque. ",
+        "botaoCard": "Saiba Mais"
+      }
+    }
+  },
+  "cacauronNaEstradaEmBreve": {
+    "backButtonAriaLabel": "Voltar",
+    "title": "Prepare-se para a Jornada!",
+    "subtitle": "<0>Em breve</0>, embarcaremos juntos na série <1>Cacauron na Estrada</1>, desvendando a rica história e os segredos do cacau de Rondônia. Aguarde!"
+  }
+}

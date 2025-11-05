@@ -1,4 +1,5 @@
 import "./artigoCard.css";
+import { useTranslation } from "react-i18next";
 
 const CalendarIcon = () => (
   <svg
@@ -48,6 +49,7 @@ type ArtigoPreview = {
 };
 
 function ArtigoCard({ artigo }: { artigo: ArtigoPreview }) {
+  const { t } = useTranslation();
   const dataPub = new Date(artigo.dataPublicacao);
   dataPub.setDate(dataPub.getDate() + 1);
   const dataFormatada = dataPub
@@ -75,7 +77,7 @@ function ArtigoCard({ artigo }: { artigo: ArtigoPreview }) {
           <h3 className='artigo-card__titulo'>{artigo.titulo}</h3>
           <p className='artigo-card__resumo'>{artigo.resumo}</p>
           <span className='artigo-card__leia-mais'>
-            Ler artigo <ArrowRightIcon />
+            {t("listaArtigosPage.cardLeiaMais")} <ArrowRightIcon />
           </span>
         </div>
       </article>

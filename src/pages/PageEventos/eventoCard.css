@@ -92,12 +92,14 @@
 }
 
 @media (min-width: 768px) {
-    .evento-card__meta {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
+    .evento-card {
+        .evento-card__conteudo {
+            padding: 2rem;
 
-    .evento-card__conteudo {
-        padding: 2rem;
+            .evento-card__meta {
+                flex-direction: row;
+                gap: 1.5rem;
+            }
+        }
     }
 }

@@ -1,20 +1,17 @@
-import "./hero.css";
+import "./hero.css"; 
+import { useTranslation } from 'react-i18next'; 
+
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section id='hero'>
       <div>
-        <h1 className='hero-title'>
-          CACAURON: Cultivando o Futuro do Cacau em Rondônia
-        </h1>
-        <p>
-          A CACAURON é a união de produtores e chocolateiros que, juntos,
-          cultivam a excelência e a tradição. Nosso compromisso é com a
-          sustentabilidade e a qualidade, garantindo que o selo "Rondônia Cacau"
-          seja a sua garantia de uma experiência inesquecível e genuína.
-        </p>
+        <h1 className='hero-title'>{t('hero.title')}</h1>
+        <p>{t('hero.description')}</p>
         <a href='#our-story' className='hero-button'>
-          Conheça Nosso Trabalho
+          {t('hero.buttonText')}
         </a>
       </div>
     </section>
