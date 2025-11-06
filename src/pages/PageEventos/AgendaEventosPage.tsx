@@ -47,7 +47,7 @@ function AgendaEventosPage() {
       data: "2025-11-24",
       local: "Prime House, em Ji-Paraná - RO",
       imagemUrl: "https://placehold.co/800x400/49190f/FFFFFF?text=Concacau",
-      link: "#",
+      link: "https://www.instagram.com/reel/DQKywE0EeN5/?utm_source=ig_web_copy_link",
       linkTextoChave: "agendaEventosPage.eventos.concacau.botaoCard",
     },
   ];
