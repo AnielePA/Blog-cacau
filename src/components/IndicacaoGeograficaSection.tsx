@@ -1,11 +1,11 @@
-import "./indicacaoGeograficaSection.css"; 
-import logoIgRondonia from "../assets/images/logoIgRondonia.png"; 
-import mapaIg from "../assets/images/mapa-ig.png"; 
-import producaoSustentavel from "../assets/images/imagem-site.png"; 
-import terroirAmazonico from "../assets/images/imagem2-site.png"; 
-import { useImageModal } from "../context/modalContext"; 
-import { useScrollAnimation } from "../hooks/useScrollAnimation"; 
-import { useTranslation, Trans } from "react-i18next"; 
+import "./indicacaoGeograficaSection.css";
+import logoIgRondonia from "../assets/images/logoIgRondonia.png";
+import mapaIg from "../assets/images/mapa-ig.png";
+import producaoSustentavel from "../assets/images/imagem-site.png";
+import terroirAmazonico from "../assets/images/imagem2-site.png";
+import { useImageModal } from "../context/modalContext";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+import { useTranslation, Trans } from "react-i18next";
 
 const IconeSabor = () => (
   <svg

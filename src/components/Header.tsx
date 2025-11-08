@@ -6,7 +6,7 @@ import {
 import { useState, useEffect, useMemo, useRef } from "react";
 import "./header.css";
 import logo from "../assets/images/LOGO_BRANCO.png";
-import logoVerde from "../assets/images/LOGO_VERDE_BANDEIRA.png";
+import logoVerde from "../assets/images/LOGO_VERDE_BANDEIRA.webp";
 import { useTranslation } from "react-i18next";
 
 type SearchableItem = {

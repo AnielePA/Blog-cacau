@@ -343,6 +343,7 @@
     "desenvolvidoPor": "Desenvolvido por Atmos Empresas & Aniele Pereira Ardisson."
   },
   "associadosPage": {
+    "imageAlt": "Cacaueiro com alguns frutos de cacau.",
     "headerTitle": "Nossos Chocolateiros ",
     "headerSubtitle": "Conheça as marcas que transformam o cacau de Rondônia em arte.",
     "backButtonAriaLabel": "Voltar",
@@ -448,6 +449,7 @@
     }
   },
   "cacauronNaEstradaEmBreve": {
+    "imageAlt": "Imagem ilustrativa de uma estrada com árvores e cacaueiros ao redor.",
     "backButtonAriaLabel": "Voltar",
     "title": "Prepare-se para a Jornada!",
     "subtitle": "<0>Em breve</0>, embarcaremos juntos na série <1>Cacauron na Estrada</1>, desvendando a rica história e os segredos do cacau de Rondônia. Aguarde!"

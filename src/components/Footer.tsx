@@ -136,10 +136,10 @@ function Footer() {
             <p className='footer-email-text'>{t("footer.contatoEmailTexto")}</p>
 
             <a
-              href='mailto:cacauron.ig@gmail.com'
+              href='mailto:Executivo@cacauronig.com'
               className='footer-email-link'
             >
-              cacauron.ig@gmail.com
+              Executivo@cacauronig.com
             </a>
           </div>
         </section>

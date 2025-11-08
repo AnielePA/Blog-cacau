@@ -1,20 +1,20 @@
 import { useState } from "react";
 import "./associados.css";
+import capaAssociados from "../../assets/images/imagem-cacau-associados2.webp";
 import { ChevronLeftIcon, Users } from "lucide-react";
 import ChocolateiroCard, { type Chocolateiro } from "./ChocolateiroCard";
 import { useTranslation } from "react-i18next";
-import cacaulandiaLogo from "../../assets/images/associados/cacaulandia.png";
-import tiengoLogo from "../../assets/images/associados/tiengo.png";
-import shalomLogo from "../../assets/images/associados/shalom.png";
-import targaLogo from "../../assets/images/associados/targa.jpg";
-import francoLogo from "../../assets/images/associados/franco.png";
-import santanaLogo from "../../assets/images/associados/santana.png";
-import cacauRaizLogo from "../../assets/images/associados/cacauRaiz.png";
+import cacaulandiaLogo from "../../assets/images/associados/cacaulandia.webp";
+import tiengoLogo from "../../assets/images/associados/tiengo.webp";
+import shalomLogo from "../../assets/images/associados/shalom.webp";
+import targaLogo from "../../assets/images/associados/targa.webp";
+import francoLogo from "../../assets/images/associados/franco.webp";
+import santanaLogo from "../../assets/images/associados/santana.webp";
+import cacauRaizLogo from "../../assets/images/associados/cacauRaiz.webp";
 
 function AssociadosPage() {
   const { t } = useTranslation();
   const [animationKey] = useState(0);
-
 
   const chocolateirosData: Chocolateiro[] = [
     {
@@ -78,6 +78,11 @@ function AssociadosPage() {
   return (
     <section className='associados-page'>
       <header className='associados-header'>
+        <img
+          src={capaAssociados}
+          alt={t("associadosPage.imageAlt")}
+          className='imagem-fundo-associados'
+        ></img>
         <button
           onClick={() => window.history.back()}
           className='back-button'

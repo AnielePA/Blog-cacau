@@ -390,6 +390,7 @@
     "desenvolvidoPor": "Desarrollado por Atmos Empresas & Aniele Pereira Ardisson."
   },
   "associadosPage": {
+    "imageAlt": "Un árbol de cacao con algunos frutos de cacao.",
     "headerTitle": "Nuestros Chocolateros ",
     "headerSubtitle": "Conozca las marcas que transforman el cacao de Rondônia en arte.",
     "backButtonAriaLabel": "Volver",
@@ -495,6 +496,7 @@
     }
   },
   "cacauronNaEstradaEmBreve": {
+    "imageAlt": "Imagen ilustrativa de una carretera rodeada de árboles y árboles de cacao.",
     "backButtonAriaLabel": "Volver",
     "title": "¡Prepárate para el Viaje!",
     "subtitle": "<0>Próximamente</0>, nos embarcaremos juntos en la serie <1>Cacauron na Estrada</1>, desvelando la rica historia y los secretos del cacao de Rondônia. ¡Espéralo!"

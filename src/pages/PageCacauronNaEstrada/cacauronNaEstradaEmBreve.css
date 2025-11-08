@@ -43,13 +43,20 @@
     height: 100vh;
     padding: 2rem;
     text-align: center;
-    background-image: url("../../assets/images/cacauron-na-estrada.png");
-    background-size: cover;
-    background-position: bottom;
     position: relative;
     color: var(--white);
     font-family: var(--font-body);
 
+
+    .imagem-fundo-em-breve {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 
     &::before {
         content: "";

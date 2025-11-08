@@ -187,21 +187,22 @@
         figure {
             margin: 3rem auto;
             max-width: 100%;
+        }
 
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
 
-            figcaption {
-                text-align: center;
-                font-size: 0.9rem;
-                color: var(--cor-cinza);
-                margin-top: 0.8rem;
-                font-style: italic;
-            }
+        figcaption {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--cor-cinza);
+            margin-top: 0.8rem;
+            font-style: italic;
+            padding: 0 1.5rem;
         }
 
         .imagem-larga {
@@ -209,6 +210,7 @@
             width: calc(100% + 4rem);
             margin-left: -2rem;
             margin-right: -2rem;
+            padding: 0 1.7rem;
         }
     }
 }

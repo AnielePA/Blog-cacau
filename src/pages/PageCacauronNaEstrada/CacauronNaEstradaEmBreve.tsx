@@ -2,6 +2,7 @@ import "./cacauronNaEstradaEmBreve.css";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeftIcon } from "lucide-react";
 import { useTranslation, Trans } from "react-i18next";
+import capaCacauronNaEstrada from "../../assets/images/cacauron-na-estrada.webp";
 
 const FilmIcon = () => (
   <svg
@@ -32,6 +33,11 @@ function CacauronNaEstradaEmBreve() {
 
   return (
     <section className='coming-soon-page'>
+      <img
+        src={capaCacauronNaEstrada}
+        alt={t("cacauronNaEstradaEmBreve.imageAlt")}
+        className='imagem-fundo-em-breve'
+      ></img>
       <button
         onClick={() => navigate(-1)}
         className='back-button-em-breve'
