@@ -185,7 +185,8 @@
           "posts",
           "artículos",
           "novedades",
-          "materia"
+          "materia",
+          "Concurso Nacional"
         ]
       },
       "verDocumentos": {
@@ -448,6 +449,10 @@
       "artigo1": {
         "titulo": "Cacauron y la valorización de la Identidad Geográfica del Cacao de Rondônia",
         "resumo": "Descubra cómo la Indicación Geográfica está redefiniendo la calidad y el reconocimiento del cacao producido en nuestro estado..."
+      },
+      "artigo2": {
+        "titulo": "Conozca a los Ganadores del VII Concurso Nacional de Cacao Especial",
+        "resumo": "Evento realizado en Cacoal Selva Park reunió a más de 500 personas y consagró a productores de Rondônia y Pará..."
       }
     }
   },
@@ -472,6 +477,57 @@
     "paragrafo6": "Rondônia, actualmente, es el <strong> 4° mayor estado en producción de cacao</strong> del país, teniendo como meta la expansión de su producción en increíbles <strong> 3 veces</strong> en los próximos años de acuerdo con la Planificación Estratégica de la Cadena productiva del Cacao que está en construcción con el Incentivo del <strong>SEBRAE</strong> y de entidades de los sectores del gobierno estatal. Con este apoyo, la CACAURON busca promover sus iniciativas con foco en la <strong> producción sostenible</strong>, trayendo oportunidades únicas para los productores de cacao. Impulsando, así, el sector a crecer. Sin embargo, este crecimiento no pondrá en riesgo el medio ambiente ni la cultura de cultivo local, pues el objetivo es conciliar el <strong> desarrollo con la identidad regional</strong>; creando una cultura única que irá tanto a exportar como a producir productos destinados al mercado interno de Rondônia, todo esto al mismo tiempo que lucha por la <strong>preservación del bioma amazónico</strong>.",
     "paragrafo7": "En el escenario nacional, productores del estado ganaron notoriedad a lo largo de los últimos años en concursos de calidad y sostenibilidad, teniendo como ápice el año de <strong>2023</strong> cuando en el <strong> Concurso Nacional de Cacau Especial do Brasil</strong> dos productores enorgullecieron al estado, siendo ellos: el productor <strong> Robson Tomaz de Castro</strong> que conquistó el <strong> primer lugar</strong> en la categoría Mezcla y el productor <strong> Deoclides Pires da Silva</strong> que conquistó el <strong> primer lugar</strong> en la categoría Varietal (vale resaltar que en 2022 este mismo productor había quedado en primer lugar en el podio del concurso en esta misma categoría). En el año de <strong> 2024</strong>, el productor <strong>Mauro Celso Tauffer</strong>, consiguió la hazaña de quedar en <strong>3° y en 2° lugar</strong> en el concurso en las categorías Varietal y Mezcla, respectivamente.",
     "paragrafo8": "El día <strong>06 de diciembre de 2025</strong>, ocurrirá la <strong> 7° edición</strong> del Concurso Nacional de Cacau Especial do Brasil, siendo el municipio de <strong>Cacoal</strong> el anfitrión de esta edición. Con Rondônia liderando entre todos los estados el número de muestras totales enviadas, el anuncio de los finalistas contó con <strong> cinco productores rondonienses</strong> indicados en ambas categorías de la premiación (tres en la categoría Varietal y dos en la categoría Mezcla). Así como en los años anteriores, Rondônia promete estar una vez más presente en el podio del concurso, demostrando como la producción de cacao está en una creciente imparable de buenas administraciones, acciones y desarrollo de este sector tan rico para la población rondoniense."
+  },
+  "artigoConcursoNacionalCacau": {
+    "titulo": "Rondônia Brilla en el Escenario Nacional: Conozca a los Ganadores del VII Concurso Nacional de Cacao Especial",
+    "subtitulo": "Evento realizado en Cacoal Selva Park reunió a más de 500 personas y consagró a productores de Rondônia y Pará.",
+    "metaReadingTime": "Aprox. 3 min de lectura",
+    "imageAlt": "Salón de eventos amplio y rústico por la noche, lleno de invitados sentados en mesas redondas de cena.",
+    "figcaption": "Público e invitados reunidos durante la celebración del Concurso Nacional de Cacao Especial.",
+    "p1": "El pasado sábado (06), el estado de Rondônia confirmó su protagonismo en la cacaocultura brasileña al acoger el VII Concurso Nacional de Cacao Especial: Sostenibilidad y Calidad. El evento, que ya es una referencia en el calendario del agronegocio, transformó Cacoal Selva Park en un escenario de excelencia, reuniendo a productores, especialistas y autoridades del sector.",
+    "p2": "La ceremonia comenzó a las 18h30 y contó con un público expresivo de más de 500 personas. La programación fue diseñada para celebrar toda la cadena productiva, uniendo conocimiento técnico y valorización cultural. El público pudo acompañar conferencias sobre el desarrollo del sector, seguidas de una cena de gala.",
+    "p3": "La cultura de Rondônia fue exaltada con una presentación artística vibrante del grupo Gavião, de Ji-Paraná, que llevó la identidad local al centro de las atenciones antes del momento más esperado de la noche: la revelación de los mejores cacaos de Brasil.",
+    "p4": "La disputa fue reñida entre los 20 finalistas, divididos equitativamente entre las categorías. El resultado final destacó la fuerza de la producción de la Región Norte, con productores de Rondônia y Pará dominando el podio.",
+    "p5": "En la categoría Varietal, el gran destaque fue el productor de Rondônia Mauro Celso Tauffer, de Buritis, quien conquistó el 1º lugar con la variedad BN34, reafirmando la calidad genética y el manejo de excelencia practicado en el estado.",
+    "p6": "El éxito del VII Concurso Nacional de Cacao Especial es fruto de la organización del Centro de Inovação do Cacau (CIC) con la coorganización estratégica del Governo do Estado de Rondônia. La alianza garantizó que el evento no solo superara las expectativas de público, sino que mantuviera el alto nivel técnico y el renombre que la competencia posee a nivel nacional.",
+    "p7": "Para cerrar la noche con broche de oro, el evento contó con un show de la cantante Samara Ayane, celebrando la integración entre los productores y el fortalecimiento de la cacaocultura sostenible en Brasil.",
+    "h2": {
+      "campeoes": "Los Grandes Campeones",
+      "organizacao": "Organización y Cierre"
+    },
+    "winners": {
+      "varietal": "Categoría Varietal",
+      "blend": "Categoría Mezcla (Blend)"
+    },
+    "common": {
+      "accessDrive": "Accede a las Fotos del Evento",
+      "driveDescription": "Revive los mejores momentos del VII Concurso Nacional de Cacao Especial a través de las fotos oficiales del evento.",
+      "buttonText": "Fotos del Evento"
+    }
+  },
+  "artigo": {
+    "titulo": "Rondônia Brilla en el Escenario Nacional: Conozca a los Ganadores del VII Concurso Nacional de Cacao Especial",
+    "subtitulo": "Evento realizado en Cacoal Selva Park reunió a más de 500 personas y consagró a productores de Rondônia y Pará.",
+    "p1": "El pasado sábado (06), el estado de Rondônia confirmó su protagonismo en la cacaocultura brasileña al acoger el VII Concurso Nacional de Cacao Especial: Sostenibilidad y Calidad. El evento, que ya es una referencia en el calendario del agronegocio, transformó Cacoal Selva Park en un escenario de excelencia, reuniendo a productores, especialistas y autoridades del sector.",
+    "p2": "La ceremonia comenzó a las 18h30 y contó con un público expresivo de más de 500 personas. La programación fue diseñada para celebrar toda la cadena productiva, uniendo conocimiento técnico y valorización cultural. El público pudo acompañar conferencias sobre el desarrollo del sector, seguidas de una cena de gala.",
+    "p3": "La cultura de Rondônia fue exaltada con una presentación artística vibrante del grupo Gavião, de Ji-Paraná, que llevó la identidad local al centro de las atenciones antes del momento más esperado de la noche: la revelación de los mejores cacaos de Brasil.",
+    "p4": "La disputa fue reñida entre los 20 finalistas, divididos equitativamente entre las categorías. El resultado final destacó la fuerza de la producción de la Región Norte, con productores de Rondônia y Pará dominando el podio.",
+    "p5": "En la categoría Varietal, el gran destaque fue el productor de Rondônia Mauro Celso Tauffer, de Buritis, quien conquistó el 1º lugar con la variedad BN34, reafirmando la calidad genética y el manejo de excelencia practicado en el estado.",
+    "p6": "El éxito del VII Concurso Nacional de Cacao Especial es fruto de la organización del Centro de Inovação do Cacau (CIC) con la coorganización estratégica del Governo do Estado de Rondônia. La alianza garantizó que el evento no solo superara las expectativas de público, sino que mantuviera el alto nivel técnico y el renombre que la competencia posee a nivel nacional.",
+    "p7": "Para cerrar la noche con broche de oro, el evento contó con un show de la cantante Samara Ayane, celebrando la integración entre los productores y el fortalecimiento de la cacaocultura sostenible en Brasil.",
+    "h2": {
+      "campeoes": "Los Grandes Campeones",
+      "organizacao": "Organización y Cierre"
+    }
+  },
+  "winners": {
+    "varietal": "Categoría Varietal",
+    "blend": "Categoría Mezcla (Blend)"
+  },
+  "common": {
+    "accessDrive": "Accede a las Fotos del Evento",
+    "driveDescription": "Revive los mejores momentos del VII Concurso Nacional de Cacao Especial a través de las fotos oficiales del evento.",
+    "buttonText": "Fotos del Evento"
   },
   "agendaEventosPage": {
     "headerTitle": "Calendario de eventos",

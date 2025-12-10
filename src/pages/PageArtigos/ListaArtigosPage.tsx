@@ -4,6 +4,7 @@ import { ChevronLeftIcon } from "lucide-react";
 import ArtigoCard, { type ArtigoPreview } from "./ArtigoCard";
 import { useTranslation } from "react-i18next";
 import seloIg from "../../assets/images/selo-article-1.jpg";
+import concursoCacau from "../../assets/images/CONCURSO-CACAU.webp";
 
 function ListaArtigosPage() {
   const navigate = useNavigate();
@@ -17,6 +18,15 @@ function ListaArtigosPage() {
       resumo: t("listaArtigosPage.artigos.artigo1.resumo"),
       imagemUrl: seloIg,
       dataPublicacao: "2025-10-22",
+    },
+
+    {
+      id: 2,
+      slug: "concurso-nacional-cacau",
+      titulo: t("listaArtigosPage.artigos.artigo2.titulo"),
+      resumo: t("listaArtigosPage.artigos.artigo2.resumo"),
+      imagemUrl: concursoCacau,
+      dataPublicacao: "2025-12-09",
     },
   ];
 

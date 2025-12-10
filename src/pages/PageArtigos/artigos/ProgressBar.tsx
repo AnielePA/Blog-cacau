@@ -8,12 +8,13 @@ function ProgressBar() {
     const scrollTop = window.scrollY;
 
     const articleElement =
-      document.querySelector(".artigo-body-ig") || document.documentElement;
+      document.querySelector(".artigo-body-ig") ||
+      document.querySelector(".content-body") ||
+      document.documentElement;
 
     const articleTop = (articleElement as HTMLElement).offsetTop || 0;
     const articleHeight = (articleElement as HTMLElement).scrollHeight;
     const windowHeight = window.innerHeight;
-
 
     const scrolledInElement = Math.max(
       0,
@@ -23,7 +24,6 @@ function ProgressBar() {
 
     let percentage = 0;
     if (totalScrollableInElement > 0) {
-
       percentage = (scrolledInElement / totalScrollableInElement) * 100;
     }
 

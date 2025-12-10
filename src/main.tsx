@@ -11,6 +11,7 @@ import AgendaEventosPage from "./pages/PageEventos/AgendaEventosPage.tsx";
 import ListaArtigosPage from "./pages/PageArtigos/ListaArtigosPage.tsx";
 import ArtigoIGRondoniaPage from "./pages/PageArtigos/artigos/ArtigoIGRondoniaPage.tsx";
 import CacauronNaEstradaEmBreve from "./pages/PageCacauronNaEstrada/CacauronNaEstradaEmBreve.tsx";
+import ArtigoConcursoNacionalCacau from "./pages/PageArtigos/artigos/ArtigoConcursoNacionalCacau.tsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/artigos/igrondonia",
     element: <ArtigoIGRondoniaPage />,
+  },
+  {
+    path: "/artigos/concurso-nacional-cacau",
+    element: <ArtigoConcursoNacionalCacau />,
   },
   {
     path: "/cacauron-na-estrada",

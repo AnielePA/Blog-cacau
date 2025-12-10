@@ -150,7 +150,8 @@
           "novidades",
           "imprensa",
           "materia",
-          "posts"
+          "posts",
+          "Concurso Nacional"
         ]
       },
       "verDocumentos": {
@@ -401,6 +402,10 @@
       "artigo1": {
         "titulo": "Cacauron e a valorização da Identidade Geográfica do Cacau de Rondônia",
         "resumo": "Descubra como a Indicação Geográfica está redefinindo a qualidade e o reconhecimento do cacau produzido em nosso estado..."
+      },
+      "artigo2": {
+        "titulo": "Confira os Vencedores do VII Concurso Nacional de Cacau Especial",
+        "resumo": "Evento realizado no Cacoal Selva Park reuniu mais de 500 pessoas e consagrou produtores de Rondônia e do Pará..."
       }
     }
   },
@@ -425,6 +430,57 @@
     "paragrafo6": "Rondônia, atualmente, é o <strong> 4° maior estado em produção de cacau</strong> do país, tendo como meta a expansão de sua produção em incríveis <strong> 3 vezes</strong> nos próximos anos de acordo com o Planejamento Estratégico da Cadeia produtiva do Cacau que está em construção com o Incentivo do <strong>SEBRAE</strong> e de entidades dos setores do governo estadual. Com este apoio, a CACAURON busca promover suas iniciativas com foco na <strong> produção sustentável</strong>, trazendo oportunidades únicas para os produtores de cacau. Impulsionando, assim, o setor a crescer. Porém, este crescimento não colocará em risco o meio ambiente nem a cultura de plantio local, pois o objetivo é conciliar o <strong> desenvolvimento com a identidade regional</strong>; criando uma cultura única que irá tanto exportar quanto produzir produtos destinados ao mercado interno de Rondônia, tudo isso ao mesmo tempo em que luta pela <strong>preservação do bioma amazônico</strong>.",
     "paragrafo7": "No cenário nacional, produtores do estado ganharam notoriedade ao longo dos últimos anos em concursos de qualidade e sustentabilidade, tendo como ápice o ano de <strong>2023</strong> quando no <strong> Concurso Nacional de Cacau Especial do Brasil</strong> dois produtores orgulharam o estado, sendo eles: o produtor <strong> Robson Tomaz de Castro</strong> que conquistou o <strong> primeiro lugar</strong> na categoria Mistura e o produtor <strong> Deoclides Pires da Silva</strong> que conquistou o <strong> primeiro lugar</strong> na categoria Varietal (vale ressaltar que em 2022 este mesmo produtor havia ficado em primeiro lugar no pódio do concurso nesta mesma categoria). No ano de <strong> 2024</strong>, o produtor <strong>Mauro Celso Tauffer</strong>, conseguiu a façanha de ficar em <strong>3° e em 2° lugar</strong> no concurso nas categorias Varietal e Mistura, respectivamente.",
     "paragrafo8": "No dia <strong>06 de dezembro de 2025</strong>, ocorrerá a <strong> 7° edição</strong> do Concurso Nacional de Cacau Especial do Brasil, sendo o munícipio de <strong>Cacoal</strong> o anfitrião desta edição. Com Rondônia liderando entre todos os estados o número de amostras totais enviadas, o anúncio dos finalistas contou com <strong> cinco produtores rondonienses</strong> indicados em ambas as categorias da premiação (três na categoria Varietal e dois na categoria Mistura). Assim como nos anos anteriores, Rondônia promete estar mais uma vez presente no pódio do concurso, demonstrando como a produção de cacau está em uma crescente imparável de boas administrações, ações e desenvolvimento deste setor tão rico para a população rondoniense."
+  },
+  "artigoConcursoNacionalCacau": {
+    "titulo": "Rondônia Brilha no Cenário Nacional: Confira os Vencedores do VII Concurso Nacional de Cacau Especial",
+    "subtitulo": "Evento realizado no Cacoal Selva Park reuniu mais de 500 pessoas e consagrou produtores de Rondônia e do Pará.",
+    "metaReadingTime": "Aprox. 3 min de leitura",
+    "imageAlt": "Salão de eventos amplo e rústico à noite, lotado de convidados sentados em mesas redondas de jantar.",
+    "figcaption": "Público e convidados reunidos durante a celebração do Concurso Nacional de Cacau Especial.",
+    "p1": "Neste último sábado (06), o estado de Rondônia confirmou seu protagonismo na cacauicultura brasileira ao sediar o VII Concurso Nacional de Cacau Especial: Sustentabilidade e Qualidade. O evento, que já é referência no calendário do agronegócio, transformou o Cacoal Selva Park em um palco de excelência, reunindo produtores, especialistas e autoridades do setor.",
+    "p2": "A cerimônia teve início às 18h30 e contou com um público expressivo de mais de 500 pessoas. A programação foi desenhada para celebrar toda a cadeia produtiva, unindo conhecimento técnico e valorização cultural. O público pôde acompanhar palestras sobre o desenvolvimento do setor, seguidas de um jantar de gala.",
+    "p3": "A cultura rondoniense foi exaltada com uma apresentação artística vibrante do grupo Gavião, de Ji-Paraná, que trouxe a identidade local para o centro das atenções antes do momento mais aguardado da noite: a revelação dos melhores cacaus do Brasil.",
+    "p4": "A disputa foi acirrada entre os 20 finalistas, divididos igualmente entre as categorias. O resultado final destacou a força da produção da Região Norte, com produtores de Rondônia e do Pará dominando o pódio.",
+    "p5": "Na categoria Varietal, o grande destaque foi o produtor rondoniense Mauro Celso Tauffer, de Buritis, que conquistou o 1º lugar com a variedade BN34, reafirmando a qualidade genética e o manejo de excelência praticado no estado.",
+    "p6": "O sucesso do VII Concurso Nacional de Cacau Especial é fruto da organização do Centro de Inovação do Cacau (CIC) com a co-organização estratégica do Governo do Estado de Rondônia. A parceria garantiu que o evento não apenas superasse as expectativas de público, mas mantivesse o alto nível técnico e o renome que a competição possui nacionalmente.",
+    "p7": "Para fechar a noite com chave de ouro, o evento contou com um show da cantora Samara Ayane, celebrando a integração entre os produtores e o fortalecimento da cacauicultura sustentável no Brasil.",
+    "h2": {
+      "campeoes": "Os Grandes Campeões",
+      "organizacao": "Organização e Encerramento"
+    },
+    "winners": {
+      "varietal": "Categoria Varietal",
+      "blend": "Categoria Mistura (Blend)"
+    },
+    "common": {
+      "accessDrive": "Acesse as Fotos do Evento",
+      "driveDescription": "Reviva os melhores momentos do VII Concurso Nacional de Cacau Especial através das fotos oficiais do evento.",
+      "buttonText": "Abrir Pasta do Evento"
+    }
+  },
+  "artigo": {
+    "titulo": "Rondônia Brilha no Cenário Nacional: Confira os Vencedores do VII Concurso Nacional de Cacau Especial",
+    "subtitulo": "Evento realizado no Cacoal Selva Park reuniu mais de 500 pessoas e consagrou produtores de Rondônia e do Pará.",
+    "p1": "Neste último sábado (06), o estado de Rondônia confirmou seu protagonismo na cacauicultura brasileira ao sediar o VII Concurso Nacional de Cacau Especial: Sustentabilidade e Qualidade. O evento, que já é referência no calendário do agronegócio, transformou o Cacoal Selva Park em um palco de excelência, reunindo produtores, especialistas e autoridades do setor.",
+    "p2": "A cerimônia teve início às 18h30 e contou com um público expressivo de mais de 500 pessoas. A programação foi desenhada para celebrar toda a cadeia produtiva, unindo conhecimento técnico e valorização cultural. O público pôde acompanhar palestras sobre o desenvolvimento do setor, seguidas de um jantar de gala.",
+    "p3": "A cultura rondoniense foi exaltada com uma apresentação artística vibrante do grupo Gavião, de Ji-Paraná, que trouxe a identidade local para o centro das atenções antes do momento mais aguardado da noite: a revelação dos melhores cacaus do Brasil.",
+    "p4": "A disputa foi acirrada entre os 20 finalistas, divididos igualmente entre as categorias. O resultado final destacou a força da produção da Região Norte, com produtores de Rondônia e do Pará dominando o pódio.",
+    "p5": "Na categoria Varietal, o grande destaque foi o produtor rondoniense Mauro Celso Tauffer, de Buritis, que conquistou o 1º lugar com a variedade BN34, reafirmando a qualidade genética e o manejo de excelência praticado no estado.",
+    "p6": "O sucesso do VII Concurso Nacional de Cacau Especial é fruto da organização do Centro de Inovação do Cacau (CIC) com a co-organização estratégica do Governo do Estado de Rondônia. A parceria garantiu que o evento não apenas superasse as expectativas de público, mas mantivesse o alto nível técnico e o renome que a competição possui nacionalmente.",
+    "p7": "Para fechar a noite com chave de ouro, o evento contou com um show da cantora Samara Ayane, celebrando a integração entre os produtores e o fortalecimento da cacauicultura sustentável no Brasil.",
+    "h2": {
+      "campeoes": "Os Grandes Campeões",
+      "organizacao": "Organização e Encerramento"
+    }
+  },
+  "winners": {
+    "varietal": "Categoria Varietal",
+    "blend": "Categoria Mistura (Blend)"
+  },
+  "common": {
+    "accessDrive": "Acesse as Fotos do Evento",
+    "driveDescription": "Reviva os melhores momentos do VII Concurso Nacional de Cacau Especial através das fotos oficiais do evento.",
+    "buttonText": "Abrir Pasta do Evento"
   },
   "agendaEventosPage": {
     "headerTitle": "Agenda de Eventos",

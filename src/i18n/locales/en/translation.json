@@ -190,7 +190,9 @@
           "imprensa",
           "materia",
           "posts",
-          "articles"
+          "articles",
+          "National Competition",
+          "Concurso Nacional"
         ]
       },
       "verDocumentos": {
@@ -456,13 +458,17 @@
     "cardLeiaMais": "Read article",
     "artigos": {
       "artigo1": {
-        "titulo": "Cacauron and the appreciation of the Geographical Identity of Cacau from Rondônia",
+        "titulo": "Cacauron and the appreciation of the Geographical Identity of Cocoa from Rondônia",
         "resumo": "Discover how the Geographical Indication is redefining the quality and recognition of the cocoa produced in our state..."
+      },
+      "artigo2": {
+        "titulo": "Check Out the Winners of the VII National Fine Cocoa Contest",
+        "resumo": "Event held at Cacoal Selva Park brought together more than 500 people and honored producers from Rondônia and Pará..."
       }
     }
   },
   "artigoIGRondoniaPage": {
-    "headerTitle": "Cacauron and the appreciation of the Geographical Identity of Cacau from Rondônia",
+    "headerTitle": "Cacauron and the appreciation of the Geographical Identity of Cocoa from Rondônia",
     "headerSubtitle": "Discover how the Geographical Indication is redefining the quality and recognition of cocoa produced in our state.",
     "logoAlt": "IG Rondônia Seal",
     "metaAuthor": "By Alan Reis",
@@ -482,6 +488,57 @@
     "paragrafo6": "Currently, Rondônia is the <strong>4th largest cocoa-producing state</strong> in the country, aiming to <strong>triple</strong> its production in the coming years according to the Strategic Plan for the Cocoa Production Chain being developed with support from <strong>SEBRAE</strong> and state government agencies. With this support, CACAURON promotes initiatives focused on <strong>sustainable production</strong>, bringing unique opportunities to cocoa producers. This fosters growth in the sector without endangering the environment or local farming culture, as the goal is to reconcile <strong>development with regional identity</strong>; creating a unique culture that both exports and produces for Rondônia’s domestic market while fighting for the <strong>preservation of the Amazon biome</strong>.",
     "paragrafo7": "On the national stage, producers from the state have gained recognition over the past few years in quality and sustainability contests, reaching a peak in <strong>2023</strong> when, at the <strong>Concurso Nacional de Cacau Especial do Brasil</strong>, two producers brought pride to the state: <strong>Robson Tomaz de Castro</strong>, who won <strong>first place</strong> in the Blend category, and <strong>Deoclides Pires da Silva</strong>, who won <strong>first place</strong> in the Varietal category (notably, this same producer had also won first place in 2022 in the same category). In <strong>2024</strong>, producer <strong>Mauro Celso Tauffer</strong> achieved <strong>3rd and 2nd place</strong> in the contest in the Varietal and Blend categories, respectively.",
     "paragrafo8": "On <strong>December 6, 2025</strong>, the <strong>7th edition</strong> of the Concurso Nacional de Cacau Especial do Brasil will take place, hosted by the municipality of <strong>Cacoal</strong>. With Rondônia leading all states in the total number of samples submitted, the announcement of the finalists featured <strong>five producers from Rondônia</strong> nominated in both contest categories (three in Varietal and two in Blend). As in previous years, Rondônia promises once again to be present on the winners' podium, showcasing the unstoppable growth, good management, and development of this thriving sector for the people of Rondônia."
+  },
+  "artigoConcursoNacionalCacau": {
+    "titulo": "Rondônia Shines on the National Scene: Check Out the Winners of the VII National Fine Cocoa Contest",
+    "subtitulo": "The event held at Cacoal Selva Park brought together more than 500 people and honored producers from Rondônia and Pará.",
+    "metaReadingTime": "Approx. 3 min read",
+    "imageAlt": "Large rustic event hall at night, filled with guests seated at round dinner tables.",
+    "figcaption": "Audience and guests gathered during the celebration of the National Fine Cocoa Contest.",
+    "p1": "This past Saturday (06), the state of Rondônia reaffirmed its leading role in Brazilian cocoa farming by hosting the VII National Fine Cocoa Contest: Sustainability and Quality. The event, already a reference on the agribusiness calendar, transformed Cacoal Selva Park into a stage of excellence, bringing together producers, specialists, and authorities from the sector.",
+    "p2": "The ceremony began at 6:30 PM and welcomed an impressive audience of more than 500 people. The program was designed to celebrate the entire production chain, uniting technical knowledge and cultural appreciation. The audience enjoyed lectures on the sector's development, followed by a gala dinner.",
+    "p3": "Rondonian culture was highlighted through a vibrant artistic performance by the group Gavião, from Ji-Paraná, bringing local identity to center stage before the most anticipated moment of the night: the revelation of the best cocoas in Brazil.",
+    "p4": "The competition was fierce among the 20 finalists, evenly divided between categories. The final results showcased the strength of production in the Northern Region, with producers from Rondônia and Pará dominating the podium.",
+    "p5": "In the Varietal category, the major highlight was the Rondonian producer Mauro Celso Tauffer, from Buritis, who secured 1st place with the BN34 variety, reaffirming the genetic quality and excellence in management practiced in the state.",
+    "p6": "The success of the VII National Fine Cocoa Contest is the result of the organization by the Centro de Inovação do Cacau (CIC), in strategic co-organization with the Governo do Estado de Rondônia. The partnership ensured that the event not only exceeded audience expectations but also maintained the high technical level and prestige the competition holds nationwide.",
+    "p7": "To close the night on a high note, the event featured a performance by singer Samara Ayane, celebrating the integration among producers and the strengthening of sustainable cocoa farming in Brazil.",
+    "h2": {
+      "campeoes": "The Grand Champions",
+      "organizacao": "Organization and Closing"
+    },
+    "winners": {
+      "varietal": "Varietal Category",
+      "blend": "Blend Category"
+    },
+    "common": {
+      "accessDrive": "Access the Event Photos",
+      "driveDescription": "Relive the best moments of the VII National Fine Cocoa Contest through the official event photos.",
+      "buttonText": "Open Event Photos"
+    }
+  },
+  "artigo": {
+    "titulo": "Rondônia Shines on the National Scene: Check Out the Winners of the VII National Fine Cocoa Contest",
+    "subtitulo": "The event held at Cacoal Selva Park brought together more than 500 people and honored producers from Rondônia and Pará.",
+    "p1": "This past Saturday (06), the state of Rondônia reaffirmed its leading role in Brazilian cocoa farming by hosting the VII National Fine Cocoa Contest: Sustainability and Quality. The event, already a reference on the agribusiness calendar, transformed Cacoal Selva Park into a stage of excellence, bringing together producers, specialists, and authorities from the sector.",
+    "p2": "The ceremony began at 6:30 PM and welcomed an impressive audience of more than 500 people. The program was designed to celebrate the entire production chain, uniting technical knowledge and cultural appreciation. The audience enjoyed lectures on the sector's development, followed by a gala dinner.",
+    "p3": "Rondonian culture was highlighted through a vibrant artistic performance by the group Gavião, from Ji-Paraná, bringing local identity to center stage before the most anticipated moment of the night: the revelation of the best cocoas in Brazil.",
+    "p4": "The competition was fierce among the 20 finalists, evenly divided between categories. The final results showcased the strength of production in the Northern Region, with producers from Rondônia and Pará dominating the podium.",
+    "p5": "In the Varietal category, the major highlight was the Rondonian producer Mauro Celso Tauffer, from Buritis, who secured 1st place with the BN34 variety, reaffirming the genetic quality and excellence in management practiced in the state.",
+    "p6": "The success of the VII National Fine Cocoa Contest is the result of the organization by the Centro de Inovação do Cacau (CIC), in strategic co-organization with the Governo do Estado de Rondônia. The partnership ensured that the event not only exceeded audience expectations but also maintained the high technical level and prestige the competition holds nationwide.",
+    "p7": "To close the night on a high note, the event featured a performance by singer Samara Ayane, celebrating the integration among producers and the strengthening of sustainable cocoa farming in Brazil.",
+    "h2": {
+      "campeoes": "The Grand Champions",
+      "organizacao": "Organization and Closing"
+    }
+  },
+  "winners": {
+    "varietal": "Varietal Category",
+    "blend": "Blend Category"
+  },
+  "common": {
+    "accessDrive": "Access the Event Photos",
+    "driveDescription": "Relive the best moments of the VII National Fine Cocoa Contest through the official event photos.",
+    "buttonText": "Open Event Photos"
   },
   "agendaEventosPage": {
     "headerTitle": "Event Schedule",
