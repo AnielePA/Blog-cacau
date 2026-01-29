@@ -1,7 +1,7 @@
-/* Componente do Card de Comunicado */
+
 .comunicado-card {
   background-color: var(--white);
-  border: 1px solid rgba(125, 76, 59, 0.1); /* marrom3 com transparência */
+  border: 1px solid rgba(125, 76, 59, 0.1); 
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
@@ -12,12 +12,12 @@
     padding: 2rem;
     gap: 2rem;
   
-  /* Borda lateral decorativa */
+
   border-left: 6px solid var(--cor-destaque);
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(49, 39, 37, 0.1); /* marrom1 sombra */
+    box-shadow: 0 10px 15px -3px rgba(49, 39, 37, 0.1); 
     border-left-width: 12px;
   }
 
@@ -64,7 +64,8 @@
     font-size: 1rem;
     line-height: 1.6;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limita a 3 linhas */
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
