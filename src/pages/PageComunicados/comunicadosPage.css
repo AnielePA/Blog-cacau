@@ -1,0 +1,128 @@
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.lista-comunicados-page {
+  background-color: var(--cor-fundo-claro);
+  min-height: 100vh;
+  font-family: var(--font-body);
+
+
+  .comunicados-header {
+    margin-bottom: 3rem;
+    position: relative;
+    background-color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    animation: slideInLeft 0.8s ease-out forwards;
+   
+
+    .back-button-comunicados {
+      top: 1.5rem;
+      left: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--cor-marrom1);
+      display: flex;
+      align-items: center;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      transition: background-color 0.2s ease;
+      animation: slideInLeft 0.6s ease-out;
+
+        &:hover {
+            background-color: var(--cor-fundo-claro);
+          }
+    }
+
+    .comunicados-header__title {
+      font-family: var(--font-navigation);
+      color: var(--cor-marrom2);
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .comunicados-header__subtitle {
+      color: var(--cor-marrom3);
+      font-family: var(--font-body);
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+
+
+  .comunicados-grid-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+
+    .comunicados-grid {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 2rem;
+    }
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  .lista-comunicados-page {
+
+    .comunicados-header {
+      text-align: center;
+      margin-bottom: 4rem;
+         padding: 4rem;
+
+      .comunicados-header__title {
+        font-size: 3rem;
+      }
+
+      .comunicados-header__subtitle {
+        font-size: 1.5rem;
+      }
+      
+      .back-button-comunicados {
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        margin-left: 2rem;
+      }
+    }
+
+    .comunicados-grid-container {
+    padding: 2rem;
+
+    .comunicados-grid {
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Grid responsivo inteligente */
+      gap: 3rem;
+    }
+  }
+  }
+}

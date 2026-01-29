@@ -83,10 +83,12 @@ function ArtigoConcursoNacionalCacau() {
           <Trans i18nKey='artigo.p1'>
             Neste último sábado (06), o estado de Rondônia confirmou seu
             protagonismo na cacauicultura brasileira ao sediar o VII Concurso
-            Nacional de Cacau Especial: Sustentabilidade e Qualidade. O evento,
-            que já é referência no calendário do agronegócio, transformou o
-            Cacoal Selva Park em um palco de excelência, reunindo produtores,
-            especialistas e autoridades do setor.
+            Nacional de Cacau Especial: Sustentabilidade e Qualidade.
+            Viabilizado por um termo de colaboração entre a SEAGRI e a Cacauron,
+            o evento transformou o Cacoal Selva Park em um palco de excelência.
+            A iniciativa garantiu uma estrutura completa, oferecendo hospedagem,
+            alimentação e transporte via ônibus para 240 produtores, reunindo
+            assim a base produtiva, especialistas e autoridades do setor.
           </Trans>
         </p>
 

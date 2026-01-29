@@ -14,7 +14,8 @@
       "imprensa": "Press",
       "imprensaSub": {
         "noticias": "News",
-        "artigos": "Articles"
+        "artigos": "Articles",
+        "comunicados": "Official Announcements"
       },
       "eventos": "Events",
       "chocolateiros": "Chocolatiers",
@@ -248,6 +249,15 @@
           "history",
           "cocoa in rondonia",
           "documentary"
+        ]
+      },
+      "verComunicados": {
+        "title": "View Official Statements",
+        "keywords": [
+          "statements",
+          "notes",
+          "positions",
+          "official information"
         ]
       }
     }
@@ -495,7 +505,7 @@
     "metaReadingTime": "Approx. 3 min read",
     "imageAlt": "Large rustic event hall at night, filled with guests seated at round dinner tables.",
     "figcaption": "Audience and guests gathered during the celebration of the National Fine Cocoa Contest.",
-    "p1": "This past Saturday (06), the state of Rondônia reaffirmed its leading role in Brazilian cocoa farming by hosting the VII National Fine Cocoa Contest: Sustainability and Quality. The event, already a reference on the agribusiness calendar, transformed Cacoal Selva Park into a stage of excellence, bringing together producers, specialists, and authorities from the sector.",
+    "p1": "This past Saturday (06), the state of Rondônia reaffirmed its leading role in Brazilian cocoa farming by hosting the VII National Fine Cocoa Contest: Sustainability and Quality. Made possible by a collaboration agreement between SEAGRI and Cacauron, the event transformed Cacoal Selva Park into a stage of excellence. The initiative provided comprehensive logistical support, ensuring accommodation, meals, and bus transportation for 240 producers, bringing together the farming community, specialists, and authorities from the sector.",
     "p2": "The ceremony began at 6:30 PM and welcomed an impressive audience of more than 500 people. The program was designed to celebrate the entire production chain, uniting technical knowledge and cultural appreciation. The audience enjoyed lectures on the sector's development, followed by a gala dinner.",
     "p3": "Rondonian culture was highlighted through a vibrant artistic performance by the group Gavião, from Ji-Paraná, bringing local identity to center stage before the most anticipated moment of the night: the revelation of the best cocoas in Brazil.",
     "p4": "The competition was fierce among the 20 finalists, evenly divided between categories. The final results showcased the strength of production in the Northern Region, with producers from Rondônia and Pará dominating the podium.",
@@ -519,7 +529,7 @@
   "artigo": {
     "titulo": "Rondônia Shines on the National Scene: Check Out the Winners of the VII National Fine Cocoa Contest",
     "subtitulo": "The event held at Cacoal Selva Park brought together more than 500 people and honored producers from Rondônia and Pará.",
-    "p1": "This past Saturday (06), the state of Rondônia reaffirmed its leading role in Brazilian cocoa farming by hosting the VII National Fine Cocoa Contest: Sustainability and Quality. The event, already a reference on the agribusiness calendar, transformed Cacoal Selva Park into a stage of excellence, bringing together producers, specialists, and authorities from the sector.",
+    "p1": "This past Saturday (06), the state of Rondônia reaffirmed its leading role in Brazilian cocoa farming by hosting the VII National Fine Cocoa Contest: Sustainability and Quality. Made possible by a collaboration agreement between SEAGRI and Cacauron, the event transformed Cacoal Selva Park into a stage of excellence. The initiative provided comprehensive logistical support, ensuring accommodation, meals, and bus transportation for 240 producers, bringing together the farming community, specialists, and authorities from the sector.",
     "p2": "The ceremony began at 6:30 PM and welcomed an impressive audience of more than 500 people. The program was designed to celebrate the entire production chain, uniting technical knowledge and cultural appreciation. The audience enjoyed lectures on the sector's development, followed by a gala dinner.",
     "p3": "Rondonian culture was highlighted through a vibrant artistic performance by the group Gavião, from Ji-Paraná, bringing local identity to center stage before the most anticipated moment of the night: the revelation of the best cocoas in Brazil.",
     "p4": "The competition was fierce among the 20 finalists, evenly divided between categories. The final results showcased the strength of production in the Northern Region, with producers from Rondônia and Pará dominating the podium.",
@@ -567,5 +577,59 @@
     "backButtonAriaLabel": "Go back",
     "title": "Get Ready for the Journey!",
     "subtitle": "<0>Coming soon</0>, we will embark together on the series <1>Cacauron na Estrada</1>, uncovering the rich history and secrets of cocoa from Rondônia. Stay tuned!"
+  },
+  "listaComunicadosPage": {
+    "headerTitle": "Official Announcements",
+    "headerSubtitle": "Follow the statements and official positions of Cacauron.",
+    "comunicados": {
+      "comunicado1": {
+        "titulo": "Position Statement on the Import of Cocoa Beans",
+        "resumo": "Official position regarding the import of African cocoa beans and the defense of cocoa farming in Rondônia."
+      }
+    },
+      "card": {
+      "readMore": "Read full announcement"
+    }
+  },
+  "comunicadoDetalhe": {
+    "voltar": "Back to Announcements"
+  },
+  "comunicado001": {
+    "titulo": "CACAURON OFFICIAL ANNOUNCEMENT No. 001/2026",
+    "labelAssunto": "Subject:",
+    "assuntoTexto": "Position statement on the import of African cocoa beans and the defense of cocoa farming in Rondônia.",
+    "paragrafo1": "The Association of Cocoa Growers and Chocolate Makers of Rondônia (CACAURON), in its capacity as a representative entity of cocoa producers and chocolate makers in the state, hereby makes public its position and deep concern regarding the recent arrival of cocoa shipments from the African continent at the Port of Ilhéus.",
+    "paragrafo2": "We reaffirm our unwavering commitment to defending the interests of producers from Rondônia. The entry of foreign cocoa beans into national territory, without the due rigor of transparency, may represent not only a threat to the economic balance of our production chain, but also an immeasurable phytosanitary risk to the national and regional cocoa sector.",
+    "introLista": "In this regard, the Board of Directors of CACAURON informs the following immediate actions:",
+    "item1": {
+      "titulo": "Request for Phytosanitary Clarifications:",
+      "texto": "We are sending an official letter to the competent authority, the Ministry of Agriculture and Livestock (MAPA), demanding detailed information on the inspection stages of imported cocoa beans and the presentation of the classification report of the imported beans. It is imperative to prove strict compliance with all safety protocols to prevent the introduction of pests and diseases that do not exist in our territory."
+    },
+    "item2": {
+      "titulo": "Support from CNA:",
+      "texto": "We reinforce the request for support so that the National Confederation of Agriculture (CNA) carries out new technical studies on the cocoa Drawback system, evaluating criteria that may harm the trade of national cocoa beans and proposing new criteria that benefit the purchase of national products."
+    },
+    "item3": {
+      "titulo": "Inquiry to the Industry:",
+      "texto": "We will forward formal communications to processing industries requesting clarification on the real technical and economic necessity of these imports, considering that Brazil, and especially Rondônia, has invested heavily in increasing productivity and improving bean quality, aiming at self-sufficiency and the strengthening of the domestic market."
+    },
+    "item4": {
+      "titulo": "Valuing Local Production:",
+      "texto": "We emphasize that Brazilian cocoa has competitive differentials, such as Geographical Indication (IG) seals, which attest to our quality and originality, and also possesses regional characteristics that reinforce high-quality production by producers. We reiterate that the production chain is of great importance to family farming, strengthening household income. Uncontrolled imports devalue the efforts of local producers to deliver an excellence product under the \"bean to bar\" and \"tree to bar\" concepts."
+    },
+    "conclusao": "CACAURON remains vigilant and in constant dialogue with national producer networks to ensure that the sovereignty of Brazilian cocoa farming is respected. We will not accept that the income and livelihood of our farming families be compromised by decisions that ignore the potential and safety of our production.",
+    "dataLocal": "Rondônia, January 29, 2026",
+    "assinatura": "CACAURON - Board of Directors"
+  },
+  "comunicadosHome": {
+    "comunicadosCta": {
+      "title": "Transparency and Commitment",
+      "description": "Follow the official positions, statements, and important announcements from Cacauron for the productive sector.",
+      "button": "View Official Announcements"
+    }
   }
 }
+
+
+
+

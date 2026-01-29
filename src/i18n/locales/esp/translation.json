@@ -14,7 +14,8 @@
       "imprensa": "Prensa",
       "imprensaSub": {
         "noticias": "Noticias",
-        "artigos": "Artículos"
+        "artigos": "Artículos",
+        "comunicados": "Comunicados Oficiales"
       },
       "eventos": "Eventos",
       "chocolateiros": "Chocolateros",
@@ -237,6 +238,15 @@
           "cacao en rondonia",
           "documental",
           "vídeo"
+        ]
+      },
+      "verComunicados": {
+        "title": "Ver Comunicados Oficiales",
+        "keywords": [
+          "comunicados",
+          "notas",
+          "posicionamientos",
+          "informaciones oficiales"
         ]
       }
     }
@@ -484,7 +494,7 @@
     "metaReadingTime": "Aprox. 3 min de lectura",
     "imageAlt": "Salón de eventos amplio y rústico por la noche, lleno de invitados sentados en mesas redondas de cena.",
     "figcaption": "Público e invitados reunidos durante la celebración del Concurso Nacional de Cacao Especial.",
-    "p1": "El pasado sábado (06), el estado de Rondônia confirmó su protagonismo en la cacaocultura brasileña al acoger el VII Concurso Nacional de Cacao Especial: Sostenibilidad y Calidad. El evento, que ya es una referencia en el calendario del agronegocio, transformó Cacoal Selva Park en un escenario de excelencia, reuniendo a productores, especialistas y autoridades del sector.",
+    "p1": "El pasado sábado (06), el estado de Rondônia confirmó su protagonismo en la cacaocultura brasileña al acoger el VII Concurso Nacional de Cacao Especial: Sostenibilidad y Calidad. Viabilizado mediante un convenio de colaboración entre la SEAGRI y Cacauron, el evento transformó Cacoal Selva Park en un escenario de excelencia. La organización garantizó una estructura completa, ofreciendo alojamiento, alimentación y transporte en autobús para 240 productores, reuniendo así a la base productiva, especialistas y autoridades del sector.",
     "p2": "La ceremonia comenzó a las 18h30 y contó con un público expresivo de más de 500 personas. La programación fue diseñada para celebrar toda la cadena productiva, uniendo conocimiento técnico y valorización cultural. El público pudo acompañar conferencias sobre el desarrollo del sector, seguidas de una cena de gala.",
     "p3": "La cultura de Rondônia fue exaltada con una presentación artística vibrante del grupo Gavião, de Ji-Paraná, que llevó la identidad local al centro de las atenciones antes del momento más esperado de la noche: la revelación de los mejores cacaos de Brasil.",
     "p4": "La disputa fue reñida entre los 20 finalistas, divididos equitativamente entre las categorías. El resultado final destacó la fuerza de la producción de la Región Norte, con productores de Rondônia y Pará dominando el podio.",
@@ -508,7 +518,7 @@
   "artigo": {
     "titulo": "Rondônia Brilla en el Escenario Nacional: Conozca a los Ganadores del VII Concurso Nacional de Cacao Especial",
     "subtitulo": "Evento realizado en Cacoal Selva Park reunió a más de 500 personas y consagró a productores de Rondônia y Pará.",
-    "p1": "El pasado sábado (06), el estado de Rondônia confirmó su protagonismo en la cacaocultura brasileña al acoger el VII Concurso Nacional de Cacao Especial: Sostenibilidad y Calidad. El evento, que ya es una referencia en el calendario del agronegocio, transformó Cacoal Selva Park en un escenario de excelencia, reuniendo a productores, especialistas y autoridades del sector.",
+    "p1": "El pasado sábado (06), el estado de Rondônia confirmó su protagonismo en la cacaocultura brasileña al acoger el VII Concurso Nacional de Cacao Especial: Sostenibilidad y Calidad. Viabilizado mediante un convenio de colaboración entre la SEAGRI y Cacauron, el evento transformó Cacoal Selva Park en un escenario de excelencia. La organización garantizó una estructura completa, ofreciendo alojamiento, alimentación y transporte en autobús para 240 productores, reuniendo así a la base productiva, especialistas y autoridades del sector.",
     "p2": "La ceremonia comenzó a las 18h30 y contó con un público expresivo de más de 500 personas. La programación fue diseñada para celebrar toda la cadena productiva, uniendo conocimiento técnico y valorización cultural. El público pudo acompañar conferencias sobre el desarrollo del sector, seguidas de una cena de gala.",
     "p3": "La cultura de Rondônia fue exaltada con una presentación artística vibrante del grupo Gavião, de Ji-Paraná, que llevó la identidad local al centro de las atenciones antes del momento más esperado de la noche: la revelación de los mejores cacaos de Brasil.",
     "p4": "La disputa fue reñida entre los 20 finalistas, divididos equitativamente entre las categorías. El resultado final destacó la fuerza de la producción de la Región Norte, con productores de Rondônia y Pará dominando el podio.",
@@ -556,5 +566,58 @@
     "backButtonAriaLabel": "Volver",
     "title": "¡Prepárate para el Viaje!",
     "subtitle": "<0>Próximamente</0>, nos embarcaremos juntos en la serie <1>Cacauron na Estrada</1>, desvelando la rica historia y los secretos del cacao de Rondônia. ¡Espéralo!"
+  },
+  "listaComunicadosPage": {
+    "headerTitle": "Comunicados Oficiales",
+    "headerSubtitle": "Siga las notas y posicionamientos de Cacauron.",
+    "comunicados": {
+      "comunicado1": {
+        "titulo": "Posicionamiento sobre la importación de almendras",
+        "resumo": "Posicionamiento oficial sobre la importación de almendras de cacao africano y la defensa de la cacaocultura de Rondônia."
+      }
+    },
+    "card": {
+      "readMore": "Leer comunicado completo"
+    }
+  },
+  "comunicadoDetalhe": {
+    "voltar": "Volver a Comunicados"
+  },
+  "comunicado001": {
+    "titulo": "COMUNICADO OFICIAL CACAURON N.º 001/2026",
+    "labelAssunto": "Asunto:",
+    "assuntoTexto": "Posicionamiento sobre la importación de almendras de cacao africano y la defensa de la cacaocultura de Rondônia.",
+    "paragrafo1": "La Asociación de Cacaocultores y Chocolateros de Rondônia (CACAURON), en su calidad de entidad representativa de los productores de cacao y chocolateros del estado, hace público su posicionamiento y profunda preocupación ante la reciente llegada de cargamentos de cacao procedentes del continente africano al Puerto de Ilhéus.",
+    "paragrafo2": "Reafirmamos nuestro compromiso inquebrantable con la defensa de los intereses de los productores de Rondônia. La entrada de almendras extranjeras en territorio nacional, sin el debido rigor de transparencia, puede representar no solo una amenaza al equilibrio económico de nuestra cadena productiva, sino también un riesgo fitosanitario incalculable para el sector cacaotero nacional y regional.",
+    "introLista": "En este sentido, la Junta Directiva de CACAURON informa las siguientes acciones inmediatas:",
+    "item1": {
+      "titulo": "Solicitud de Aclaraciones Fitosanitarias:",
+      "texto": "Estamos enviando un oficio al organismo competente, el Ministerio de Agricultura y Ganadería (MAPA), exigiendo el detalle de las etapas de verificación de las almendras importadas y la presentación del informe de clasificación de dichas almendras. Es imperativo comprobar el estricto cumplimiento de todos los protocolos de seguridad para evitar la introducción de plagas y enfermedades inexistentes en nuestro territorio."
+    },
+    "item2": {
+      "titulo": "Apoyo de la CNA:",
+      "texto": "Reforzamos la solicitud de apoyo para que la Confederación Nacional de Agricultura (CNA) realice nuevos estudios técnicos sobre el Drawback del cacao, evaluando criterios que puedan perjudicar el comercio de almendras nacionales y presentando nuevos criterios que beneficien la compra de productos nacionales."
+    },
+    "item3": {
+      "titulo": "Cuestionamiento a la Industria:",
+      "texto": "Enviaremos comunicaciones formales a las industrias procesadoras solicitando aclaraciones sobre la real necesidad técnica y económica de estas importaciones, considerando que Brasil, y especialmente Rondônia, ha invertido fuertemente en el aumento de la productividad y en la calidad de las almendras, buscando la autosuficiencia y el fortalecimiento del mercado interno."
+    },
+    "item4": {
+      "titulo": "Valorización de la Producción Local:",
+      "texto": "Destacamos que el cacao brasileño posee diferenciales competitivos, como los sellos de Indicación Geográfica (IG), que certifican nuestra calidad y originalidad, y también características regionales que refuerzan la producción de calidad de los productores. Reiteramos que la cadena productiva es de gran importancia para la agricultura familiar, fortaleciendo los ingresos familiares. La importación descontrolada desvaloriza el esfuerzo del productor local por ofrecer un producto de excelencia bajo los conceptos \"bean to bar\" y \"tree to bar\"."
+    },
+    "conclusao": "CACAURON permanece vigilante y en constante diálogo con las redes de productores nacionales para garantizar que se respete la soberanía de la cacaocultura brasileña. No aceptaremos que los ingresos y el sustento de nuestras familias agricultoras se vean comprometidos por decisiones que ignoren el potencial y la seguridad de nuestra producción.",
+    "dataLocal": "Rondônia, 29 de enero de 2026",
+    "assinatura": "CACAURON - Directiva"
+  },
+  "comunicadosHome": {
+    "comunicadosCta": {
+      "title": "Transparencia y Compromiso",
+      "description": "Siga los posicionamientos oficiales, notas y comunicados importantes de Cacauron para el sector productivo.",
+      "button": "Ver Comunicados Oficiales"
+    }
   }
 }
+
+
+

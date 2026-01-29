@@ -14,7 +14,8 @@
       "imprensa": "Imprensa",
       "imprensaSub": {
         "noticias": "Notícias",
-        "artigos": "Artigos"
+        "artigos": "Artigos",
+        "comunicados": "Comunicados"
       },
       "eventos": "Eventos",
       "chocolateiros": "Chocolateiros",
@@ -190,6 +191,15 @@
           "documentário",
           "video",
           "rondônia"
+        ]
+      },
+      "verComunicados": {
+        "title": "Ver Comunicados Oficiais",
+        "keywords": [
+          "comunicados",
+          "notas",
+          "posicionamentos",
+          "informações oficiais"
         ]
       }
     }
@@ -437,7 +447,7 @@
     "metaReadingTime": "Aprox. 3 min de leitura",
     "imageAlt": "Salão de eventos amplo e rústico à noite, lotado de convidados sentados em mesas redondas de jantar.",
     "figcaption": "Público e convidados reunidos durante a celebração do Concurso Nacional de Cacau Especial.",
-    "p1": "Neste último sábado (06), o estado de Rondônia confirmou seu protagonismo na cacauicultura brasileira ao sediar o VII Concurso Nacional de Cacau Especial: Sustentabilidade e Qualidade. O evento, que já é referência no calendário do agronegócio, transformou o Cacoal Selva Park em um palco de excelência, reunindo produtores, especialistas e autoridades do setor.",
+    "p1": "Neste último sábado (06), o estado de Rondônia confirmou seu protagonismo na cacauicultura brasileira ao sediar o VII Concurso Nacional de Cacau Especial: Sustentabilidade e Qualidade. Viabilizado por um termo de colaboração entre a SEAGRI e a Cacauron, o evento transformou o Cacoal Selva Park em um palco de excelência. A iniciativa garantiu uma estrutura completa, oferecendo hospedagem, alimentação e transporte via ônibus para 240 produtores, reunindo assim a base produtiva, especialistas e autoridades do setor.",
     "p2": "A cerimônia teve início às 18h30 e contou com um público expressivo de mais de 500 pessoas. A programação foi desenhada para celebrar toda a cadeia produtiva, unindo conhecimento técnico e valorização cultural. O público pôde acompanhar palestras sobre o desenvolvimento do setor, seguidas de um jantar de gala.",
     "p3": "A cultura rondoniense foi exaltada com uma apresentação artística vibrante do grupo Gavião, de Ji-Paraná, que trouxe a identidade local para o centro das atenções antes do momento mais aguardado da noite: a revelação dos melhores cacaus do Brasil.",
     "p4": "A disputa foi acirrada entre os 20 finalistas, divididos igualmente entre as categorias. O resultado final destacou a força da produção da Região Norte, com produtores de Rondônia e do Pará dominando o pódio.",
@@ -461,7 +471,7 @@
   "artigo": {
     "titulo": "Rondônia Brilha no Cenário Nacional: Confira os Vencedores do VII Concurso Nacional de Cacau Especial",
     "subtitulo": "Evento realizado no Cacoal Selva Park reuniu mais de 500 pessoas e consagrou produtores de Rondônia e do Pará.",
-    "p1": "Neste último sábado (06), o estado de Rondônia confirmou seu protagonismo na cacauicultura brasileira ao sediar o VII Concurso Nacional de Cacau Especial: Sustentabilidade e Qualidade. O evento, que já é referência no calendário do agronegócio, transformou o Cacoal Selva Park em um palco de excelência, reunindo produtores, especialistas e autoridades do setor.",
+    "p1": "Neste último sábado (06), o estado de Rondônia confirmou seu protagonismo na cacauicultura brasileira ao sediar o VII Concurso Nacional de Cacau Especial: Sustentabilidade e Qualidade. Viabilizado por um termo de colaboração entre a SEAGRI e a Cacauron, o evento transformou o Cacoal Selva Park em um palco de excelência. A iniciativa garantiu uma estrutura completa, oferecendo hospedagem, alimentação e transporte via ônibus para 240 produtores, reunindo assim a base produtiva, especialistas e autoridades do setor.",
     "p2": "A cerimônia teve início às 18h30 e contou com um público expressivo de mais de 500 pessoas. A programação foi desenhada para celebrar toda a cadeia produtiva, unindo conhecimento técnico e valorização cultural. O público pôde acompanhar palestras sobre o desenvolvimento do setor, seguidas de um jantar de gala.",
     "p3": "A cultura rondoniense foi exaltada com uma apresentação artística vibrante do grupo Gavião, de Ji-Paraná, que trouxe a identidade local para o centro das atenções antes do momento mais aguardado da noite: a revelação dos melhores cacaus do Brasil.",
     "p4": "A disputa foi acirrada entre os 20 finalistas, divididos igualmente entre as categorias. O resultado final destacou a força da produção da Região Norte, com produtores de Rondônia e do Pará dominando o pódio.",
@@ -509,5 +519,55 @@
     "backButtonAriaLabel": "Voltar",
     "title": "Prepare-se para a Jornada!",
     "subtitle": "<0>Em breve</0>, embarcaremos juntos na série <1>Cacauron na Estrada</1>, desvendando a rica história e os segredos do cacau de Rondônia. Aguarde!"
+  },
+  "listaComunicadosPage": {
+    "headerTitle": "Comunicados Oficiais",
+    "headerSubtitle": "Acompanhe as notas e posicionamentos oficiais da Cacauron.",
+    "comunicados": {
+      "comunicado1": {
+        "titulo": "Posicionamento sobre a importação de amêndoas de cacau",
+        "resumo": "Posicionamento oficial sobre a importação de amêndoas de cacau africano e a defesa da cacauicultura de Rondônia."
+      }
+    },
+    "card": {
+      "readMore": "Ler comunicado completo"
+    }
+  },
+  "comunicadoDetalhe": {
+    "voltar": "Voltar para Comunicados"
+  },
+  "comunicado001": {
+    "titulo": "COMUNICADO OFICIAL CACAURON Nº 001/2026",
+    "labelAssunto": "Assunto:",
+    "assuntoTexto": "Posicionamento sobre a importação de amêndoas de cacau africano e a defesa da cacauicultura de Rondônia.",
+    "paragrafo1": "A Associação dos Cacauicultores e Chocolateiros de Rondônia (CACAURON), na qualidade de entidade representativa dos produtores de cacau e chocolateiros do estado, vem a público manifestar seu posicionamento e profunda preocupação em relação à recente chegada de carregamentos de cacau provenientes do continente africano ao Porto de Ilhéus.",
+    "paragrafo2": "Reafirmamos nosso compromisso inabalável com a defesa dos interesses dos produtores de Rondônia. A entrada de amêndoas estrangeiras em território nacional, sem o devido rigor de transparência, pode representar não apenas uma ameaça ao equilíbrio econômico da nossa cadeia produtiva, mas também um risco fitossanitário imensurável para o parque cacaueiro nacional e regional.",
+    "introLista": "Nesse sentido, a Diretoria da CACAURON informa as seguintes ações imediatas:",
+    "item1": {
+      "titulo": "Solicitação de Esclarecimentos Fitossanitários:",
+      "texto": "Estamos enviando ofício ao órgão competente, o Ministério da Agricultura e Pecuária (MAPA), exigindo o detalhamento das etapas de checagem das amêndoas importadas e a apresentação do laudo de classificação das amêndoas importadas. É imperativo que se comprove o cumprimento rigoroso de todos os protocolos de segurança para evitar a introdução de pragas e doenças inexistentes em nosso território."
+    },
+    "item2": {
+      "titulo": "Apoio da CNA:",
+      "texto": "Reforçamos a solicitação de apoio para que a Confederação Nacional da Agricultura (CNA) realize novos estudos técnicos sobre o Drawback do cacau, avaliando critérios que possam prejudicar o comércio de amêndoas nacionais e apresentando novos critérios que beneficiem a compra de produtos nacionais."
+    },
+    "item3": {
+      "titulo": "Questionamento à Indústria:",
+      "texto": "Encaminharemos comunicações formais às indústrias processadoras solicitando esclarecimentos sobre a real necessidade técnica e econômica dessas importações, considerando que o Brasil, e especialmente Rondônia, tem investido fortemente no aumento da produtividade e na melhoria da qualidade das amêndoas, visando a autossuficiência e o fortalecimento do mercado interno."
+    },
+    "item4": {
+      "titulo": "Valorização da Produção Local:",
+      "texto": "Ressaltamos que o cacau brasileiro possui diferenciais competitivos, como os selos de Indicação Geográfica (IG), que atestam nossa qualidade e originalidade, além de características regionais que reforçam a produção de qualidade pelos produtores. Reiteramos que a cadeia produtiva é de grande importância para a agricultura familiar, fortalecendo a renda das famílias. A importação desenfreada desvaloriza o esforço do produtor local em fornecer um produto de excelência nos modelos \"bean to bar\" e \"tree to bar\"."
+    },
+    "conclusao": "A CACAURON permanece vigilante e em constante diálogo com as redes de produtores nacionais para garantir que a soberania da cacauicultura brasileira seja respeitada. Não aceitaremos que a renda e o sustento de nossas famílias agricultoras sejam comprometidos por decisões que ignorem o potencial e a segurança da nossa produção.",
+    "dataLocal": "Rondônia, 29 de janeiro de 2026",
+    "assinatura": "CACAURON - Diretoria"
+  },
+  "comunicadosHome": {
+    "comunicadosCta": {
+      "title": "Transparência e Compromisso",
+      "description": "Acompanhe os posicionamentos oficiais, notas e comunicados importantes da Cacauron para o setor produtivo.",
+      "button": "Ver Comunicados Oficiais"
+    }
   }
 }

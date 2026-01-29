@@ -120,6 +120,7 @@ function Header() {
     });
     chocolateirosKeywords = [...new Set(chocolateirosKeywords)];
 
+    // Mapeamento de Destinos (Adicionei verComunicados aqui)
     const destinationMap: Record<
       string,
       { destination: string; type: "navigate" | "scroll" }
@@ -134,6 +135,7 @@ function Header() {
       verArtigos: { destination: "/artigos", type: "navigate" },
       verDocumentos: { destination: "#documentos", type: "scroll" },
       verEventos: { destination: "/eventos", type: "navigate" },
+      verComunicados: { destination: "/comunicados", type: "navigate" }, 
       verCacauronNaEstrada: {
         destination: "/cacauron-na-estrada",
         type: "navigate",
@@ -304,7 +306,7 @@ function Header() {
           )}
           <ul>
             <li>
-              <a href='/'>{t("header.nav.inicio")}</a>
+              <a href='/#hero'>{t("header.nav.inicio")}</a>
             </li>
             <li className={openSubmenus["institucional"] ? "open" : ""}>
               <a
@@ -337,6 +339,8 @@ function Header() {
                 </li>
               </ul>
             </li>
+            
+            {/* MENU IMPRENSA (Comunicados adicionado aqui) */}
             <li className={openSubmenus["imprensa"] ? "open" : ""}>
               <a
                 href='/imprensa'
@@ -357,6 +361,11 @@ function Header() {
               </a>
               <ul>
                 <li>
+                  <a href='/comunicados'>
+                    {t("header.nav.imprensaSub.comunicados", "Comunicados")}
+                  </a>
+                </li>
+                <li>
                   <a href='#noticias'>{t("header.nav.imprensaSub.noticias")}</a>
                 </li>
                 <li>
@@ -364,6 +373,7 @@ function Header() {
                 </li>
               </ul>
             </li>
+
             <li>
               <a href='/eventos'>{t("header.nav.eventos")}</a>
             </li>

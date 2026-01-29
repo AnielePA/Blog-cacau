@@ -10,6 +10,7 @@ import { ModalProvider } from "./context/ModalProvider";
 import ImageModal from "./components/ImageModal";
 import "./index.css";
 import DocumentosSection from "./components/DocumentosSection";
+import ComunicadosSection from "./components/ComunicadosSection";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <OurStory />
         <IndicacaoGeograficaSection />
         <DocumentosSection />
+        <ComunicadosSection />
         <Parceiros />
         <ChamadaListasSection />
         <Footer />
