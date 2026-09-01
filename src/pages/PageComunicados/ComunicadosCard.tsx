@@ -5,7 +5,7 @@ import type { ComunicadoPreview } from "./ComunicadoPreview";
 
 
 
-// Componente do Card
+
 const ComunicadoCard = ({ comunicado }: { comunicado: ComunicadoPreview }) => {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -15,11 +15,18 @@ const ComunicadoCard = ({ comunicado }: { comunicado: ComunicadoPreview }) => {
     console.log(`Navegar para: /comunicados/${comunicado.slug}`);
   };
 
-  // Formatador de data simples
-  const formatDate = (dateString: string) => {
-    const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString('pt-BR', options);
-  };
+const formatDate = (dateString: string) => {
+  const [year, month, day] = dateString.split('-').map(Number);
+
+  const date = new Date(year, month - 1, day);
+
+  return date.toLocaleDateString('pt-BR', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+};
+
 
   return (
     <article className="comunicado-card" onClick={handleCardClick}>

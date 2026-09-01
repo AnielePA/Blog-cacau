@@ -1,0 +1,265 @@
+/* ==========================================================================
+   Artigo IG - "Indicação Geográfica Rondônia Cacau em Bruxelas"
+   Mobile-first
+   ========================================================================== */
+
+.artigo-page-ig {
+  --white: #ffffff;
+  --cor-marrom1: #312725;
+  --cor-marrom2: #49190f;
+  --cor-marrom3: #7d4c3b;
+  --cor-destaque: #fd8763;
+  --cor-texto-claro: #f7f7f7;
+  --cor-fundo-claro: #f9ead4;
+  --cor-cinza: #9a9494;
+
+  --font-body: "Open Sans", sans-serif;
+  --font-navigation: "Raleway", sans-serif;
+
+  background-color: var(--cor-fundo-claro);
+  font-family: var(--font-body);
+  color: var(--cor-marrom1);
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.artigo-header-ig {
+  position: relative;
+  padding: 56px 20px 28px;
+  background: linear-gradient(
+    160deg,
+    var(--cor-marrom2) 0%,
+    var(--cor-marrom1) 100%
+  );
+  overflow: hidden;
+}
+
+.artigo-header-ig__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 80% 0%,
+    rgba(253, 135, 99, 0.18),
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.back-button-artigo {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(247, 247, 247, 0.12);
+  color: var(--cor-texto-claro);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.back-button-artigo:hover {
+  background-color: rgba(247, 247, 247, 0.22);
+}
+
+.artigo-header-ig__content {
+  position: relative;
+  z-index: 2;
+}
+
+.header-main-row {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.artigo-header-ig__text {
+  flex: 1;
+}
+
+.artigo-header-ig__title {
+  font-family: var(--font-navigation);
+  font-weight: 800;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  color: var(--white);
+  margin: 0 0 14px;
+}
+
+.artigo-header-ig__subtitle {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--cor-texto-claro);
+  opacity: 0.9;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.artigo-header-ig__logo-wrapper {
+    /* flex-shrink: 0; */
+    /* width: clamp(140px, 22vw, 260px);
+    height: clamp(90px, 12vw, 130px); */
+    width: 180px;
+    height: 120px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.artigo-header-ig__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.artigo-header-ig__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 24px;
+}
+
+.artigo-header-ig__meta span {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-navigation);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cor-fundo-claro);
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+.artigo-body-ig {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.artigo-body-ig p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--cor-marrom1);
+  margin: 0;
+  text-align: justify;
+}
+
+.artigo-body-ig p strong {
+  color: var(--cor-marrom2);
+  font-weight: 700;
+}
+
+.artigo-body-ig figure {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artigo-body-ig figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(49, 39, 37, 0.15);
+  object-fit: cover;
+}
+
+.artigo-body-ig figure.imagem-larga img {
+  max-height: 320px;
+  object-fit: cover;
+}
+
+.artigo-body-ig figcaption {
+  margin-top: 10px;
+  font-family: var(--font-navigation);
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--cor-cinza);
+  text-align: center;
+}
+
+/* ==========================================================================
+   Tablet and up
+   ========================================================================== */
+
+@media (min-width: 640px) {
+  .artigo-header-ig {
+    padding: 64px 40px 36px;
+  }
+
+  .header-main-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .artigo-header-ig__title {
+    font-size: 2.4rem;
+  }
+
+    .artigo-header-ig__logo-wrapper {
+    width: 180px;
+    height: 120px;
+  }
+
+  .artigo-header-ig__subtitle {
+    font-size: 1.05rem;
+  }
+
+
+  .artigo-body-ig {
+    padding: 40px 40px 80px;
+    gap: 26px;
+  }
+
+  .artigo-body-ig p {
+    font-size: 1.05rem;
+  }
+
+  .artigo-body-ig figure.imagem-larga img {
+    max-height: 400px;
+  }
+}
+
+/* ==========================================================================
+   Desktop
+   ========================================================================== */
+
+@media  (min-width: 900px) {
+    .artigo-header-ig__logo-wrapper {
+        width: 250px;
+        height: auto;
+  }
+}
+    
+
+@media (min-width: 1024px) {
+  .artigo-header-ig {
+    padding: 80px 96px 44px;
+  }
+
+  .artigo-header-ig__title {
+    font-size: 2.9rem;
+  }
+
+  .artigo-body-ig {
+    padding: 48px 0 96px;
+  }
+}

@@ -1,4 +1,4 @@
-export default interface ComunicadoPreview {
+export interface ComunicadoPreview {
   id: number;
   slug: string;
   numero: string; // Ex: 001/2026

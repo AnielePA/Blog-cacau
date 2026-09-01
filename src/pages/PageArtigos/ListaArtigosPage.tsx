@@ -5,6 +5,7 @@ import ArtigoCard, { type ArtigoPreview } from "./ArtigoCard";
 import { useTranslation } from "react-i18next";
 import seloIg from "../../assets/images/selo-article-1.jpg";
 import concursoCacau from "../../assets/images/CONCURSO-CACAU.webp";
+import conexaoVerdeCapa from "../../assets/images/conexao-verde-capa.jpeg";
 
 function ListaArtigosPage() {
   const navigate = useNavigate();
@@ -28,6 +29,14 @@ function ListaArtigosPage() {
       imagemUrl: concursoCacau,
       dataPublicacao: "2025-12-09",
     },
+    {
+      id: 3,
+      slug: "ue-bruxelas",
+      titulo: t("listaArtigosPage.artigos.artigo3.titulo"),
+      resumo: t("listaArtigosPage.artigos.artigo3.resumo"),
+      imagemUrl: conexaoVerdeCapa,
+      dataPublicacao: "2026-07-18",
+    }
   ];
 
   return (

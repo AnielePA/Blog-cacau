@@ -463,7 +463,12 @@
       "artigo2": {
         "titulo": "Conozca a los Ganadores del VII Concurso Nacional de Cacao Especial",
         "resumo": "Evento realizado en Cacoal Selva Park reunió a más de 500 personas y consagró a productores de Rondônia y Pará..."
+      },
+        "artigo3": {
+        "titulo": "indicación geográfica “rondônia cacau” marca presencia en un evento internacional de la unión europea",
+        "resumo": "El presidente de CACAURON, Estevam Fernandes, representó al cacao de Rondônia en un evento de la Unión Europea en Bruxelas, Bélgica...."
       }
+
     }
   },
   "artigoIGRondoniaPage": {
@@ -538,6 +543,24 @@
     "accessDrive": "Accede a las Fotos del Evento",
     "driveDescription": "Revive los mejores momentos del VII Concurso Nacional de Cacao Especial a través de las fotos oficiales del evento.",
     "buttonText": "Fotos del Evento"
+  },
+    "artigoUEBruxelasPage": {
+    "headerTitle": "La Indicación Geográfica “Rondônia Cacau” marca presencia en evento internacional de la Unión Europea",
+    "headerSubtitle": "Representando la Indicación Geográfica del cacao de Rondônia, Estevam Fernandes, presidente de CACAURON, estuvo presente en un evento organizado por la Unión Europea en la ciudad de Bruselas, Bélgica.",
+    "logoAlt": "Estevam Fernandes, presidente de CACAURON, parado frente a un banner del evento Conexão Verde.",
+    "metaAuthor": "Por Alan Reis",
+    "metaReadingTime": "Aprox. 5 min de lectura",
+    "backButtonAriaLabel": "Volver",
+    "imageAlt1": "Estevam Fernandes, presidente de CACAURON, al lado de dos participantes, posando para foto en el escenario del evento Conexão Verde.",
+    "figcaption2": "Estevam Fernandes, presidente de CACAURON, representó la Indicación Geográfica “Rondônia Cacau” en el evento.",
+    "imageAlt2": "Estevam Fernandes, presidente de CACAURON, parado frente a un banner del evento Conexão Verde, en Bruxelas, Bélgica.",
+    "imageAlt3": "Panel discussion at the Conexão Verde event, in Brussels, with a speaker at the podium and three panelists seated on stage, including Estevam Fernandes, president of CACAURON.",
+    "paragrafo1": "En el mes de <strong>junio</strong>, llegó a su fin el emblemático proyecto de la Unión Europea, <strong>AL-INVEST Verde</strong>, que actuó en América Latina en los últimos años como un fuerte impulsor de la sostenibilidad en los ámbitos público y privado. Para marcar el fin de esta fase, representantes de la Unión Europea y de diversos países de América Latina se reunieron en <strong>Bruselas, Bélgica</strong>, en el evento titulado <strong>Conexão Verde</strong>, con el objetivo de discutir los resultados alcanzados con el proyecto, así como futuras alianzas, inversiones y posibles nuevos programas.",
+    "paragrafo2": "Los representantes de los sectores público y privado de la <strong>agroindustria brasileña</strong> tuvieron la oportunidad de compartir con los demás representantes mundiales sus vivencias, ideas y planes, además de los resultados obtenidos con el apoyo del proyecto AL-INVEST Verde, atrayendo así la atención internacional hacia la creciente producción brasileña alineada con los principios de <strong>sostenibilidad</strong> defendidos por los proyectos de la Unión Europea.",
+    "paragrafo3": "En Rondônia, AL-INVEST Verde, junto con la cooperación de <strong>SEBRAE</strong>, promovió acciones destinadas a fortalecer la producción de cacao proveniente principalmente de la <strong>agricultura familiar</strong>, ampliando los aspectos sostenibles de la producción del cacao nativo de la región amazónica. En <strong>2024</strong>, se destinaron cerca de <strong>300 mil euros</strong> en inversiones en el segmento del cacao de Rondônia, con el objetivo de favorecer a pequeños y medianos productores.",
+    "paragrafo4": "<strong>Estevam Fernandes</strong>, presidente de CACAURON, marcó presencia en el evento Conexão Verde, representando la Indicación Geográfica <strong>“Rondônia Cacau”</strong>, en el cual participó del foro dedicado exclusivamente a representantes de la agroindustria brasileña. En esta oportunidad, expresó su agradecimiento al proyecto AL-INVEST Verde y a SEBRAE por impulsar la producción cacaotera rondoniense en los últimos años. Relató cómo la valorización a través de la IG ha proporcionado una <strong> agregación de valor y competitividad</strong> a toda la producción de cacao de Rondônia, abriendo puertas en la industria y creando una fuerte alianza con el mercado.",
+    "paragrafo5": "Estevam Fernandes también destacó la <strong> producción sostenible y libre de deforestación</strong> con la que se cultiva y produce el cacao en el estado, afirmando que la producción enfrenta muy pocos problemas ambientales y sociales gracias al entendimiento de lo que es la sostenibilidad. Un conocimiento que los productores asociados adquirieron en estos últimos años con la ayuda de SEBRAE y del fondo europeo. Y agregó que muchos de los productores todavía recibirán <strong> asistencia técnica</strong> y conocimiento de las prácticas sostenibles alineadas con los principios de la Unión Europea, con el fin de acceder a nuevos mercados con estos productos que serán cultivados.",
+    "paragrafo6": "Esta alianza entre CACAURON y SEBRAE, junto con AL-INVEST Verde, ha traído resultados claros y significativos, que han contribuido a la expansión en <strong>productividad, calidad</strong> y tecnologías aplicadas en la industria cacaotera del estado. Alianzas como esta proporcionan grandes avances para el futuro y abren margen para que nuevos proyectos puedan establecerse entre CACAURON, SEBRAE y el fondo europeo, que se ha mostrado un gran aliado para los productores. Con la mirada puesta en un futuro de ampliación de la producción y con grandes logros como metas a alcanzar, CACAURON se muestra agradecida por contar con socios que colaboran con la <strong> expansión de la industria del cacao en Rondônia</strong>."
   },
   "agendaEventosPage": {
     "headerTitle": "Calendario de eventos",

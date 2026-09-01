@@ -474,6 +474,10 @@
       "artigo2": {
         "titulo": "Check Out the Winners of the VII National Fine Cocoa Contest",
         "resumo": "Event held at Cacoal Selva Park brought together more than 500 people and honored producers from Rondônia and Pará..."
+      },
+        "artigo3": {
+        "titulo": "geographical indication “rondônia cacau” is present at an international european union event",
+        "resumo": "The president of CACAURON, Estevam Fernandes, represented the cocoa from Rondônia at a European Union event in Bruxelas, Belgium...."
       }
     }
   },
@@ -549,6 +553,26 @@
     "accessDrive": "Access the Event Photos",
     "driveDescription": "Relive the best moments of the VII National Fine Cocoa Contest through the official event photos.",
     "buttonText": "Open Event Photos"
+  },
+    "artigoUEBruxelasPage": {
+    "headerTitle": "Geographical Indication “Rondônia Cacau” takes part in international European Union event",
+    "headerSubtitle": "Representing the Geographical Indication of Rondônia cocoa, Estevam Fernandes, president of CACAURON, attended an event organized by the European Union in the city of Brussels, Belgium.",
+    "logoAlt": "Estevam Fernandes, president of CACAURON, standing in front of a banner for the Conexão Verde event.",
+    "metaAuthor": "By Alan Reis",
+    "metaReadingTime": "Approx. 5 min read",
+    "backButtonAriaLabel": "Back",
+    "figcaption1": "Representatives from Latin America and the European Union gathered at the Conexão Verde event, in Brussels.",
+    "imageAlt1": "Representatives from several countries gathered in an auditorium during the Conexão Verde event, in Brussels, Belgium.",
+    "figcaption2": "Estevam Fernandes, president of CACAURON, represented the Geographical Indication “Rondônia Cacau” at the event.",
+    "imageAlt2": "Estevam Fernandes, president of CACAURON, standing in front of a banner for the Conexão Verde event, in Bruxelas, Belgium.",
+    "figcaption3": "Sustainable, deforestation-free production: one of the pillars of certified cocoa from Rondônia.",
+    "imageAlt3": "Sustainable cocoa plantation in Rondônia, with native trees preserved around the crop.",
+    "paragrafo1": "In <strong>June</strong>, the European Union's emblematic <strong>AL-INVEST Verde</strong> project came to an end, having worked across Latin America in recent years as a strong driver of sustainability in both the public and private sectors. To mark the close of this phase, representatives from the European Union and several Latin American countries gathered in <strong>Brussels, Belgium</strong>, at the event called <strong>Conexão Verde</strong>, with the aim of discussing the results achieved by the project, as well as future partnerships, investments, and possible new programs.",
+    "paragrafo2": "Representatives from the public and private sectors of <strong>Brazilian agribusiness</strong> had the opportunity to share their experiences, ideas, and plans with other representatives from around the world, along with the results achieved through the support of the AL-INVEST Verde project, bringing international attention to Brazil's growing production aligned with the <strong>sustainability</strong> principles championed by the European Union's projects.",
+    "paragrafo3": "In Rondônia, AL-INVEST Verde, together with <strong>SEBRAE</strong>, promoted actions aimed at strengthening cocoa production coming mainly from <strong>family farming</strong>, expanding the sustainable aspects of native Amazonian cocoa production. In <strong>2024</strong>, around <strong>300 thousand euros</strong> were invested in Rondônia's cocoa segment, aiming to benefit small and medium-sized producers.",
+    "paragrafo4": "<strong>Estevam Fernandes</strong>, president of CACAURON, attended the Conexão Verde event, representing the Geographical Indication <strong>“Rondônia Cacau”</strong>, where he took part in the forum dedicated exclusively to representatives of Brazilian agribusiness. On this occasion, he expressed his gratitude to the AL-INVEST Verde project and to SEBRAE for driving Rondônia's cocoa production forward in recent years. He described how the value gained through the GI has provided <strong> added value and competitiveness</strong> to all of Rondônia's cocoa production, opening doors in the industry and building a strong partnership with the market.",
+    "paragrafo5": "Estevam Fernandes also emphasized the <strong> sustainable, deforestation-free production</strong> through which cocoa is grown and produced in the state, stating that production faces very few environmental and social issues thanks to a solid understanding of sustainability. This is knowledge that associated producers have gained in recent years with the help of SEBRAE and the European fund. He added that many producers will still receive <strong> technical assistance</strong> and training in sustainable practices aligned with European Union principles, in order to access new markets with these products.",
+    "paragrafo6": "This partnership between CACAURON and SEBRAE, together with AL-INVEST Verde, has brought clear and significant results, contributing to gains in <strong>productivity, quality</strong>, and technologies applied to the state's cocoa industry. Partnerships like this one drive major progress for the future and open the way for new projects to be established between CACAURON, SEBRAE, and the European fund, which has proven to be a great ally to producers. Looking ahead to a future of expanded production and major achievements as goals to be reached, CACAURON is grateful to have partners who contribute to the <strong> growth of the cocoa industry in Rondônia</strong>."
   },
   "agendaEventosPage": {
     "headerTitle": "Event Schedule",

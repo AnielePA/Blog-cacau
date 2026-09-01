@@ -416,6 +416,10 @@
       "artigo2": {
         "titulo": "Confira os Vencedores do VII Concurso Nacional de Cacau Especial",
         "resumo": "Evento realizado no Cacoal Selva Park reuniu mais de 500 pessoas e consagrou produtores de Rondônia e do Pará..."
+      },
+      "artigo3": {
+        "titulo": "indicação geográfica “rondônia cacau” marca presença em evento internacional da união europeia",
+        "resumo": "O presidente da CACAURON, Estevam Fernandes, representou o cacau de Rondônia em um evento da União Europeia em Bruxelas, na Bélgica...."
       }
     }
   },
@@ -491,6 +495,24 @@
     "accessDrive": "Acesse as Fotos do Evento",
     "driveDescription": "Reviva os melhores momentos do VII Concurso Nacional de Cacau Especial através das fotos oficiais do evento.",
     "buttonText": "Abrir Pasta do Evento"
+  },
+    "artigoUEBruxelasPage": {
+    "headerTitle": "Indicação Geográfica “Rondônia Cacau” marca presença em evento internacional da União Europeia",
+    "headerSubtitle": "Representando a Indicação Geográfica do cacau de Rondônia, Estevam Fernandes, presidente da CACAURON, esteve presente em evento organizado pela União Europeia na cidade de Bruxelas, na Bélgica.",
+    "logoAlt": "Estevam Fernandes, presidente da CACAURON, parado em frente a um banner do evento Conexão Verde.",
+    "metaAuthor": "Por Alan Reis",
+    "metaReadingTime": "Aprox. 5 min de leitura",
+    "backButtonAriaLabel": "Voltar",
+    "imageAlt1": "Estevam Fernandes, presidente da CACAURON, ao lado de duas participantes, posando para foto no palco do evento Conexão Verde.",
+    "figcaption2": "Estevam Fernandes, presidente da CACAURON, representou a Indicação Geográfica “Rondônia Cacau” no evento.",
+    "imageAlt2": "Estevam Fernandes, presidente da CACAURON, parado em frente a um banner do evento Conexão Verde, em Bruxelas, na Bélgica.",
+    "imageAlt3": "Painel de debate no evento Conexão Verde, em Bruxelas, com uma palestrante no púlpito e três participantes sentados no palco, entre eles Estevam Fernandes, presidente da CACAURON..",
+    "paragrafo1": "No mês de <strong>junho</strong>, chegou ao fim o emblemático projeto da União Europeia, <strong>AL-INVEST Verde</strong>, que atuou na América Latina nos últimos anos como um forte incentivador da sustentabilidade nos âmbitos público e privado. Para marcar o fim dessa fase, representantes da União Europeia e de diversos países da América Latina se reuniram em <strong>Bruxelas, na Bélgica</strong>, no evento intitulado <strong>Conexão Verde</strong>, com o objetivo de discutir os resultados alcançados com o projeto, assim como sobre futuras parcerias, investimentos e possíveis novos programas.",
+    "paragrafo2": "Os representantes dos setores público e privado da <strong>agroindústria brasileira</strong> tiveram a oportunidade de compartilhar com os demais representantes mundiais suas vivências, ideias e planejamentos, além dos resultados obtidos com o apoio do projeto AL-INVEST Verde, trazendo, assim, os holofotes internacionais para a crescente produção brasileira alinhada aos princípios da <strong>sustentabilidade</strong> defendidos pelos projetos da União Europeia.",
+    "paragrafo3": "Em Rondônia, o AL-INVEST Verde, juntamente com a cooperação do <strong>SEBRAE</strong>, promoveu ações visando o fortalecimento da produção de cacau oriunda principalmente da <strong>agricultura familiar</strong>, ampliando os aspectos sustentáveis da produção do cacau nativo da região amazônica. Em <strong>2024</strong>, foram destinados cerca de <strong>300 mil euros</strong> em investimentos no segmento do cacau de Rondônia, com o objetivo de favorecer pequenos e médios produtores.",
+    "paragrafo4": "<strong>Estevam Fernandes</strong>, presidente da CACAURON, marcou presença no evento Conexão Verde, representando a Indicação Geográfica <strong>“Rondônia Cacau”</strong>, no qual participou do fórum dedicado exclusivamente para representantes da agroindústria brasileira. Nesta oportunidade, expressou os seus agradecimentos ao projeto AL-INVEST Verde e ao SEBRAE por impulsionarem a produção cacaueira rondoniense nos últimos anos. Relatou como a valorização por meio da IG tem proporcionado uma <strong> agregação de valor e competitividade</strong> a toda a produção de cacau de Rondônia, abrindo portas na indústria e criando uma forte parceria com o mercado.",
+    "paragrafo5": "Estevam Fernandes também deu ênfase à <strong> produção sustentável e livre de desmatamento</strong>, em que o cacau é cultivado e produzido no estado, afirmando que a produção enfrenta pouquíssimos problemas ambientais e sociais graças ao entendimento do que é sustentabilidade. Conhecimento este que os produtores associados adquiriram nesses últimos anos com a ajuda do SEBRAE e do fundo europeu. E completou dizendo que muitos dos produtores ainda receberão <strong> assistência técnica</strong> e conhecimento das práticas sustentáveis alinhadas com os princípios da União Europeia, a fim de acessar novos mercados com estes produtos que serão cultivados.",
+    "paragrafo6": "Esta parceria da CACAURON e do SEBRAE, juntamente com o AL-INVEST Verde, trouxe resultados claros e expressivos, que colaboraram para a expansão em <strong>produtividade, qualidade</strong> e tecnologias aplicadas na indústria cacaueira no estado. Parcerias como esta proporcionam grandes avanços para o futuro e abrem margem para que novos projetos possam ser firmados entre a CACAURON, o SEBRAE e o fundo europeu, que se mostrou um grande aliado para os produtores. Almejando um futuro de ampliação da produção e com grandes conquistas como metas a serem alcançadas, a CACAURON se mostra grata por ter parceiros que colaboram para a <strong> expansão da indústria de cacau em Rondônia</strong>."
   },
   "agendaEventosPage": {
     "headerTitle": "Agenda de Eventos",

@@ -14,6 +14,7 @@ import CacauronNaEstradaEmBreve from "./pages/PageCacauronNaEstrada/CacauronNaEs
 import ArtigoConcursoNacionalCacau from "./pages/PageArtigos/artigos/ArtigoConcursoNacionalCacau.tsx";
 import ComunicadosPage from "./pages/PageComunicados/ComunicadosPage.tsx";
 import ComunicadoImportacao from "./pages/PageComunicados/ComunicadoImportacao.tsx";
+import ArtigoUEBruxelas from "./pages/PageArtigos/artigos/ArtigoUEBruxelas.tsx";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/artigos/concurso-nacional-cacau",
     element: <ArtigoConcursoNacionalCacau />,
+  },
+  {
+    path: "/artigos/ue-bruxelas",
+    element: <ArtigoUEBruxelas />,
   },
   {
     path: "/cacauron-na-estrada",

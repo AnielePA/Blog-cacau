@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ChevronLeftIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ComunicadoCard from "./ComunicadosCard";
-import type { ComunicadoPreview } from "./ComunicadoPreview";
+import type  { ComunicadoPreview } from "./ComunicadoPreview";
 
 
 
